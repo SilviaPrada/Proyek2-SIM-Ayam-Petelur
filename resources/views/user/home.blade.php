@@ -65,299 +65,297 @@
     </div>
   </header>
   <!-- End Header -->
-<!-- ======= Hero Section ======= -->
-<section id="hero" class="d-flex align-items-center">
-
-<div class="container">
-  <div class="row gy-4">
-    <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-      <h1>TERNAK AYAM LEBIH MUDAH DENGAN SIMAP!</h1>
-      <h2>Yuk, atur ternak ayammu!</h2>
-      <div>
-        <a href="#about" class="btn-get-started scrollto">Mulai</a>
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1>TERNAK AYAM LEBIH MUDAH DENGAN SIMAP!</h1>
+          <h2>Yuk, atur ternak ayammu!</h2>
+          <div>
+            <a href="#about" class="btn-get-started scrollto">Mulai</a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img">
+          <img src="assets/img/home.jpg" class="img-fluid animated" alt="">
+        </div>
       </div>
     </div>
-    <div class="col-lg-6 order-1 order-lg-2 hero-img">
-      <img src="assets/img/home.jpg" class="img-fluid animated" alt="">
-    </div>
-  </div>
-</div>
+  </section><!-- End Hero -->
 
-</section><!-- End Hero -->
+  <main id="main">
 
-<main id="main">
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+    <div class="container">
 
-<!-- ======= About Section ======= -->
-<section id="about" class="about">
-  <div class="container">
-
-    <div class="row justify-content-between">
-      <div class="col-lg-5 d-flex align-items-center justify-content-center about-img">
-        <img src="assets/img/logo.png" class="img-fluid" alt="" data-aos="zoom-in">
+      <div class="row justify-content-between">
+        <div class="col-lg-5 d-flex align-items-center justify-content-center about-img">
+          <img src="assets/img/logo.png" class="img-fluid" alt="" data-aos="zoom-in">
+        </div>
+        <div class="col-lg-6 pt-5 pt-lg-0">
+          <h3 data-aos="fade-up">SISTEM INFORMASI MANAJEMEN AYAM PETELUR</h3>
+          <p data-aos="fade-up" data-aos-delay="100">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+          </p>
+        </div>
       </div>
-      <div class="col-lg-6 pt-5 pt-lg-0">
-        <h3 data-aos="fade-up">SISTEM INFORMASI MANAJEMEN AYAM PETELUR</h3>
-        <p data-aos="fade-up" data-aos-delay="100">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-        </p>
+      <br><br><br>
+      <div class="section-title" data-aos="fade-up">
+        <h2>Anggota Tim</h2>
+        <p>Tim kami siap membantu</p>
       </div>
-    </div>
-    <br><br><br>
-    <div class="section-title" data-aos="fade-up">
-      <h2>Anggota Tim</h2>
-      <p>Tim kami siap membantu</p>
-    </div>
 
-    <div class="row">
+      <div class="row">
 
-      <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
-        <div class="member">
-          <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-          <div class="member-info">
-            <div class="member-info-content">
-              <h4>Mila Yunita</h4>
-              <span>2041720027</span>
+        <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="member">
+            <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>Mila Yunita</h4>
+                <span>2041720027</span>
+              </div>
             </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+          <div class="member">
+            <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>Rara Deninda Hurianto</h4>
+                <span>2041720110</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+          <div class="member">
+            <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>Shine Devi Oktaviana R S P</h4>
+                <span>2041720065</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+          <div class="member">
+            <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>Silvia Prada Aprilia</h4>
+                <span>2041720141</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section><!-- End About Section -->
+
+  <!-- ======= Catat Section ======= -->
+  <section id="catat" class="catat">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <p>Pencatatan Ayam</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <div class="row">
+              <div class="form-group col-md-6">
+                <label for="name">Your Name</label>
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="form-group col-md-6 mt-3 mt-md-0">
+                <label for="name">Your Email</label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <label for="name">Subject</label>
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group mt-3">
+              <label for="name">Message</label>
+              <textarea class="form-control" name="message" rows="10" required></textarea>
+            </div>
+            <div class="my-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Catat Section -->
+
+  <!-- ======= Hasil Section ======= -->
+  <section id="hasil" class="hasil">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <p>Hasil Pencatatan</p>
+      </div>
+
+      <div class="row">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+              <th scope="col">Handle</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td colspan="2">Larry the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+
+    </div>
+  </section><!-- End Hasil Section -->
+
+  <!-- ======= Hitung Section ======= -->
+  <section id="hitung" class="hitung">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <p>Penghitungan</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <div class="row">
+              <div class="form-group col-md-6">
+                <label for="name">Your Name</label>
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="form-group col-md-6 mt-3 mt-md-0">
+                <label for="name">Your Email</label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <label for="name">Subject</label>
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group mt-3">
+              <label for="name">Message</label>
+              <textarea class="form-control" name="message" rows="10" required></textarea>
+            </div>
+            <div class="my-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Hitung Section -->
+
+
+  <!-- ======= Services Section ======= -->
+  <section id="services" class="services section-bg">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <p>Informasi Penanganan Penyakit pada Ayam</p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bxl-dribbble"></i></div>
+            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-file"></i></div>
+            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla</p>
           </div>
         </div>
       </div>
 
-      <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-        <div class="member">
-          <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
-          <div class="member-info">
-            <div class="member-info-content">
-              <h4>Rara Deninda Hurianto</h4>
-              <span>2041720110</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-        <div class="member">
-          <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-          <div class="member-info">
-            <div class="member-info-content">
-              <h4>Shine Devi Oktaviana R S P</h4>
-              <span>2041720065</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
-        <div class="member">
-          <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
-          <div class="member-info">
-            <div class="member-info-content">
-              <h4>Silvia Prada Aprilia</h4>
-              <span>2041720141</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
-  </div>
-</section><!-- End About Section -->
+  </section><!-- End Services Section -->
 
-<!-- ======= Catat Section ======= -->
-<section id="catat" class="catat">
-  <div class="container" data-aos="fade-up">
-
-    <div class="section-title">
-      <p>Pencatatan Ayam</p>
-    </div>
-
-    <div class="row">
-      <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+  </main><!-- End #main -->
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
           <div class="row">
-            <div class="form-group col-md-6">
-              <label for="name">Your Name</label>
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <img src="assets/img/logo.png" class="img-fluid animated" alt="" height="300" width="100">
             </div>
-            <div class="form-group col-md-6 mt-3 mt-md-0">
-              <label for="name">Your Email</label>
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <a href="#"><h4>Ketentuan Pemakaian</h4></a></li>
             </div>
-          </div>
-          <div class="form-group mt-3">
-            <label for="name">Subject</label>
-            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-          </div>
-          <div class="form-group mt-3">
-            <label for="name">Message</label>
-            <textarea class="form-control" name="message" rows="10" required></textarea>
-          </div>
-          <div class="my-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your message has been sent. Thank you!</div>
-          </div>
-          <div class="text-center"><button type="submit">Send Message</button></div>
-        </form>
-      </div>
 
-    </div>
-
-  </div>
-</section><!-- End Catat Section -->
-
-<!-- ======= Hasil Section ======= -->
-<section id="hasil" class="hasil">
-  <div class="container" data-aos="fade-up">
-
-    <div class="section-title">
-      <p>Hasil Pencatatan</p>
-    </div>
-
-    <div class="row">
-      <table class="table table-bordered">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-          </tr>
-        </tbody>
-      </table>
-
-    </div>
-
-  </div>
-</section><!-- End Hasil Section -->
-
-<!-- ======= Hitung Section ======= -->
-<section id="hitung" class="hitung">
-  <div class="container" data-aos="fade-up">
-
-    <div class="section-title">
-      <p>Penghitungan</p>
-    </div>
-
-    <div class="row">
-      <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-          <div class="row">
-            <div class="form-group col-md-6">
-              <label for="name">Your Name</label>
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+            <div class="col-lg-3 col-md-6 footer-links">
+              <a href="#"><h4>Privasi & Keamanan</h4></a></li>
             </div>
-            <div class="form-group col-md-6 mt-3 mt-md-0">
-              <label for="name">Your Email</label>
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              </div>
             </div>
+
           </div>
-          <div class="form-group mt-3">
-            <label for="name">Subject</label>
-            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-          </div>
-          <div class="form-group mt-3">
-            <label for="name">Message</label>
-            <textarea class="form-control" name="message" rows="10" required></textarea>
-          </div>
-          <div class="my-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your message has been sent. Thank you!</div>
-          </div>
-          <div class="text-center"><button type="submit">Send Message</button></div>
-        </form>
-      </div>
-
-    </div>
-
-  </div>
-</section><!-- End Hitung Section -->
-
-
-<!-- ======= Services Section ======= -->
-<section id="services" class="services section-bg">
-  <div class="container" data-aos="fade-up">
-
-    <div class="section-title">
-      <p>Informasi Penanganan Penyakit pada Ayam</p>
-    </div>
-
-    <div class="row">
-      <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-        <div class="icon-box">
-          <div class="icon"><i class="bx bxl-dribbble"></i></div>
-          <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-          <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate</p>
         </div>
       </div>
 
-      <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
-        <div class="icon-box">
-          <div class="icon"><i class="bx bx-file"></i></div>
-          <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-          <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla</p>
+      <div class="container py-4">
+        <div class="copyright">
+          &copy; 2022 <strong><span> Sistem Informasi Manajemen Ayam Petelur (SIMAP)</span></strong>
         </div>
-      </div>
-    </div>
-
-  </div>
-</section><!-- End Services Section -->
-
-</main><!-- End #main -->
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <img src="assets/img/logo.png" class="img-fluid animated" alt="" height="300" width="100">
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <a href="#"><h4>Ketentuan Pemakaian</h4></a></li>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <a href="#"><h4>Privasi & Keamanan</h4></a></li>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="container py-4">
-      <div class="copyright">
-        &copy; 2022 <strong><span> Sistem Informasi Manajemen Ayam Petelur (SIMAP)</span></strong>
-      </div>
-  </footer><!-- End Footer -->
+    </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 

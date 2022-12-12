@@ -54,7 +54,7 @@
           <li><a class="nav-link scrollto" href="#catat">Pencatatan Ayam</a></li>
           <li><a class="nav-link scrollto" href="#hasil">Hasil Pencatatan</a></li>
           <li><a class="nav-link scrollto" href="#hitung">Penghitungan</a></li>
-          <li><a class="nav-link scrollto" href="#services">Informasi</a></li>
+          <li><a class="nav-link scrollto" href="#info">Informasi</a></li>
           <li><a class="getstarted scrollto" href="#about">Keluar</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -279,7 +279,7 @@
 
 
   <!-- ======= Services Section ======= -->
-  <section id="services" class="services section-bg">
+  <section id="info" class="info section-bg">
     <div class="container" data-aos="fade-up">
       <div class="section-title">
         <p>Informasi Penanganan Penyakit pada Ayam</p>
@@ -292,7 +292,7 @@
             <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate</p>
           </div>
         </div>
-        
+
         <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
           <div class="icon-box">
             <div class="icon"><i class="bx bx-file"></i></div>

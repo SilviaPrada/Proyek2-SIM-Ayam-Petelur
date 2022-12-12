@@ -1,5 +1,70 @@
-@extends('layout.main')
-@section('main_content')
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>SIMAP</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  @yield('cssgallery')
+
+  <!-- =======================================================
+  * Template Name: Ninestars - v4.9.1
+  * Template URL: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+   <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1 class="text-light"><img src="assets/img/logo.png" class="img-fluid animated" alt=""></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">Tentang Kami</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li> -->
+          <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
+          <li><a class="nav-link scrollto" href="#catat">Pencatatan Ayam</a></li>
+          <li><a class="nav-link scrollto" href="#hasil">Hasil Pencatatan</a></li>
+          <li><a class="nav-link scrollto" href="#hitung">Penghitungan</a></li>
+          <li><a class="nav-link scrollto" href="#services">Informasi</a></li>
+          <li><a class="getstarted scrollto" href="#about">Keluar</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header>
+  <!-- End Header -->
 <!-- ======= Hero Section ======= -->
 <section id="hero" class="d-flex align-items-center">
 
@@ -39,8 +104,8 @@
     </div>
     <br><br><br>
     <div class="section-title" data-aos="fade-up">
-      <h2>Team</h2>
-      <p>Our team is always here to help</p>
+      <h2>Anggota Tim</h2>
+      <p>Tim kami siap membantu</p>
     </div>
 
     <div class="row">
@@ -50,8 +115,8 @@
           <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
           <div class="member-info">
             <div class="member-info-content">
-              <h4>Walter White</h4>
-              <span>Chief Executive Officer</span>
+              <h4>Mila Yunita</h4>
+              <span>2041720027</span>
             </div>
           </div>
         </div>
@@ -62,8 +127,8 @@
           <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
           <div class="member-info">
             <div class="member-info-content">
-              <h4>Sarah Jhonson</h4>
-              <span>Product Manager</span>
+              <h4>Rara Deninda Hurianto</h4>
+              <span>2041720110</span>
             </div>
           </div>
         </div>
@@ -74,8 +139,8 @@
           <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
           <div class="member-info">
             <div class="member-info-content">
-              <h4>William Anderson</h4>
-              <span>CTO</span>
+              <h4>Shine Devi Oktaviana R S P</h4>
+              <span>2041720065</span>
             </div>
           </div>
         </div>
@@ -86,8 +151,8 @@
           <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
           <div class="member-info">
             <div class="member-info-content">
-              <h4>Amanda Jepson</h4>
-              <span>Accountant</span>
+              <h4>Silvia Prada Aprilia</h4>
+              <span>2041720141</span>
             </div>
           </div>
         </div>
@@ -97,47 +162,15 @@
   </div>
 </section><!-- End About Section -->
 
-<!-- ======= Team Section ======= -->
-<section id="team" class="team">
-  
-</section><!-- End Team Section -->
-
-<!-- ======= Contact Us Section ======= -->
-<section id="contact" class="contact">
+<!-- ======= Catat Section ======= -->
+<section id="catat" class="catat">
   <div class="container" data-aos="fade-up">
 
     <div class="section-title">
-      <h2>Contact Us</h2>
-      <p>Contact us the get started</p>
+      <p>Pencatatan Ayam</p>
     </div>
 
     <div class="row">
-
-      <div class="col-lg-5 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-        <div class="info">
-          <div class="address">
-            <i class="bi bi-geo-alt"></i>
-            <h4>Location:</h4>
-            <p>A108 Adam Street, New York, NY 535022</p>
-          </div>
-
-          <div class="email">
-            <i class="bi bi-envelope"></i>
-            <h4>Email:</h4>
-            <p>info@example.com</p>
-          </div>
-
-          <div class="phone">
-            <i class="bi bi-phone"></i>
-            <h4>Call:</h4>
-            <p>+1 5589 55488 55s</p>
-          </div>
-
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
-        </div>
-
-      </div>
-
       <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
         <form action="forms/contact.php" method="post" role="form" class="php-email-form">
           <div class="row">
@@ -170,7 +203,95 @@
     </div>
 
   </div>
-</section><!-- End Contact Us Section -->
+</section><!-- End Catat Section -->
+
+<!-- ======= Hasil Section ======= -->
+<section id="hasil" class="hasil">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <p>Hasil Pencatatan</p>
+    </div>
+
+    <div class="row">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+
+  </div>
+</section><!-- End Hasil Section -->
+
+<!-- ======= Hitung Section ======= -->
+<section id="hitung" class="hitung">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <p>Penghitungan</p>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="name">Your Name</label>
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group col-md-6 mt-3 mt-md-0">
+              <label for="name">Your Email</label>
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <label for="name">Subject</label>
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+          </div>
+          <div class="form-group mt-3">
+            <label for="name">Message</label>
+            <textarea class="form-control" name="message" rows="10" required></textarea>
+          </div>
+          <div class="my-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">Send Message</button></div>
+        </form>
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End Hitung Section -->
+
 
 <!-- ======= Services Section ======= -->
 <section id="services" class="services section-bg">
@@ -202,4 +323,55 @@
 </section><!-- End Services Section -->
 
 </main><!-- End #main -->
-@endsection
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <img src="assets/img/logo.png" class="img-fluid animated" alt="" height="300" width="100">
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <a href="#"><h4>Ketentuan Pemakaian</h4></a></li>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <a href="#"><h4>Privasi & Keamanan</h4></a></li>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-4">
+      <div class="copyright">
+        &copy; 2022 <strong><span> Sistem Informasi Manajemen Ayam Petelur (SIMAP)</span></strong>
+      </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

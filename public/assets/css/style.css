@@ -1025,9 +1025,9 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Contact Us
+# Catat
 --------------------------------------------------------------*/
-.contact .info {
+.catat .info {
   border-top: 3px solid #eb5d1e;
   border-bottom: 3px solid #eb5d1e;
   padding: 30px;
@@ -1036,7 +1036,7 @@ section {
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
-.contact .info i {
+.catat .info i {
   font-size: 20px;
   color: #eb5d1e;
   float: left;
@@ -1050,7 +1050,7 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
-.contact .info h4 {
+.catat .info h4 {
   padding: 0 0 0 60px;
   font-size: 22px;
   font-weight: 600;
@@ -1058,22 +1058,22 @@ section {
   color: #7a6960;
 }
 
-.contact .info p {
+.catat .info p {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
   color: #ab9d95;
 }
 
-.contact .info .email p {
+.catat .info .email p {
   padding-top: 5px;
 }
 
-.contact .info .social-links {
+.catat .info .social-links {
   padding-left: 60px;
 }
 
-.contact .info .social-links a {
+.catat .info .social-links a {
   font-size: 18px;
   display: inline-block;
   background: #333;
@@ -1088,32 +1088,32 @@ section {
   margin-right: 10px;
 }
 
-.contact .info .social-links a:hover {
+.catat .info .social-links a:hover {
   background: #eb5d1e;
   color: #fff;
 }
 
-.contact .info .email:hover i,
-.contact .info .address:hover i,
-.contact .info .phone:hover i {
+.catat .info .email:hover i,
+.catat .info .address:hover i,
+.catat .info .phone:hover i {
   background: #eb5d1e;
   color: #fff;
 }
 
-.contact .php-email-form {
+.catat .php-email-form {
   width: 100%;
   border-top: 3px solid #eb5d1e;
   border-bottom: 3px solid #eb5d1e;
   padding: 30px;
-  background: #fff;
+  background: #FFEEE1;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
-.contact .php-email-form .form-group {
+.catat .php-email-form .form-group {
   padding-bottom: 8px;
 }
 
-.contact .php-email-form .error-message {
+.catat .php-email-form .error-message {
   display: none;
   color: #fff;
   background: #ed3c0d;
@@ -1122,27 +1122,27 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br+br {
+.catat .php-email-form .error-message br+br {
   margin-top: 25px;
 }
 
-.contact .php-email-form .sent-message {
+.catat .php-email-form .sent-message {
   display: none;
-  color: #fff;
+  color: #FFEEE1;
   background: #18d26e;
   text-align: center;
   padding: 15px;
   font-weight: 600;
 }
 
-.contact .php-email-form .loading {
+.catat .php-email-form .loading {
   display: none;
   background: #fff;
   text-align: center;
   padding: 15px;
 }
 
-.contact .php-email-form .loading:before {
+.catat .php-email-form .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -1155,22 +1155,22 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .php-email-form input,
-.contact .php-email-form textarea {
+.catat .php-email-form input,
+.catat .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
 }
 
-.contact .php-email-form input {
+.catat .php-email-form input {
   height: 44px;
 }
 
-.contact .php-email-form textarea {
+.catat .php-email-form textarea {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
+.catat .php-email-form button[type=submit] {
   background: #eb5d1e;
   border: 0;
   padding: 10px 24px;
@@ -1179,7 +1179,7 @@ section {
   border-radius: 4px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.catat .php-email-form button[type=submit]:hover {
   background: #ef7f4d;
 }
 
@@ -1202,6 +1202,544 @@ section {
     transform: rotate(360deg);
   }
 }
+
+/*--------------------------------------------------------------
+# Catat
+--------------------------------------------------------------*/
+.catat .info {
+  border-top: 3px solid #eb5d1e;
+  border-bottom: 3px solid #eb5d1e;
+  padding: 30px;
+  background: #FFEEE1;
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.catat .info i {
+  font-size: 20px;
+  color: #eb5d1e;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #fdf1ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.catat .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #7a6960;
+}
+
+.catat .info p {
+  padding: 0 0 10px 60px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #ab9d95;
+}
+
+.catat .info .email p {
+  padding-top: 5px;
+}
+
+.catat .info .social-links {
+  padding-left: 60px;
+}
+
+.catat .info .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  border-radius: 50%;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  transition: 0.3s;
+  margin-right: 10px;
+}
+
+.catat .info .social-links a:hover {
+  background: #eb5d1e;
+  color: #fff;
+}
+
+.catat .info .email:hover i,
+.catat .info .address:hover i,
+.catat .info .phone:hover i {
+  background: #eb5d1e;
+  color: #fff;
+}
+
+.catat .php-email-form {
+  width: 100%;
+  border-top: 3px solid #eb5d1e;
+  border-bottom: 3px solid #eb5d1e;
+  padding: 30px;
+  background: #FFEEE1;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.catat .php-email-form .form-group {
+  padding-bottom: 8px;
+}
+
+.catat .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.catat .php-email-form .error-message br+br {
+  margin-top: 25px;
+}
+
+.catat .php-email-form .sent-message {
+  display: none;
+  color: #FFEEE1;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.catat .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.catat .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+.catat .php-email-form input,
+.catat .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.catat .php-email-form input {
+  height: 44px;
+}
+
+.catat .php-email-form textarea {
+  padding: 10px 12px;
+}
+
+.catat .php-email-form button[type=submit] {
+  background: #eb5d1e;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.catat .php-email-form button[type=submit]:hover {
+  background: #ef7f4d;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
+# Hasil
+--------------------------------------------------------------*/
+.hasil .info {
+  border-top: 3px solid #eb5d1e;
+  border-bottom: 3px solid #eb5d1e;
+  padding: 30px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.hasil .info i {
+  font-size: 20px;
+  color: #eb5d1e;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #fdf1ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.hasil .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #7a6960;
+}
+
+.hasil .info p {
+  padding: 0 0 10px 60px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #ab9d95;
+}
+
+.hasil .info .email p {
+  padding-top: 5px;
+}
+
+.hasil .info .social-links {
+  padding-left: 60px;
+}
+
+.hasil .info .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  border-radius: 50%;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  transition: 0.3s;
+  margin-right: 10px;
+}
+
+.hasil .info .social-links a:hover {
+  background: #eb5d1e;
+  color: #fff;
+}
+
+.hasil .info .email:hover i,
+.hasil .info .address:hover i,
+.hasil .info .phone:hover i {
+  background: #eb5d1e;
+  color: #fff;
+}
+
+.hasil .php-email-form {
+  width: 100%;
+  border-top: 3px solid #eb5d1e;
+  border-bottom: 3px solid #eb5d1e;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.hasil .php-email-form .form-group {
+  padding-bottom: 8px;
+}
+
+.hasil .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.hasil .php-email-form .error-message br+br {
+  margin-top: 25px;
+}
+
+.hasil .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.hasil .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.hasil .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+.hasil .php-email-form input,
+.hasil .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.hasil .php-email-form input {
+  height: 44px;
+}
+
+.hasil .php-email-form textarea {
+  padding: 10px 12px;
+}
+
+.hasil .php-email-form button[type=submit] {
+  background: #eb5d1e;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.hasil .php-email-form button[type=submit]:hover {
+  background: #ef7f4d;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
+# Hitung
+--------------------------------------------------------------*/
+.hitung .info {
+  border-top: 3px solid #eb5d1e;
+  border-bottom: 3px solid #eb5d1e;
+  padding: 30px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.hitung .info i {
+  font-size: 20px;
+  color: #eb5d1e;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #fdf1ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.hitung .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #7a6960;
+}
+
+.hitung .info p {
+  padding: 0 0 10px 60px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #ab9d95;
+}
+
+.hitung .info .email p {
+  padding-top: 5px;
+}
+
+.hitung .info .social-links {
+  padding-left: 60px;
+}
+
+.hitung .info .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  border-radius: 50%;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  transition: 0.3s;
+  margin-right: 10px;
+}
+
+.hitung .info .social-links a:hover {
+  background: #eb5d1e;
+  color: #fff;
+}
+
+.hitung .info .email:hover i,
+.hitung .info .address:hover i,
+.hitung .info .phone:hover i {
+  background: #eb5d1e;
+  color: #fff;
+}
+
+.hitung .php-email-form {
+  width: 100%;
+  border-top: 3px solid #eb5d1e;
+  border-bottom: 3px solid #eb5d1e;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.hitung .php-email-form .form-group {
+  padding-bottom: 8px;
+}
+
+.hitung .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.hitung .php-email-form .error-message br+br {
+  margin-top: 25px;
+}
+
+.hitung .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.hitung .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.hitung .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+.hitung .php-email-form input,
+.hitung .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.hitung .php-email-form input {
+  height: 44px;
+}
+
+.hitung .php-email-form textarea {
+  padding: 10px 12px;
+}
+
+.hitung .php-email-form button[type=submit] {
+  background: #eb5d1e;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.hitung .php-email-form button[type=submit]:hover {
+  background: #ef7f4d;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Footer
@@ -1247,11 +1785,11 @@ section {
   max-height: 40px;
 }
 
-#footer .footer-top .footer-contact {
+#footer .footer-top .footer-catat {
   margin-bottom: 20px;
 }
 
-#footer .footer-top .footer-contact h4 {
+#footer .footer-top .footer-catat h4 {
   font-size: 22px;
   margin: 0 0 30px 0;
   padding: 2px 0 2px 0;

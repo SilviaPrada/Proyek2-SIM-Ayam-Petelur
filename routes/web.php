@@ -16,8 +16,13 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/', function () {
-    return view('home',[
-        'title'=>'Halaman Home'
-    ]);
-})->name('home');
+
+// Route::get('/home', function () {
+//     return view('user/layout/home',[
+//         'title'=>'Halaman Home'
+//     ]);
+// })->name('home');
+
+Route::get('/home-user', function () {
+    return view('user/home');
+});

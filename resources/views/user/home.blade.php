@@ -26,7 +26,6 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-  @yield('cssgallery')
 
   <!-- =======================================================
   * Template Name: Ninestars - v4.9.1
@@ -40,7 +39,6 @@
    <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
-
       <div class="logo">
         <h1 class="text-light"><img src="assets/img/logo.png" class="img-fluid animated" alt=""></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
@@ -161,13 +159,11 @@
   </section><!-- End About Section -->
 
   <!-- ======= Catat Section ======= -->
-  <section id="catat" class="catat">
-    <div class="container" data-aos="fade-up">
-
+  <section id="catat" class="catat justify-content-center">
+    <div class="container justify-content-center" data-aos="fade-up">
       <div class="section-title">
         <p>Pencatatan Ayam</p>
       </div>
-
       <div class="row">
         <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
           <form action="forms/contact.php" method="post" role="form" class="php-email-form">
@@ -197,20 +193,16 @@
             <div class="text-center"><button type="submit">Send Message</button></div>
           </form>
         </div>
-
       </div>
-
     </div>
   </section><!-- End Catat Section -->
 
   <!-- ======= Hasil Section ======= -->
   <section id="hasil" class="hasil">
     <div class="container" data-aos="fade-up">
-
       <div class="section-title">
         <p>Hasil Pencatatan</p>
       </div>
-
       <div class="row">
         <table class="table table-bordered">
           <thead>
@@ -241,9 +233,7 @@
             </tr>
           </tbody>
         </table>
-
       </div>
-
     </div>
   </section><!-- End Hasil Section -->
 
@@ -254,7 +244,6 @@
       <div class="section-title">
         <p>Penghitungan</p>
       </div>
-
       <div class="row">
         <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
           <form action="forms/contact.php" method="post" role="form" class="php-email-form">
@@ -284,9 +273,7 @@
             <div class="text-center"><button type="submit">Send Message</button></div>
           </form>
         </div>
-
       </div>
-
     </div>
   </section><!-- End Hitung Section -->
 
@@ -294,11 +281,9 @@
   <!-- ======= Services Section ======= -->
   <section id="services" class="services section-bg">
     <div class="container" data-aos="fade-up">
-
       <div class="section-title">
         <p>Informasi Penanganan Penyakit pada Ayam</p>
       </div>
-
       <div class="row">
         <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
           <div class="icon-box">
@@ -307,7 +292,7 @@
             <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate</p>
           </div>
         </div>
-
+        
         <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
           <div class="icon-box">
             <div class="icon"><i class="bx bx-file"></i></div>
@@ -316,7 +301,6 @@
           </div>
         </div>
       </div>
-
     </div>
   </section><!-- End Services Section -->
 

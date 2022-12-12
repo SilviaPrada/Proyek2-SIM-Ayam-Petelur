@@ -30,6 +30,6 @@
 
     <div class="container py-4">
       <div class="copyright">
-        &copy; 2022 <strong><span>Manajemen Ayam Petelur</span></strong>
+        &copy; 2022 <strong><span> Sistem Informasi Manajemen Ayam Petelur (SIMAP)</span></strong>
       </div>
   </footer><!-- End Footer -->

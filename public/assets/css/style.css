@@ -596,21 +596,25 @@ section {
 /*--------------------------------------------------------------
 # info
 --------------------------------------------------------------*/
-.info .icon-box {
-  padding: 30px;
+.info h5{
+  font-weight: bold;
+}
+
+.info .card {
+  padding: 20px;
   position: relative;
   overflow: hidden;
-  margin: 0 0 0px 0;
+  margin-right: 30px;
   background: #fff;
   box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
   transition: all 0.3s ease-in-out;
-  border-radius: 15px;
-  text-align: center;
+  border-radius: 10px;
+  text-align: justify;
   justify-items: center;
   border-bottom: 3px solid #fff;
 }
 
-.info .icon-box:hover {
+.info .card:hover {
   transform: translateY(-5px);
   border-color: #ef7f4d;
 }

@@ -26,3 +26,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/home-user', function () {
     return view('user/home');
 });
+
+Route::get('/login', function () {
+    return view('user/login');
+});

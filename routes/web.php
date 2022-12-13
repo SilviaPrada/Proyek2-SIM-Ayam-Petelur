@@ -30,3 +30,7 @@ Route::get('/home-user', function () {
 Route::get('/login', function () {
     return view('user/login');
 });
+
+Route::get('/pencatatan_ayam', function () {
+    return view('user/pencatatan_ayam');
+});

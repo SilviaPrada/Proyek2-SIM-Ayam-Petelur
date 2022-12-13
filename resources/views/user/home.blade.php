@@ -51,7 +51,7 @@
           <li><a class="nav-link scrollto" href="#about">Tentang Kami</a></li>
           <!-- <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li> -->
           <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
-          <li><a class="nav-link scrollto" href="#catat">Pencatatan Ayam</a></li>
+          <li><a class="nav-link scrollto" href="#catat-ayam">Pencatatan Ayam</a></li>
           <li><a class="nav-link scrollto" href="#hasil">Hasil Pencatatan</a></li>
           <li><a class="nav-link scrollto" href="#hitung">Penghitungan</a></li>
           <li><a class="nav-link scrollto" href="#info">Informasi</a></li>
@@ -159,42 +159,84 @@
   </section><!-- End About Section -->
 
   <!-- ======= Catat Section ======= -->
-  <section id="catat" class="catat justify-content-center">
-    <div class="container justify-content-center" data-aos="fade-up">
-      <div class="section-title">
-        <p>Pencatatan Ayam</p>
-      </div>
-      <div class="row">
-        <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-            <div class="row">
-              <div class="form-group col-md-6">
-                <label for="name">Your Name</label>
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-              </div>
-              <div class="form-group col-md-6 mt-3 mt-md-0">
-                <label for="name">Your Email</label>
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-              </div>
+  <section id="catat-ayam" class="catat-ayam justify-content-center">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <p>Pencatatan Ayam</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <h4 class="description"><a href="">Baterai A</a></h4>
             </div>
-            <div class="form-group mt-3">
-              <label for="name">Subject</label>
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+          </div>
+
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <h4 class="description"><a href="">Baterai B</a></h4>
             </div>
-            <div class="form-group mt-3">
-              <label for="name">Message</label>
-              <textarea class="form-control" name="message" rows="10" required></textarea>
+          </div>
+
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <h4 class="description"><a href="">Baterai C</a></h4>
             </div>
-            <div class="my-3">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <h4 class="description"><a href="">Baterai D</a></h4>
             </div>
-            <div class="text-center"><button type="submit">Send Message</button></div>
-          </form>
+          </div>
+
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <h4 class="description"><a href="">Baterai E</a></h4>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <h4 class="description"><a href="">Baterai F</a></h4>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <h4 class="description"><a href="">Baterai G</a></h4>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <h4 class="description"><a href="">Baterai H</a></h4>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <h4 class="description"><a href="">Baterai I</a></h4>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <h4 class="description"><a href="">Baterai J</a></h4>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <h4 class="description"><a href="">Baterai K</a></h4>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <h4 class="description"><a href="">Baterai L</a></h4>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
   </section><!-- End Catat Section -->
 
   <!-- ======= Hasil Section ======= -->

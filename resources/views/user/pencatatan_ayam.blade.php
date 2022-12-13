@@ -36,42 +36,67 @@
 </head>
 
 <body>
-    <!-- ======= F.A.Q Section ======= -->
-    <section id="faq" class="faq section-bg">
-      <div class="login" data-aos="fade-up">
-        <div data-aos="zoom-in" data-aos-delay="100" style="width: 300px; margin-left: auto; margin-right: auto;">
-        <br><br><br>
+   <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+      <div class="logo">
+        <h1 class="text-light"><img src="assets/img/logo.png" class="img-fluid animated" alt=""></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">Tentang Kami</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li> -->
+          <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
+          <li><a class="nav-link scrollto" href="#catat-ayam">Pencatatan Ayam</a></li>
+          <li><a class="nav-link scrollto" href="#hasil">Hasil Pencatatan</a></li>
+          <li><a class="nav-link scrollto" href="#hitung">Penghitungan</a></li>
+          <li><a class="nav-link scrollto" href="#info">Informasi</a></li>
+          <li><a class="getstarted scrollto" href="#about">Keluar</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header>
+  <!-- End Header -->
+  <section id="faq" class="faq section-bg">
+    <br><br><br>
+    <div class="section-title">
+          <p>Pencatatan Ayam</p>
+    </div>  
+  <div class="edit" data-aos="fade-up">
+        <div data-aos="zoom-in" data-aos-delay="100" style="width: 420px; margin-left: auto; margin-right: auto; margin-top:">
+        <br>
+        <h3>Baterai A</h3>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div>
-            <center><img src="assets/img/logo.png" width="148px" height="143px">
-              <center>
-          </div>
-          <br>
-          <div>
-            <h2 style="text-align:center;"><b>MANAJEMEN AYAM <br> PETELUR</b></h2>
+              <p><a href="">Baterai A</a></p>
+            </div>
           </div>
 
-        <div style="width: 100;">
-          <h3><b>Hallo!</b></h3>
-          <p>Masukkan username dan password untuk memulai aplikasi</p>
-          </p>
-          <div class="align-items-stretch" data-aos="fade-up" data-aos-delay="200" style="width: 100;">
-            <form action="user/home.php" method="post" role="form" class="php-email-form">
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="username" id="username" placeholder="Username" required>
-              </div>
-              <br>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="password" id="password" placeholder="Password" required>
-              </div>
-              <br>
-              <div class="text-center"><button type="submit">Masuk</button></div>
-            </form>
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <p><a href="">Baterai B</a></p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <p><a href="">Baterai C</a></p>
+            </div>
           </div>
         </div>
-      </div>
-      </div>
+          </div>
+        </div>
+    </div>
+</div>
     </section><!-- End F.A.Q Section -->
-
+  
     <!-- ======= Footer ======= -->
     <footer id="footer">
       <div class="footer-top">
@@ -108,8 +133,7 @@
         </div>
     </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
@@ -125,3 +149,4 @@
 </body>
 
 </html>
+

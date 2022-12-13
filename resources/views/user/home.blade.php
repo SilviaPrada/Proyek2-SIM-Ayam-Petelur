@@ -327,23 +327,91 @@
         <p>Informasi Penanganan Penyakit pada Ayam</p>
       </div>
       <div class="row">
-        <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bxl-dribbble"></i></div>
-            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate</p>
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row no-gutters">
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Gumboro</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <img src="assets/img/gumboro.png" class="card-img" alt="gambar" height="100%">
+            </div>
           </div>
         </div>
-
-        <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-file"></i></div>
-            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla</p>
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row no-gutters">
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Kolera</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <img src="assets/img/kolera.png" class="card-img" alt="gambar" height="100%">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row no-gutters">
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Coryza</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <img src="assets/img/coryza.png" class="card-img" alt="gambar" height="100%">
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row no-gutters">
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Influenza</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <img src="assets/img/influenza.png" class="card-img" alt="gambar" height="100%">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row no-gutters">
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Virus ND</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <img src="assets/img/virusnd.png" class="card-img" alt="gambar" height="100%">
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row no-gutters">
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">CRD</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <img src="assets/img/crd.png" class="card-img" alt="gambar" height="100%">
+            </div>
           </div>
         </div>
       </div>
     </div>
+    
   </section><!-- End Services Section -->
 
   </main><!-- End #main -->

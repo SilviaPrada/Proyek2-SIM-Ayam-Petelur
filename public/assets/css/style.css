@@ -1420,6 +1420,10 @@ section {
   color: #7a6960;
 }
 
+.hasil table {
+  text-align: center;
+}
+
 .hasil .info p {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
@@ -1525,10 +1529,10 @@ section {
 }
 
 .hasil .php-email-form input {
-  height: 44px;
+  height: 30px;
 }
 
-.hasil .php-email-form textarea {
+.hasil .form-control textarea {
   padding: 10px 12px;
 }
 

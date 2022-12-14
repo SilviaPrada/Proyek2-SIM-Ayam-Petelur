@@ -206,30 +206,102 @@
       <div class="row">
         <table class="table table-bordered">
           <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">First</th>
-              <th scope="col">Last</th>
-              <th scope="col">Handle</th>
+            <tr style="background-color: #FFCEA1;">
+              <th scope="col">Tanggal</th>
+              <th scope="col">Waktu</th>
+              <th scope="col">Baterai</th>
+              <th scope="col">Baris</th>
+              <th scope="col">Kolom Ayam</th>
+              <th scope="col">Produktivitas</th>
+              <th scope="col">Kondisi</th>
+              <th scope="col">Jumlah Telur</th>
+              <th scope="col">Aksi</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
+              <td>2 September 2022</td>
+              <td>Sore</td>
+              <td>Baterai A</td>
+              <td>Baris 03</td>
+              <td>Kolom 03</td>
+              <td>Bertelur</td>
+              <td>Sehat</td>
+              <td>1</td>
+              <td>
+								<a href="#" class="btn btn-sm btn-warning">Edit</a>
+								<a href="#" class="btn btn-sm btn-danger" onclick="return confirm('Anda yakin ingin hapus?');">Hapus</a>
+						  </td>
             </tr>
             <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
+              <td>2 September 2022</td>
+              <td>Sore</td>
+              <td>Baterai A</td>
+              <td>Baris 03</td>
+              <td>Kolom 03</td>
+              <td>Bertelur</td>
+              <td>Sehat</td>
+              <td>1</td>
+              <td>
+								<a href="#" class="btn btn-sm btn-warning">Edit</a>
+								<a href="#" class="btn btn-sm btn-danger" onclick="return confirm('Anda yakin ingin hapus?');">Hapus</a>
+						  </td>
             </tr>
             <tr>
-              <th scope="row">3</th>
-              <td colspan="2">Larry the Bird</td>
-              <td>@twitter</td>
+              <td>2 September 2022</td>
+              <td>Sore</td>
+              <td>Baterai A</td>
+              <td>Baris 03</td>
+              <td>Kolom 03</td>
+              <td>Bertelur</td>
+              <td>Sehat</td>
+              <td>1</td>
+              <td>
+								<a href="#" class="btn btn-sm btn-warning">Edit</a>
+								<a href="#" class="btn btn-sm btn-danger" onclick="return confirm('Anda yakin ingin hapus?');">Hapus</a>
+						  </td>
+            </tr>
+            <tr>
+              <td>2 September 2022</td>
+              <td>Sore</td>
+              <td>Baterai A</td>
+              <td>Baris 03</td>
+              <td>Kolom 03</td>
+              <td>Bertelur</td>
+              <td>Sehat</td>
+              <td>1</td>
+              <td>
+								<a href="#" class="btn btn-sm btn-warning">Edit</a>
+								<a href="#" class="btn btn-sm btn-danger" onclick="return confirm('Anda yakin ingin hapus?');">Hapus</a>
+						  </td>
+            </tr>
+            <tr>
+              <td>2 September 2022</td>
+              <td>Sore</td>
+              <td>Baterai A</td>
+              <td>Baris 03</td>
+              <td>Kolom 03</td>
+              <td>Bertelur</td>
+              <td>Sehat</td>
+              <td>1</td>
+              <td>
+								<a href="#" class="btn btn-sm btn-warning">Edit</a>
+								<a href="#" class="btn btn-sm btn-danger" onclick="return confirm('Anda yakin ingin hapus?');">Hapus</a>
+						  </td>
+            </tr>
+            <tr>
+              <td>2 September 2022</td>
+              <td>Sore</td>
+              <td>Baterai A</td>
+              <td>Baris 03</td>
+              <td>Kolom 03</td>
+              <td>Bertelur</td>
+              <td>Sehat</td>
+              <td>1</td>
+              <td>
+								<a href="#" class="btn btn-sm btn-warning">Edit</a>
+								<a href="#" class="btn btn-sm btn-danger" onclick="return confirm('Anda yakin ingin hapus?');">Hapus</a>
+						  </td>
             </tr>
           </tbody>
         </table>

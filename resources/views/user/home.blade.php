@@ -246,6 +246,21 @@
         <p>Hasil Pencatatan</p>
       </div>
       <div class="row">
+        <div class="col-sm-4">
+          <div class="form-group">
+                <input type="text" class="toDate form-control" name="dt" id="dt" value="" placeholder="Tanggal/waktu/baterai/baris/kolom/produktivitas/kondisi/jumlah telur">
+          </div>     
+        </div>
+        <div class="col-sm-3">
+            <div class="form-group">
+                <div>
+                    <button type="submit" name="submit" value="search" id="submit" class="btn btn-default"><i class="fa fa-fw fa-search"></i>Cari</button>
+                </div>
+            </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
         <table class="table table-bordered">
           <thead>
             <tr style="background-color: #FFCEA1;">

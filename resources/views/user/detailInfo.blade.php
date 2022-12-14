@@ -65,8 +65,8 @@
   <!-- End Header -->
   <!-- Content -->
   <br><br>
-    <section id="detail" class="detail justify-content-center">
-        <div class="container">
+    <section id="detail" data-aos="fade-up" data-aos-delay="100" style="width: 900px; margin-left: auto; margin-right: auto; margin: top 0px;">
+    <div data-aos="zoom-in" class="detail justify-content-center">
                 <div class="row">
                         <br><br><br>
                         <div class="col-lg-12">
@@ -98,7 +98,7 @@
                     </div>
                 </div>
             </div>
-        </div>    
+    
     </section>
     
   <!-- End Content -->

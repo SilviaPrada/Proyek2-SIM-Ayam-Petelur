@@ -77,7 +77,7 @@
               <p>Baris</p>
                 <select class="dropdown" name="baris" id="baris"> 
                   <option value="Baris 01">Baris 01</option>
-                  <option value="Baris 02">Baris 02</option>
+                  <option value="Baris 02" selected>Baris 02</option>
                   <option value="Baris 03">Baris 03</option>
                   <option value="Baris 04">Baris 04</option>
                 </select>
@@ -88,23 +88,21 @@
                 <option value="Baris 01">Baris 01</option>
                   <option value="Baris 02">Baris 02</option>
                   <option value="Baris 03">Baris 03</option>
-                  <option value="Baris 04">Baris 04</option>
+                  <option value="Baris 04" selected>Baris 04</option>
                 </select>
             </div>
             <div class="column">
               <p>Waktu</p>
                 <select class="dropdown" name="waktu" id="waktu">
-                <option value="Baris 01">Baris 01</option>
-                  <option value="Baris 02">Baris 02</option>
-                  <option value="Baris 03">Baris 03</option>
-                  <option value="Baris 04">Baris 04</option>
+                <option value="Pagi">Pagi</option>
+                  <option value="Sore" selected>Sore</option>
                 </select>
             </div>
           </div>
           <br>
           <p>Produktivitas</p>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
               <label class="form-check-label" for="inlineRadio1">Bertelur</label>
             </div>
             <div class="form-check form-check-inline">

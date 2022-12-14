@@ -1573,6 +1573,46 @@ section {
 /*--------------------------------------------------------------
 # Hitung
 --------------------------------------------------------------*/
+.hitung .con{
+  width: 900px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hitung .row{
+  margin-left: auto;
+  margin-right: auto;
+  width: 450px;
+}
+
+.hitung .btn{
+  width: 87px;
+  height: 40px;
+  background-color: #DFFC8A;
+  margin-left: auto;
+  margin-right: auto;
+  color: #111;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.hitung .btn:hover{
+  width: 87px;
+  height: 40px;
+  background-color: #A3D317;
+  margin-left: auto;
+  margin-right: auto;
+  color: #111;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+}
+
 .hitung .info {
   border-top: 3px solid #eb5d1e;
   border-bottom: 3px solid #eb5d1e;
@@ -1895,7 +1935,14 @@ section {
 
 .edit .form-check {
   font-size: 12px;
-  width: 150px;
+  width: 180px;
+  margin-left: 20px;
+}
+
+.edit .form-check-inline {
+  font-size: 12px;
+  width: 165px;
+  margin-left: 20px;
 }
 
 .edit .btn {

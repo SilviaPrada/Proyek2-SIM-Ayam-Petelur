@@ -1399,6 +1399,11 @@ section {
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
+.btn-cari, .btn-default, .fa, .fa-fw, .fa-search{
+  color: #fff;
+  background-color:#EF7E16;
+}
+
 .hasil .info i {
   font-size: 20px;
   color: #eb5d1e;

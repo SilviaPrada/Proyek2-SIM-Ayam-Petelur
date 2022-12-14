@@ -70,28 +70,82 @@
     </div>  
   <div class="edit" data-aos="fade-up">
         <div data-aos="zoom-in" data-aos-delay="100" style="width: 420px; margin-left: auto; margin-right: auto; margin-top:">
-        <br>
+        <br><br>
         <h3>Baterai A</h3>
-        <div class="row">
-          <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div>
-              <p><a href="">Baterai A</a></p>
+        <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+            <div class="column">
+              <p>Baris</p>
+                <select class="dropdown" name="baris" id="baris"> 
+                  <option value="Baris 01">Baris 01</option>
+                  <option value="Baris 02">Baris 02</option>
+                  <option value="Baris 03">Baris 03</option>
+                  <option value="Baris 04">Baris 04</option>
+                </select>
+            </div>
+            <div class="column">
+              <p>Kolom</p>
+                <select class="dropdown" name="kolom" id="kolom"> 
+                <option value="Baris 01">Baris 01</option>
+                  <option value="Baris 02">Baris 02</option>
+                  <option value="Baris 03">Baris 03</option>
+                  <option value="Baris 04">Baris 04</option>
+                </select>
+            </div>
+            <div class="column">
+              <p>Waktu</p>
+                <select class="dropdown" name="waktu" id="waktu">
+                <option value="Baris 01">Baris 01</option>
+                  <option value="Baris 02">Baris 02</option>
+                  <option value="Baris 03">Baris 03</option>
+                  <option value="Baris 04">Baris 04</option>
+                </select>
             </div>
           </div>
-
-          <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box">
-              <p><a href="">Baterai B</a></p>
+          <br>
+          <p>Produktivitas</p>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <label class="form-check-label" for="inlineRadio1">Bertelur</label>
             </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box">
-              <p><a href="">Baterai C</a></p>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+              <label class="form-check-label" for="inlineRadio2">Tidak Bertelur</label>
             </div>
-          </div>
-        </div>
-          </div>
+          <p>Kondisi</p>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <label class="form-check-label" for="inlineRadio1">Sehat</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+              <label class="form-check-label" for="inlineRadio2">Mati</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <label class="form-check-label" for="inlineRadio1">Sakit</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+              <label class="form-check-label" for="inlineRadio2">Afkir</label>
+            </div>
+            <div class="column">
+              <p>Jumlah telur</p>
+                <select class="dropdown" name="kolom" id="kolom"> 
+                <option value="Baris 01">Baris 01</option>
+                  <option value="Baris 02">Baris 02</option>
+                  <option value="Baris 03">Baris 03</option>
+                  <option value="Baris 04">Baris 04</option>
+                </select>
+            </div>
+            <br>
+            <div class="row">
+              <div class="btn">
+                <button class="btn btn-success" type="submit">Simpan</button>
+              </div>
+              <div class="btn">
+                <button class="btn btn-danger" type="submit">Kembali</button>
+              </div>
+            </div>
         </div>
     </div>
 </div>

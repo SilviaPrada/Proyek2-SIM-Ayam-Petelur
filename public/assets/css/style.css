@@ -596,7 +596,7 @@ section {
 /*--------------------------------------------------------------
 # info
 --------------------------------------------------------------*/
-.info h5{
+.info h5 {
   font-weight: bold;
 }
 
@@ -1814,7 +1814,8 @@ section {
   font-size: 48px;
   line-height: 1;
   margin-bottom: 15px;
-  color: #111;;
+  color: #111;
+  ;
 }
 
 .catat-ayam .title {
@@ -1827,7 +1828,7 @@ section {
   color: #111;
 }
 
-.catat-ayam .description a{
+.catat-ayam .description a {
   color: #111;
   font-size: 15px;
   font-weight: 600;
@@ -1865,7 +1866,7 @@ section {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 21px;
   color: #111;
 }
 
@@ -1877,6 +1878,30 @@ section {
   border-radius: 4px;
   width: 300px;
   height: 38px;
+}
+
+.edit .dropdown {
+  width: 113px;
+  height: 38px;
+  margin-right: 40px;
+  border-color: #EA9B6F;
+  font-size: 12px;
+}
+
+.edit .form-check {
+  font-size: 12px;
+  width: 150px;
+}
+
+.edit .btn {
+  width: 113px;
+  height: 38px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /*--------------------------------------------------------------

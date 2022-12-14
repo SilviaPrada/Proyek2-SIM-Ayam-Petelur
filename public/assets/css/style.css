@@ -2062,3 +2062,14 @@ section {
     padding: 3px 0;
   }
 }
+
+.title{
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.detail{
+  margin-left: 50px;
+  margin-right: 50px;
+}

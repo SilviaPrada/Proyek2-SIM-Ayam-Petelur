@@ -596,7 +596,7 @@ section {
 /*--------------------------------------------------------------
 # info
 --------------------------------------------------------------*/
-.info h5{
+.info h5 {
   font-weight: bold;
 }
 
@@ -1788,6 +1788,124 @@ section {
   border-radius: 4px;
   width: 300px;
   height: 38px;
+}
+
+/*--------------------------------------------------------------
+# Pencatatan Ayam
+--------------------------------------------------------------*/
+.catat-ayam .icon-box {
+  width: 352px;
+  height: 38px;
+  position: relative;
+  overflow: hidden;
+  background: #FFE5CD;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid #FFAD93;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+.catat-ayam .icon-box:hover {
+  transform: translateY(-5px);
+  border-color: #ef7f4d;
+}
+
+.catat-ayam .icon i {
+  font-size: 48px;
+  line-height: 1;
+  margin-bottom: 15px;
+  color: #111;
+  ;
+}
+
+.catat-ayam .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.catat-ayam .title a {
+  color: #111;
+}
+
+.catat-ayam .description a {
+  color: #111;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Edit Pencatatan Ayam
+--------------------------------------------------------------*/
+
+.edit {
+  width: 522px;
+  height: 521px;
+  background: #FFEEE1;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.edit h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.edit h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.edit p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #111;
+}
+
+.edit .php-email-form button[type=submit] {
+  background: #eb5d1e;
+  border: 0;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+  width: 300px;
+  height: 38px;
+}
+
+.edit .dropdown {
+  width: 113px;
+  height: 38px;
+  margin-right: 40px;
+  border-color: #EA9B6F;
+  font-size: 12px;
+}
+
+.edit .form-check {
+  font-size: 12px;
+  width: 150px;
+}
+
+.edit .btn {
+  width: 113px;
+  height: 38px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /*--------------------------------------------------------------

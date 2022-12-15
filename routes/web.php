@@ -42,3 +42,15 @@ Route::get('/edit_pencatatan', function () {
 Route::get('/detail_info', function () {
     return view('user/detailInfo');
 });
+
+Route::get('/penghitunganHenDay', function () {
+    return view('user/penghitunganHenDay');
+});
+
+Route::get('/penghitunganEggWeight', function () {
+    return view('user/penghitunganEggWeight');
+});
+
+Route::get('/penghitunganFCR', function () {
+    return view('user/penghitunganFCR');
+});

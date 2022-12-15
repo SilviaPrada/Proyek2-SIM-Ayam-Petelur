@@ -373,7 +373,6 @@
       <div class="section-title">
         <p>Penghitungan</p>
       </div>
-        <!-- <div class="container-fluid" style="background-color: #c1c1c1c1" data-aos="fade-up" > -->
           <div class="row ms-4 justify-content-center">
             <button type="button" class="btn btn1">Deplesi</button>
             <button type="button" class="btn btn1">Hen Day</button>
@@ -389,11 +388,11 @@
           <form class="row justify-content-center ps-4" >
             <div class="col-md-4 ps-5" >
                   <label for="basic-url" class="form-label">Populasi ayam saat iniL</label>
-                  <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                  <input type="text" class="form-control" placeholder="0" aria-label="First name">
                 </div>
             <div class="col-md-4 ps-5">
                 <label for="basic-url" class="form-label">Jumlah ayam afkir/mati</label>
-                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                <input type="text" class="form-control" placeholder="0" aria-label="Last name">
                 </div>
               </div><br><br><br>
               <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="200">

@@ -38,3 +38,7 @@ Route::get('/pencatatan_ayam', function () {
 Route::get('/edit_pencatatan', function () {
     return view('user/editPencatatan');
 });
+
+Route::get('/detail_info', function () {
+    return view('user/detailInfo');
+});

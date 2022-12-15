@@ -1399,9 +1399,13 @@ section {
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
-.btn-cari, .btn-default, .fa, .fa-fw, .fa-search{
+.btn-cari,
+.btn-default,
+.fa,
+.fa-fw,
+.fa-search {
   color: #fff;
-  background-color:#EF7E16;
+  background-color: #EF7E16;
 }
 
 .hasil .info i {
@@ -1578,24 +1582,75 @@ section {
 /*--------------------------------------------------------------
 # Hitung
 --------------------------------------------------------------*/
-.hitung .con{
+.hitung .con {
   width: 900px;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-}
-.hitung .row{
-  margin-left: auto;
-  margin-right: auto;
-  width: 450px;
+  background-color: #18d26e;
 }
 
-.hitung .btn{
-  width: 87px;
+.hitung .row-button {
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+}
+
+.hitung .desc {
+  width: 398px;
+  height: 26px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+
+  color: #987F7F;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hitung .hasil{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 54px;
+  width: 800px;
+  
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  
+  color: #000000;
+}
+
+.hitung .hasil .akhir{
+  font-size: 36px;
+}
+
+.hitung .hasil .riwayat{
+  align-items:left;
+  text-align:left;
+}
+
+.hitung .form-control {
+  width: 346px;
+  height: 38px;
+  font-size: 20px;
+  border: 1px solid #EF7E16;
+  border-radius: 5px;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+}
+
+.hitung .btn1 {
+  width: 100px;
   height: 40px;
   background-color: #DFFC8A;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto; */
+  margin-right: 30px;
   color: #111;
 
   font-style: normal;
@@ -1604,18 +1659,8 @@ section {
   line-height: 18px;
 }
 
-.hitung .btn:hover{
-  width: 87px;
-  height: 40px;
+.hitung .btn1:hover {
   background-color: #A3D317;
-  margin-left: auto;
-  margin-right: auto;
-  color: #111;
-
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 18px;
 }
 
 .hitung .info {
@@ -1652,8 +1697,31 @@ section {
 .hitung .info p {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
-  font-size: 14px;
+  font-size: 12px;
   color: #ab9d95;
+
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.hitung .hasil h4 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hitung .row {
+  font-size: 12px;
+  color: #111;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 .hitung .info .email p {
@@ -1662,6 +1730,21 @@ section {
 
 .hitung .info .social-links {
   padding-left: 60px;
+}
+
+.hitung .btn2[type=submit] {
+  width: 346px;
+  height: 38px;
+  background: #EF7E16;
+  border-radius: 5px;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+
+  text-align: center;
+
+  color: #FFFFFF;
 }
 
 .hitung .info .social-links a {
@@ -1942,6 +2025,10 @@ section {
   font-size: 12px;
   width: 180px;
   margin-left: 20px;
+}
+
+.edit .form-control {
+  font-size: 12px;
 }
 
 .edit .form-check-inline {

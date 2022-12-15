@@ -368,20 +368,48 @@
 
   <!-- ======= Hitung Section ======= -->
   <section id="hitung" class="hitung">
-    <div class="container" data-aos="fade-up">
+    <div class="container-fluid" data-aos="fade-up" data-aos-delay="200">
 
       <div class="section-title">
         <p>Penghitungan</p>
       </div>
-        <div class="con" data-aos="fade-up" data-aos-delay="200">
-          <div class="row">
-            <button type="button" class="btn">Primary</button>
-            <button type="button" class="btn">Secondary</button>
-            <button type="button" class="btn">Success</button>
-            <button type="button" class="btn">Danger</button>
+        <!-- <div class="container-fluid" style="background-color: #c1c1c1c1" data-aos="fade-up" > -->
+          <div class="row ms-4 justify-content-center">
+            <button type="button" class="btn btn1">Deplesi</button>
+            <button type="button" class="btn btn1">Hen Day</button>
+            <button type="button" class="btn btn1">Egg Weight</button>
+            <button type="button" class="btn btn1">FCR Total</button>
           </div>
-        </div>
-      </div>
+          <br>
+          <div class="desc">
+            <p>Deplesi  digunakan untuk menghitung jumlah penyusutan ayam baik karena 
+              kematian maupun karena afkir (culling).
+            </p>
+          </div><br><br>
+          <form class="row justify-content-center ps-4" >
+            <div class="col-md-4 ps-5" >
+                  <label for="basic-url" class="form-label">Populasi ayam saat iniL</label>
+                  <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                </div>
+            <div class="col-md-4 ps-5">
+                <label for="basic-url" class="form-label">Jumlah ayam afkir/mati</label>
+                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                </div>
+              </div><br><br><br>
+              <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                <button type="submit" class="btn btn2">Hitung</button>
+              </div><br>
+              <div class="hasil" data-aos="fade-up" data-aos-delay="200">
+                <p>Deplesi</p>
+                <div class="akhir">
+                <p>0%</p>
+                </div>
+                <div class="riwayat">
+                <p>Riwayat Penghitungan</p>
+                </div>
+              </div>
+            </form>
+      <!-- </div> -->
     </div>
   </section><!-- End Hitung Section -->
 

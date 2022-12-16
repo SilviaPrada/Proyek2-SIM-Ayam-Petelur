@@ -83,7 +83,7 @@
           </div><br><br>
           <form class="row justify-content-center ps-4" >
             <div class="col-md-4 ps-5" >
-                  <label for="basic-url" class="form-label">Julmah telur yang dihasilkan 1 hari</label>
+                  <label for="basic-url" class="form-label">Jumlah telur yang dihasilkan 1 hari</label>
                   <input type="text" class="form-control" placeholder="0" aria-label="First name">
                 </div>
             <div class="col-md-4 ps-5">

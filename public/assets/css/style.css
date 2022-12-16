@@ -1611,6 +1611,10 @@ section {
   margin-right: auto;
 }
 
+.hitung a{
+  color: #000000;
+}
+
 .hitung .hasil{
   font-style: normal;
   font-weight: 400;

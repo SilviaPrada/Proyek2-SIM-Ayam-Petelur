@@ -49,13 +49,11 @@
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">Tentang Kami</a></li>
-          <!-- <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li> -->
-          <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
           <li><a class="nav-link scrollto" href="#catat-ayam">Pencatatan Ayam</a></li>
           <li><a class="nav-link scrollto" href="#hasil">Hasil Pencatatan</a></li>
           <li><a class="nav-link scrollto" href="#hitung">Penghitungan</a></li>
           <li><a class="nav-link scrollto" href="#info">Informasi</a></li>
-          <li><a class="getstarted scrollto" href="#about">Keluar</a></li>
+          <li><a class="getstarted scrollto" href="login">Keluar</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -402,7 +400,7 @@
                 <p>Deplesi</p>
                 <div class="akhir">
                 <p>0%</p>
-                </div>
+                </div><br>
                 <div class="riwayat">
                 <p>Riwayat Penghitungan</p>
                 </div>

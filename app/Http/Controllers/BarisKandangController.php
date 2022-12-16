@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\BarisKandang;
 use Illuminate\Http\Request;
 
-class TransaksiController extends Controller
+class BarisKandangController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -40,10 +41,10 @@ class TransaksiController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\BarisKandang  $barisKandang
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(BarisKandang $barisKandang)
     {
         //
     }
@@ -51,10 +52,10 @@ class TransaksiController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\BarisKandang  $barisKandang
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(BarisKandang $barisKandang)
     {
         //
     }
@@ -63,10 +64,10 @@ class TransaksiController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Models\BarisKandang  $barisKandang
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, BarisKandang $barisKandang)
     {
         //
     }
@@ -74,10 +75,10 @@ class TransaksiController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Models\BarisKandang  $barisKandang
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(BarisKandang $barisKandang)
     {
         //
     }

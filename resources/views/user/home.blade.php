@@ -373,9 +373,9 @@
       </div>
           <div class="row ms-4 justify-content-center">
             <button type="button" class="btn btn1">Deplesi</button>
-            <button type="button" class="btn btn1">Hen Day</button>
-            <button type="button" class="btn btn1">Egg Weight</button>
-            <button type="button" class="btn btn1">FCR Total</button>
+            <button type="button" class="btn btn1"><a class="nav-link scrollto" href="#catat-ayam">Hen Day</a></button>
+            <button type="button" class="btn btn1"><a href="/penghitunganEggWeight">Egg Weight</a></button>
+            <button type="button" class="btn btn1"><a href="/penghitunganFCR">FCR Total</a></button>
           </div>
           <br>
           <div class="desc">

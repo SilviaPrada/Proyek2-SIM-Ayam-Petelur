@@ -69,10 +69,10 @@
         <p>Penghitungan</p>
       </div>
           <div class="row ms-4 justify-content-center">
-            <button type="button" class="btn btn1">Deplesi</button>
-            <button type="button" class="btn btn1">Hen Day</button>
-            <button type="button" class="btn btn1">Egg Weight</button>
-            <button type="button" class="btn btn1">FCR Total</button>
+            <button type="button" class="btn btn1"><a href="/home-user">Deplesi</a></button>
+            <button type="button" class="btn btn1"><a href="/penghitunganHenDay">Hen Day</a></button>
+            <button type="button" class="btn btn1"><a href="/penghitunganEggWeight">Egg Weight</a></button>
+            <button type="button" class="btn btn1"><a href="/penghitunganFCR">FCR Total</a></button>
           </div>
           <br>
           <div class="desc">
@@ -81,7 +81,7 @@
           </div><br><br>
           <form class="row justify-content-center ps-4" >
             <div class="col-md-4 ps-5" >
-                  <label for="basic-url" class="form-label">Julmah telur yang dihasilkan 1 hari</label>
+                  <label for="basic-url" class="form-label">Jumlah telur yang dihasilkan 1 hari</label>
                   <input type="text" class="form-control" placeholder="0" aria-label="First name">
                 </div>
             <div class="col-md-4 ps-5">

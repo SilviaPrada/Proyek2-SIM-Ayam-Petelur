@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateRumusTable extends Migration
+class CreateKolomAyamTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,10 @@ class CreateRumusTable extends Migration
      */
     public function up()
     {
-        Schema::create('rumus', function (Blueprint $table) {
+        Schema::create('kolom_ayam', function (Blueprint $table) {
             $table->id();
+            $table->integer('baris_id');
+            $table->string('nama_kolom_ayam', 50);
             $table->timestamps();
         });
     }
@@ -26,6 +28,6 @@ class CreateRumusTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('rumus');
+        Schema::dropIfExists('kolom_ayam');
     }
 }

@@ -72,7 +72,7 @@
             <button type="button" class="btn btn1"><a href="home-user#hitung">Deplesi</a></button>
             <button type="button" class="btn btn1"><a href="/penghitunganHenDay"></a>Hen Day</button>
             <button type="button" class="btn btn1"><a href="/penghitunganEggWeight">Egg Weight</a></button>
-            <button type="button" class="btn btn1"><a href="/penghitunganFCR">FCR Total</a></button>
+            <button type="button" class="btn btn1 active"><a href="/penghitunganFCR">FCR Total</a></button>
           </div>
           <br>
           <div class="desc">

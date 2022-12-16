@@ -1609,7 +1609,6 @@ section {
   font-size: 12px;
   line-height: 18px;
   text-align: center;
-detailInfo
   color: #987F7F;
   margin-left: auto;
   margin-right: auto;
@@ -1668,6 +1667,12 @@ detailInfo
 }
 
 .hitung .btn1:hover {
+  background-color: #A3D317;
+}
+.btn1 .active{
+  background-color: #A3D317;
+}
+.hitung .btn1 .active{
   background-color: #A3D317;
 }
 

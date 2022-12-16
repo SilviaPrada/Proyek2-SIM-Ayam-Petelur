@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\PerhitunganRumus;
 use Illuminate\Http\Request;
 
-class PenyakitAyamController extends Controller
+class PerhitunganRumusController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -40,10 +41,10 @@ class PenyakitAyamController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\PerhitunganRumus  $perhitunganRumus
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(PerhitunganRumus $perhitunganRumus)
     {
         //
     }
@@ -51,10 +52,10 @@ class PenyakitAyamController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\PerhitunganRumus  $perhitunganRumus
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(PerhitunganRumus $perhitunganRumus)
     {
         //
     }
@@ -63,10 +64,10 @@ class PenyakitAyamController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Models\PerhitunganRumus  $perhitunganRumus
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, PerhitunganRumus $perhitunganRumus)
     {
         //
     }
@@ -74,10 +75,10 @@ class PenyakitAyamController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Models\PerhitunganRumus  $perhitunganRumus
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(PerhitunganRumus $perhitunganRumus)
     {
         //
     }

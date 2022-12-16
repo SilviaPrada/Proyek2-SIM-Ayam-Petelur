@@ -43,6 +43,10 @@ Route::get('/detail_info', function () {
     return view('user/detailInfo');
 });
 
+Route::get('/penghitunganDeplesi', function () {
+    return view('user/penghitunganDeplesi');
+});
+
 Route::get('/penghitunganHenDay', function () {
     return view('user/penghitunganHenDay');
 });

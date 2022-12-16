@@ -167,36 +167,36 @@
         <div class="row">
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
-              <h4 class="description"><a href="">Baterai A</a></h4>
+              <h4 class="description"><a href="pencatatan_ayam">Baterai A</a></h4>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
-              <h4 class="description"><a href="">Baterai B</a></h4>
+              <h4 class="description"><a href="pencatatan_ayam">Baterai B</a></h4>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
-              <h4 class="description"><a href="">Baterai C</a></h4>
+              <h4 class="description"><a href="pencatatan_ayam">Baterai C</a></h4>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
-              <h4 class="description"><a href="">Baterai D</a></h4>
+              <h4 class="description"><a href="pencatatan_ayam">Baterai D</a></h4>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
-              <h4 class="description"><a href="">Baterai E</a></h4>
+              <h4 class="description"><a href="pencatatan_ayam">Baterai E</a></h4>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
-              <h4 class="description"><a href="">Baterai F</a></h4>
+              <h4 class="description"><a href="pencatatan_ayam">Baterai F</a></h4>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
@@ -207,30 +207,30 @@
 
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
-              <h4 class="description"><a href="">Baterai H</a></h4>
+              <h4 class="description"><a href="pencatatan_ayam">Baterai H</a></h4>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
-              <h4 class="description"><a href="">Baterai I</a></h4>
+              <h4 class="description"><a href="pencatatan_ayam">Baterai I</a></h4>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
-              <h4 class="description"><a href="">Baterai J</a></h4>
+              <h4 class="description"><a href="pencatatan_ayam">Baterai J</a></h4>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
-              <h4 class="description"><a href="">Baterai K</a></h4>
+              <h4 class="description"><a href="pencatatan_ayam">Baterai K</a></h4>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
-              <h4 class="description"><a href="">Baterai L</a></h4>
+              <h4 class="description"><a href="pencatatan_ayam">Baterai L</a></h4>
             </div>
           </div>
         </div>

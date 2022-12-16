@@ -600,6 +600,10 @@ section {
   font-weight: bold;
 }
 
+.info a{
+  color: #000000;
+}
+
 .info .card {
   padding: 20px;
   position: relative;
@@ -1605,7 +1609,7 @@ section {
   font-size: 12px;
   line-height: 18px;
   text-align: center;
-
+detailInfo
   color: #987F7F;
   margin-left: auto;
   margin-right: auto;
@@ -1996,6 +2000,10 @@ section {
   font-weight: 700;
   font-size: 24px;
   line-height: 36px;
+}
+
+.edit a{
+  color: #fff;
 }
 
 .edit h3 {

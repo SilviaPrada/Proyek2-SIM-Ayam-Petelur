@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\BateraiKandang;
 use Illuminate\Http\Request;
 
-class KandangController extends Controller
+class BateraiKandangController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -40,10 +41,10 @@ class KandangController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\BateraiKandang  $bateraiKandang
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(BateraiKandang $bateraiKandang)
     {
         //
     }
@@ -51,10 +52,10 @@ class KandangController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\BateraiKandang  $bateraiKandang
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(BateraiKandang $bateraiKandang)
     {
         //
     }
@@ -63,10 +64,10 @@ class KandangController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Models\BateraiKandang  $bateraiKandang
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, BateraiKandang $bateraiKandang)
     {
         //
     }
@@ -74,10 +75,10 @@ class KandangController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Models\BateraiKandang  $bateraiKandang
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(BateraiKandang $bateraiKandang)
     {
         //
     }

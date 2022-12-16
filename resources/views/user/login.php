@@ -55,7 +55,7 @@
           <p>Masukkan username dan password untuk memulai aplikasi</p>
           </p>
           <div class="align-items-stretch" data-aos="fade-up" data-aos-delay="200" style="width: 100;">
-            <form action="user/home.php" method="post" role="form" class="php-email-form">
+            <form action="user/home-user" method="post" role="form" class="php-email-form">
               <div class="form-group mt-3">
                 <input type="text" class="form-control" name="username" id="username" placeholder="Username" required>
               </div>

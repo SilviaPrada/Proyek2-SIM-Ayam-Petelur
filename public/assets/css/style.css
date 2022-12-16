@@ -1611,28 +1611,28 @@ section {
   margin-right: auto;
 }
 
-.hitung .hasil{
+.hitung .hasil {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 54px;
-  width: 800px;
-  
+  width: 57%;
+
   align-items: center;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  
+
   color: #000000;
 }
 
-.hitung .hasil .akhir{
+.hitung .hasil .akhir {
   font-size: 36px;
 }
 
-.hitung .hasil .riwayat{
-  align-items:left;
-  text-align:left;
+.hitung .hasil .riwayat {
+  align-items: left;
+  text-align: left;
 }
 
 .hitung .form-control {
@@ -1659,7 +1659,7 @@ section {
   line-height: 18px;
 }
 
-.hitung .btn1:hover{
+.hitung .btn1:hover {
   background-color: #A3D317;
 }
 
@@ -1917,6 +1917,12 @@ section {
   border-radius: 4px;
   width: 300px;
   height: 38px;
+}
+
+.login .form-control {
+  background: #FFFFFF;
+  border: 1px solid #EF7E16;
+  border-radius: 5px;
 }
 
 /*--------------------------------------------------------------
@@ -2197,7 +2203,7 @@ section {
   }
 }
 
-.title{
+.title {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;

@@ -49,13 +49,13 @@ Route::resource('pencatatanAyam', pencatatanAyamController::class);
 //     return view('user/login');
 // });
 
-// Route::get('/pencatatan_ayam', function () {
-//     return view('user/pencatatan_ayam');
-// });
+Route::get('/pencatatan_ayam', function () {
+    return view('user/pencatatan_ayam');
+});
 
-// Route::get('/edit_pencatatan', function () {
-//     return view('user/editPencatatan');
-// });
+Route::get('/edit_pencatatan', function () {
+    return view('user/editPencatatan');
+});
 
 // Route::get('/detail_info', function () {
 //     return view('user/detailInfo');

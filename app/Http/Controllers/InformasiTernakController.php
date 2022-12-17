@@ -4,9 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\InformasiTernak;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Crypt;
-use Illuminate\Support\Str;
-use App\Http\Controllers\Controller;
 
 class InformasiTernakController extends Controller
 {
@@ -19,7 +16,7 @@ class InformasiTernakController extends Controller
     {
         //
         $informasiTernak = InformasiTernak::all();
-        return view('admin.informasi.index', compact('informasiTernak'));
+        return view('admin.informasi.index', compact(['informasiTernak']));
     }
 
     /**
@@ -30,6 +27,7 @@ class InformasiTernakController extends Controller
     public function create()
     {
         //
+        return view('admin.informasi.create');
     }
 
     /**
@@ -40,27 +38,8 @@ class InformasiTernakController extends Controller
      */
     public function store(Request $request)
     {
-        //
-        $this->validate($request, [
-            'nama_penyakit' => 'required',
-            'keterangan' => 'required',
-            'gejala' => 'required',
-            'pengobatan' => 'required'
-        ]);
-
-        InformasiTernak::updateOrCreate(
-            [
-                'id' => $request->penyakit_id
-            ],
-            [
-                'nama_penyakit' => $request->nama_penyakit,
-                'keterangan' => $request->keterangan,
-                'gejala' => $request->gejala,
-                'pengobatan' => $request->pengobatan,
-            ]
-        );
-
-        return redirect()->back()->with('success', 'Informasi berhasil diperbarui!'); 
+        InformasiTernak::create($request->all());
+        return redirect()->route('informasiTernak.index')->with('success', 'Informasi Ternak Berhasil Dibuat');
     }
 
     /**
@@ -69,7 +48,7 @@ class InformasiTernakController extends Controller
      * @param  \App\Models\InformasiTernak  $informasiTernak
      * @return \Illuminate\Http\Response
      */
-    public function show(InformasiTernak $informasiTernak)
+    public function show($id)
     {
         //
     }
@@ -80,12 +59,11 @@ class InformasiTernakController extends Controller
      * @param  \App\Models\InformasiTernak  $informasiTernak
      * @return \Illuminate\Http\Response
      */
-    public function edit(InformasiTernak $informasiTernak)
+    public function edit($id)
     {
         //
-        $informasiTernak = Crypt::decrypt($informasiTernak);
-        $informasiTernak = InformasiTernak::findorfail($informasiTernak);
-        return view('admin.informasi.edit', compact('informasiTernak'));
+        $informasiTernak = InformasiTernak::find($id);
+        return view('admin.informasi.edit', compact(['informasiTernak']));
     }
 
     /**
@@ -95,9 +73,11 @@ class InformasiTernakController extends Controller
      * @param  \App\Models\InformasiTernak  $informasiTernak
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, InformasiTernak $informasiTernak)
+    public function update(Request $request, $id)
     {
-        //
+        $informasiTernak = InformasiTernak::find($id);
+        $informasiTernak->update($request->all());
+        return redirect()->route('informasiTernak.index')->with('success', 'Informasi Ternak Berhasil Diedit!!');
     }
 
     /**
@@ -106,31 +86,10 @@ class InformasiTernakController extends Controller
      * @param  \App\Models\InformasiTernak  $informasiTernak
      * @return \Illuminate\Http\Response
      */
-    public function destroy(InformasiTernak $informasiTernak)
+    public function destroy($id)
     {
-        $informasiTernak = InformasiTernak::findorfail($informasiTernak);
+        $informasiTernak = InformasiTernak::find($id);
         $informasiTernak->delete();
-        return redirect()->back()->with('warning', 'Informasi berhasil dihapus! (Silahkan cek trash Informasi)');
-    }
-
-    public function trash()
-    {
-        $informasiTernak = InformasiTernak::onlyTrashed()->get();
-        return view('admin.informasi.trash', compact('informasiTernak'));
-    }
-
-    public function restore($informasiTernak)
-    {
-        $informasiTernak = Crypt::decrypt($informasiTernak);
-        $informasiTernak = InformasiTernak::withTrashed()->findorfail($informasiTernak);
-        $informasiTernak->restore();
-        return redirect()->back()->with('info', 'Infomrasi berhasil direstore! (Silahkan cek informasi)');
-    }
-
-    public function kill($informasiTernak)
-    {
-        $informasiTernak = InformasiTernak::withTrashed()->findorfail($informasiTernak);
-        $informasiTernak->forceDelete();
-        return redirect()->back()->with('success', 'Informasi berhasil dihapus secara permanent');
+        return redirect()->route('informasiTernak.index')->with('success', 'Informasi Ternak Berhasil DiHapus!!');
     }
 }

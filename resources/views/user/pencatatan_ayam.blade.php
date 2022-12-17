@@ -83,10 +83,10 @@
             <div class="column">
               <p>Kolom</p>
                 <select class="dropdown" name="kolom" id="kolom"> 
-                <option value="Baris 01">Baris 01</option>
-                  <option value="Baris 02">Baris 02</option>
-                  <option value="Baris 03">Baris 03</option>
-                  <option value="Baris 04">Baris 04</option>
+                <option value="Kolom 01">Kolom 01</option>
+                  <option value="Kolom 02">Kolom 02</option>
+                  <option value="Kolom 03">Kolom 03</option>
+                  <option value="Kolom 04">Kolom 04</option>
                 </select>
             </div>
             <div class="column">

@@ -1,7 +1,8 @@
-@extends('template_backend.home')
-@section('heading', 'Edit Siswa')
+@extends('admin.template_backend.home')
+@section('heading', 'Edit Anak Kandang')
 @section('page')
-  <li class="breadcrumb-item active"><a href="{{ route('#') }}">Anak Kandang</a></li>
+                                        <!-- {{ route('anakKandang.index') }} -->
+  <li class="breadcrumb-item active"><a href="#">Anak Kandang</a></li>
   <li class="breadcrumb-item active">Edit Anak Kandang</li>
 @endsection
 @section('content')
@@ -13,31 +14,32 @@
       </div>
       <!-- /.card-header -->
       <!-- form start -->
-      <form action="{{ route('#') }}" method="post">
+             <!-- {{ route('anakKandang.update', $anakKandang->id) }} -->
+      <form action="#" method="post">
         @csrf
         @method('patch')
         <div class="card-body">
           <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
-                    <label for="no_induk">Nomor KTP</label>
-                    <input type="text" id="no_induk" name="no_induk" value="isi nomor ktp" class="form-control" readonly>
+                    <label for="no_ktp">Nomor KTP</label>
+                    <input type="text" id="no_ktp" name="no_ktp" value="#" class="form-control" readonly>
                 </div>
                 <div class="form-group">
-                    <label for="nama_siswa">Nama Anak Kandang</label>
-                    <input type="text" id="nama_siswa" name="nama_siswa" value="{{ isi nama }}" class="form-control @error('nama_siswa') is-invalid @enderror">
+                    <label for="nama_anak_kandang">Nama Anak Kandang</label>
+                    <input type="text" id="nama_anak_kandang" name="nama_anak_kandang" value="#" class="form-control @error('nama_anak_kandang') is-invalid @enderror">
                 </div>
                 <div class="form-group">
                     <label for="jk">Jenis Kelamin</label>
                     <select id="jk" name="jk" class="select2bs4 form-control @error('jk') is-invalid @enderror">
                         <option value="">-- Pilih Jenis Kelamin --</option>
                         <!-- <option value="L"
-                            @if ($siswa->jk == 'L')
+                            @if ($anakKandang->jk == 'L')
                                 selected
                             @endif
                         >Laki-Laki</option>
                         <option value="P"
-                            @if ($siswa->jk == 'P')
+                            @if ($anakKandang->jk == 'P')
                                 selected
                             @endif
                         >Perempuan</option> -->
@@ -45,34 +47,30 @@
                 </div>
                 <div class="form-group">
                     <label for="tmp_lahir">Tempat Lahir</label>
-                    <input type="text" id="tmp_lahir" name="tmp_lahir" value="{{ $siswa->tmp_lahir }}" class="form-control @error('tmp_lahir') is-invalid @enderror">
+                    <input type="text" id="tmp_lahir" name="tmp_lahir" value="#" class="form-control @error('tmp_lahir') is-invalid @enderror">
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="form-group">
-                    <label for="nis">No ID</label>
-                    <input type="text" id="nis" name="nis" onkeypress="return inputAngka(event)" value="{{ $siswa->nis }}" class="form-control @error('nis') is-invalid @enderror">
-                </div>
-                <div class="form-group">
-                    <label for="kelas_id">Baterai</label>
-                    <select id="kelas_id" name="kelas_id" class="select2bs4 form-control @error('kelas_id') is-invalid @enderror">
-                        <option value="">-- Pilih Baterai --</option>
-                        <!-- @foreach ($kelas as $data)
-                            <option value="{{ $data->id }}"
-                                @if ($siswa->kelas_id == $data->id)
-                                    selected
-                                @endif
-                            >{{ $data->nama_kelas }}</option>
-                        @endforeach -->
-                    </select>
-                </div>
-                <div class="form-group">
                     <label for="telp">Nomor Telpon/HP</label>
-                    <input type="text" id="telp" name="telp" value="isi nomor" onkeypress="return inputAngka(event)" class="form-control @error('telp') is-invalid @enderror">
+                    <input type="text" id="telp" name="telp" value="#" onkeypress="return inputAngka(event)" class="form-control @error('telp') is-invalid @enderror">
                 </div>
                 <div class="form-group">
                     <label for="tgl_lahir">Tanggal Lahir</label>
-                    <input type="date" id="tgl_lahir" name="tgl_lahir" value="isi tanggal" class="form-control @error('tgl_lahir') is-invalid @enderror">
+                    <input type="date" id="tgl_lahir" name="tgl_lahir" value="#" class="form-control @error('tgl_lahir') is-invalid @enderror">
+                </div>
+                <div class="form-group">
+                    <label for="baterai_id">Baterai</label>
+                    <select id="baterai_id" name="baterai_id" class="select2bs4 form-control @error('baterai_id') is-invalid @enderror">
+                        <option value="">-- Pilih Baterai --</option>
+                        <!-- @foreach ($anakKandang as $data)
+                            <option value="#"
+                                @if ($anakKandang->baterai_id == $data->id)
+                                    selected
+                                @endif
+                            >{{ $data->nama_baterai }}</option>
+                        @endforeach -->
+                    </select>
                 </div>
             </div>
           </div>
@@ -92,11 +90,12 @@
 <script type="text/javascript">
     $(document).ready(function() {
         $('#back').click(function() {
-        window.location="{{ route('#' }}";
+        window.location="#";
+        // {{ route('anakKandang.baterai', Crypt::encrypt($anakKandang->baterai_id)) }}
         });
     });
     $("#MasterData").addClass("active");
     $("#liMasterData").addClass("menu-open");
-    $("#DataSiswa").addClass("active");
+    $("#DataAnakKandang").addClass("active");
 </script>
 @endsection

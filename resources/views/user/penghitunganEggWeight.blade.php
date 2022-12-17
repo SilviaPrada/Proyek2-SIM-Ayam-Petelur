@@ -89,10 +89,10 @@
                 <input type="text" class="form-control" placeholder="0" aria-label="Last name">
                 </div>
               </div><br><br><br>
-              <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+              <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
                 <button type="submit" class="btn btn2">Hitung</button>
               </div><br>
-              <div class="hasil" data-aos="fade-up" data-aos-delay="200">
+              <div class="hasil" data-aos="fade-up" data-aos-delay="150">
                 <p>Egg Weight</p>
                 <div class="akhir">
                 <p>0%</p>

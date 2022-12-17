@@ -1,4 +1,4 @@
-@extends('template_backend.home')
+@extends('admin.template_backend.home')
 @section('heading', 'Dashboard')
 @section('page')
   <li class="breadcrumb-item active">Dashboard</li>

@@ -54,3 +54,15 @@ Route::get('/penghitunganEggWeight', function () {
 Route::get('/penghitunganFCR', function () {
     return view('user/penghitunganFCR');
 });
+
+Route::get('/baterai', function () {
+    return view('admin/baterai/index');
+});
+
+Route::get('/baterai/edit', function () {
+    return view('admin/baterai/edit');
+});
+
+Route::get('/baterai/create', function () {
+    return view('admin/baterai/create');
+});

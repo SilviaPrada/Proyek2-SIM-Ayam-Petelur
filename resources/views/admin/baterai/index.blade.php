@@ -1,4 +1,4 @@
-@extends('template_backend.home')
+@extends('admin.template_backend.home')
 @section('heading', 'Data Baterai')
 @section('page')
   <li class="breadcrumb-item active">Data Baterai</li>

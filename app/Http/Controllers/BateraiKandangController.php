@@ -7,79 +7,34 @@ use Illuminate\Http\Request;
 
 class BateraiKandangController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        //
+    public function index(){
+        $bateraiKandang = BateraiKandang::all();
+        return view('baterai.index', compact(['baterai']));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
+    public function create(){
+        return view('baterai.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
+    public function store(Request $request){
+        BateraiKandang::create($request->all());
+        return redirect()->route('baterai.index')->with('success', 'Baterai Kandang Berhasil Dibuat');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\BateraiKandang  $bateraiKandang
-     * @return \Illuminate\Http\Response
-     */
-    public function show(BateraiKandang $bateraiKandang)
-    {
-        //
+    public function edit($id){
+        $bateraiKandang = BateraiKandang::find($id);
+        return view('baterai.edit', compact(['baterai']));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\BateraiKandang  $bateraiKandang
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(BateraiKandang $bateraiKandang)
-    {
-        //
+    public function update(Request $request,$id){
+        $bateraiKandang = BateraiKandang::find($id);
+        $bateraiKandang->update($request->all());
+        return redirect()->route('baterai.index')->with('success', 'Baterai Kandang Berhasil Diedit!!');
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\BateraiKandang  $bateraiKandang
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, BateraiKandang $bateraiKandang)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\BateraiKandang  $bateraiKandang
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(BateraiKandang $bateraiKandang)
-    {
-        //
+    public function destroy($id){
+        $bateraiKandang = BateraiKandang::find($id);
+        $bateraiKandang->delete();
+        return redirect()->route('baterai.index')->with('success', 'Baterai Kandang Berhasil DiHapus!!');
     }
 }

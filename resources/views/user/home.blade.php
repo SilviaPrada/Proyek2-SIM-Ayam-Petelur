@@ -284,7 +284,7 @@
               <td>Sehat</td>
               <td>1</td>
               <td>
-								<a href="#" class="btn btn-sm btn-warning">Edit</a>
+								<a href="/edit_pencatatan" class="btn btn-sm btn-warning">Edit</a>
 								<a href="#" class="btn btn-sm btn-danger" onclick="return confirm('Anda yakin ingin hapus?');">Hapus</a>
 						  </td>
             </tr>
@@ -298,7 +298,7 @@
               <td>Sehat</td>
               <td>1</td>
               <td>
-								<a href="#" class="btn btn-sm btn-warning">Edit</a>
+								<a href="/edit_pencatatan" class="btn btn-sm btn-warning">Edit</a>
 								<a href="#" class="btn btn-sm btn-danger" onclick="return confirm('Anda yakin ingin hapus?');">Hapus</a>
 						  </td>
             </tr>
@@ -312,7 +312,7 @@
               <td>Sehat</td>
               <td>1</td>
               <td>
-								<a href="#" class="btn btn-sm btn-warning">Edit</a>
+								<a href="/edit_pencatatan" class="btn btn-sm btn-warning">Edit</a>
 								<a href="#" class="btn btn-sm btn-danger" onclick="return confirm('Anda yakin ingin hapus?');">Hapus</a>
 						  </td>
             </tr>
@@ -326,7 +326,7 @@
               <td>Sehat</td>
               <td>1</td>
               <td>
-								<a href="#" class="btn btn-sm btn-warning">Edit</a>
+								<a href="/edit_pencatatan" class="btn btn-sm btn-warning">Edit</a>
 								<a href="#" class="btn btn-sm btn-danger" onclick="return confirm('Anda yakin ingin hapus?');">Hapus</a>
 						  </td>
             </tr>
@@ -340,7 +340,7 @@
               <td>Sehat</td>
               <td>1</td>
               <td>
-								<a href="#" class="btn btn-sm btn-warning">Edit</a>
+								<a href="/edit_pencatatan" class="btn btn-sm btn-warning">Edit</a>
 								<a href="#" class="btn btn-sm btn-danger" onclick="return confirm('Anda yakin ingin hapus?');">Hapus</a>
 						  </td>
             </tr>
@@ -354,7 +354,7 @@
               <td>Sehat</td>
               <td>1</td>
               <td>
-								<a href="#" class="btn btn-sm btn-warning">Edit</a>
+								<a href="/edit_pencatatan" class="btn btn-sm btn-warning">Edit</a>
 								<a href="#" class="btn btn-sm btn-danger" onclick="return confirm('Anda yakin ingin hapus?');">Hapus</a>
 						  </td>
             </tr>
@@ -372,7 +372,7 @@
         <p>Penghitungan</p>
       </div>
           <div class="row ms-4 justify-content-center">
-            <button type="button" class="btn btn1"><a href="home-user#hitung">Deplesi</a></button>
+            <button type="button" class="btn btn1 active"><a href="home-user#hitung">Deplesi</a></button>
             <button type="button" class="btn btn1"><a href="/penghitunganHenDay">Hen Day</a></button>
             <button type="button" class="btn btn1"><a href="/penghitunganEggWeight">Egg Weight</a></button>
             <button type="button" class="btn btn1"><a href="/penghitunganFCR">FCR Total</a></button>
@@ -422,8 +422,10 @@
           <div class="row no-gutters">
             <div class="col-md-8">
               <div class="card-body">
-                <h5 class="card-title">Gumboro</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <a href="/detail_info">
+                  <h5 class="card-title">Gumboro</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </a>
               </div>
             </div>
             <div class="col-md-4">
@@ -435,8 +437,10 @@
           <div class="row no-gutters">
             <div class="col-md-8">
               <div class="card-body">
-                <h5 class="card-title">Kolera</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <a href="/detail_info">
+                  <h5 class="card-title">Kolera</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </a>
               </div>
             </div>
             <div class="col-md-4">
@@ -450,8 +454,10 @@
           <div class="row no-gutters">
             <div class="col-md-8">
               <div class="card-body">
-                <h5 class="card-title">Coryza</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <a href="/detail_info">
+                  <h5 class="card-title">Coryza</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </a>
               </div>
             </div>
             <div class="col-md-4">
@@ -463,8 +469,10 @@
           <div class="row no-gutters">
             <div class="col-md-8">
               <div class="card-body">
-                <h5 class="card-title">Influenza</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <a href="/detail_info">
+                  <h5 class="card-title">Influenza</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </a>
               </div>
             </div>
             <div class="col-md-4">
@@ -478,8 +486,10 @@
           <div class="row no-gutters">
             <div class="col-md-8">
               <div class="card-body">
-                <h5 class="card-title">Virus ND</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <a href="/detail_info">
+                  <h5 class="card-title">Virus ND</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </a>
               </div>
             </div>
             <div class="col-md-4">
@@ -491,8 +501,10 @@
           <div class="row no-gutters">
             <div class="col-md-8">
               <div class="card-body">
-                <h5 class="card-title">CRD</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <a href="/detail_info">
+                  <h5 class="card-title">CRD</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </a>
               </div>
             </div>
             <div class="col-md-4">

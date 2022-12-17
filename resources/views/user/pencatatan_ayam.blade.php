@@ -92,10 +92,8 @@
             <div class="column">
               <p>Waktu</p>
                 <select class="dropdown" name="waktu" id="waktu">
-                <option value="Baris 01">Baris 01</option>
-                  <option value="Baris 02">Baris 02</option>
-                  <option value="Baris 03">Baris 03</option>
-                  <option value="Baris 04">Baris 04</option>
+                <option value="Pagi">Pagi</option>
+                  <option value="Sore">Sore</option>
                 </select>
             </div>
           </div>

@@ -25,7 +25,7 @@ class PencatatanAyamController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.laporanPencatatan.create');
     }
 
     /**
@@ -46,7 +46,7 @@ class PencatatanAyamController extends Controller
      * @param  \App\Models\PencatatanAyam  $pencatatanAyam
      * @return \Illuminate\Http\Response
      */
-    public function show(PencatatanAyam $pencatatanAyam)
+    public function show($id)
     {
         //
     }
@@ -57,9 +57,9 @@ class PencatatanAyamController extends Controller
      * @param  \App\Models\PencatatanAyam  $pencatatanAyam
      * @return \Illuminate\Http\Response
      */
-    public function edit(PencatatanAyam $id)
+    public function edit($id)
     {
-        $pencatatanAyam = BateraiKandang::find($id);
+        $pencatatanAyam = PencatatanAyam::find($id);
         return view('admin.laporanPencatatan.edit', compact(['pencatatanAyam']));
     }
 
@@ -70,7 +70,7 @@ class PencatatanAyamController extends Controller
      * @param  \App\Models\PencatatanAyam  $pencatatanAyam
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, PencatatanAyam $pencatatanAyam)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -81,7 +81,7 @@ class PencatatanAyamController extends Controller
      * @param  \App\Models\PencatatanAyam  $pencatatanAyam
      * @return \Illuminate\Http\Response
      */
-    public function destroy(PencatatanAyam $pencatatanAyam)
+    public function destroy($id)
     {
         //
     }

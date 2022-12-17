@@ -14,7 +14,8 @@ class PencatatanAyamController extends Controller
      */
     public function index()
     {
-        //
+        $pencatatanAyam = PencatatanAyam::all();
+        return view('admin.laporanPencatatan.index', compact(['pencatatanAyam']));
     }
 
     /**
@@ -35,7 +36,8 @@ class PencatatanAyamController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        PencatatanAyam::create($request->all());
+        return redirect()->route('laporanPencatatan.index')->with('success', 'Pencatatan Berhasil Dibuat');
     }
 
     /**
@@ -55,9 +57,10 @@ class PencatatanAyamController extends Controller
      * @param  \App\Models\PencatatanAyam  $pencatatanAyam
      * @return \Illuminate\Http\Response
      */
-    public function edit(PencatatanAyam $pencatatanAyam)
+    public function edit(PencatatanAyam $id)
     {
-        //
+        $pencatatanAyam = BateraiKandang::find($id);
+        return view('admin.laporanPencatatan.edit', compact(['pencatatanAyam']));
     }
 
     /**

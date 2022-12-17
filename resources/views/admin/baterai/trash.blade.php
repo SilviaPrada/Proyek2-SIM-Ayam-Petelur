@@ -1,9 +1,12 @@
-@extends('template_backend.home')
-@section('heading', 'Trash Kelas')
+@extends('admin.template_backend.home')
+@section('heading', 'Trash Data Baterai')
 @section('page')
-  <li class="breadcrumb-item active">Trash Baterai</li>
+  <li class="breadcrumb-item active">Trash Data Baterai</li>
 @endsection
 @section('content')
+<!-- @php
+    $no = 1;
+@endphp -->
 <div class="col-md-12">
     <div class="card card-primary">
         <div class="card-header">
@@ -15,13 +18,26 @@
             <thead>
                 <tr>
                     <th>No.</th>
-                    <th>Baterai</th>
-                    <th>Jumlah Ayam</th>
+                    <th>Nama Baterai</th>
+                    <th>Total Ayam</th>
                     <th>Aksi</th>
                 </tr>
             </thead>
             <tbody>
-                <!--  -->
+            <!-- @foreach ($bateraiKandang as $data) -->
+                <tr>
+                    <!-- <td>{{ $loop->iteration }}</td>
+                    <td>{{ $data->nama_baterai }}</td> -->
+                    <td>
+                        <form action="#" method="post">
+                            @csrf
+                            @method('delete')
+                            <a href="#" class="btn btn-success btn-sm mt-2"><i class="nav-icon fas fa-undo"></i> &nbsp; Restore</a>
+                            <button class="btn btn-danger btn-sm mt-2"><i class="nav-icon fas fa-trash-alt"></i> &nbsp; Hapus</button>
+                        </form>
+                    </td>
+                </tr>
+                @endforeach
             </tbody>
           </table>
         </div>
@@ -30,8 +46,8 @@
 @endsection
 @section('script')
     <script>
-        $("#ViewTrash").addClass("active");
-        $("#liViewTrash").addClass("menu-open");
+        $("#MasterData").addClass("active");
+        $("#liMasterData").addClass("menu-open");
         $("#TrashBaterai").addClass("active");
     </script>
 @endsection

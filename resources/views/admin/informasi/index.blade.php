@@ -1,7 +1,7 @@
-@extends('template_backend.home')
+@extends('admin.template_backend.home')
 @section('heading', 'Informasi')
 @section('page')
-  <li class="breadcrumb-item active">Informasi</li>
+<li class="breadcrumb-item active">Informasi</li>
 @endsection
 @section('content')
 <div class="col-md-12">
@@ -20,14 +20,18 @@
                 <tr>
                     <th>No.</th>
                     <th>Nama Penyakit</th>
+                    <th>Keterangan</th>
                     <th>Gejala</th>
                     <th>Pengobatan</th>
-                    <th>Keterangan</th>
                     <th>Aksi</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                     <td></td>
                     <td>
                         <form action="#" method="post">
@@ -63,20 +67,20 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="form-group">
-                  <label for="nama_mapel">Nama Penyakit</label>
-                  <input type="text" id="nama_mapel" name="nama_mapel" class="form-control @error('nama_mapel') is-invalid @enderror" placeholder="">
+                  <label for="nama_penyakit">Nama Penyakit</label>
+                  <input type="text" id="nama_penyakit" name="nama_penyakit" class="form-control @error('nama_penyakit') is-invalid @enderror" placeholder="{{ __('Nama Penyakit') }}">
                 </div>
                 <div class="form-group">
-                  <label for="nama_mapel">Gejala</label>
-                  <input type="text" id="nama_mapel" name="nama_mapel" class="form-control @error('nama_mapel') is-invalid @enderror" placeholder="">
+                  <label for="keterangan">Keterangan</label>
+                  <input type="text" id="keterangan" name="keterangan" class="form-control @error('keterangan') is-invalid @enderror" placeholder="{{ __('Keterangan Penyakit') }}">
                 </div>
                 <div class="form-group">
-                  <label for="nama_mapel">Pengobatan</label>
-                  <input type="text" id="nama_mapel" name="nama_mapel" class="form-control @error('nama_mapel') is-invalid @enderror" placeholder="">
+                  <label for="gejala">Gejala</label>
+                  <input type="text" id="gejala" name="gejala" class="form-control @error('gejala') is-invalid @enderror" placeholder="{{ __('Gejala') }}">
                 </div>
                 <div class="form-group">
-                  <label for="nama_mapel">Keterangan</label>
-                  <input type="text" id="nama_mapel" name="nama_mapel" class="form-control @error('nama_mapel') is-invalid @enderror" placeholder="">
+                  <label for="pengobatan">Pengobatan</label>
+                  <input type="text" id="pengobatan" name="pengobatan" class="form-control @error('pengobatan') is-invalid @enderror" placeholder="{{ __('Cara Mengobati') }}">
                 </div>
               </div>
             </div>
@@ -94,6 +98,7 @@
   <script>
     $("#MasterData").addClass("active");
     $("#liMasterData").addClass("menu-open");
-    $("#DataMapel").addClass("active");
+    $("#DataInformasi").addClass("active");
   </script>
 @endsection
+

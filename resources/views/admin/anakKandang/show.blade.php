@@ -1,16 +1,18 @@
-@extends('template_backend.home')
+@extends('admin.template_backend.home')
 @section('heading')
-  <!-- Data Siswa {{ $kelas->nama_kelas }} -->
+  <!-- Data Anak Kandang {{ $anakKandang->nama_baterai }} -->
 @endsection
 @section('page')
-  <li class="breadcrumb-item active"><a href="{{ route('#') }}">Anak Kandang</a></li>
-  <li class="breadcrumb-item active">{{}}</li>
+                                        <!--{{ route('anakKandang.index') }}-->
+  <li class="breadcrumb-item active"><a href="#">Anak Kandang</a></li>
+  <li class="breadcrumb-item active">{{ # }}</li>
+                        <!-- {{ $anakKandang->nama_baterai }} -->
 @endsection
 @section('content')
 <div class="col-md-12">
     <div class="card">
         <div class="card-header">
-            <a href="{{ route('#') }}" class="btn btn-default btn-sm"><i class="nav-icon fas fa-arrow-left"></i> &nbsp; Kembali</a>
+            <a href="#" class="btn btn-default btn-sm"><i class="nav-icon fas fa-arrow-left"></i> &nbsp; Kembali</a>
         </div>
         <!-- /.card-header -->
         <div class="card-body">
@@ -25,28 +27,28 @@
                 </tr>
             </thead>
             <tbody>
-                <!-- @foreach ($siswa as $data) -->
+                <!-- @foreach ($anakKandang as $data) -->
                     <tr>
                         <!-- <td>{{ $loop->iteration }}</td>
-                        <td>{{ $data->nama_siswa }}</td>
-                        <td>{{ $data->no_induk }}</td> -->
+                        <td>{{ $data->nama_anak_kandang }}</td>
+                        <td>{{ $data->no_ktp }}</td> -->
                         <td>
-                            <a href="#" data-toggle="lightbox" data-title="Foto {{}}" data-gallery="gallery" data-footer='<a href="{{ route('#') }}" id="linkFotoGuru" class="btn btn-link btn-block btn-light"><i class="nav-icon fas fa-file-upload"></i> &nbsp; Ubah Foto</a>'>
+                            <a href="#" data-toggle="lightbox" data-title="Foto {{ $data->nama_anak_kandang }}" data-gallery="gallery" data-footer='<a href="{{#}}" id="linkFotoGuru" class="btn btn-link btn-block btn-light"><i class="nav-icon fas fa-file-upload"></i> &nbsp; Ubah Foto</a>'>
                                 <img src="#" width="130px" class="img-fluid mb-2">
                             </a>
                             <!-- {{-- https://siakad.didev.id/siswa/ubah-foto/{{$data->id}} --}} -->
                         </td>
                         <td>
-                            <form action="{{ route('#') }}" method="post">
+                            <form action="#" method="post">
                                 @csrf
                                 @method('delete')
-                                <a href="{{ route('#') }}" class="btn btn-info btn-sm mt-2"><i class="nav-icon fas fa-id-card"></i> &nbsp; Detail</a>
-                                <a href="{{ route('#') }}" class="btn btn-success btn-sm mt-2"><i class="nav-icon fas fa-edit"></i> &nbsp; Edit</a>
+                                <a href="#" class="btn btn-info btn-sm mt-2"><i class="nav-icon fas fa-id-card"></i> &nbsp; Detail</a>
+                                <a href="#" class="btn btn-success btn-sm mt-2"><i class="nav-icon fas fa-edit"></i> &nbsp; Edit</a>
                                 <button class="btn btn-danger btn-sm mt-2"><i class="nav-icon fas fa-trash-alt"></i> &nbsp; Hapus</button>
                             </form>
                         </td>
                     </tr>
-                @endforeach
+                <!-- @endforeach -->
             </tbody>
           </table>
         </div>
@@ -60,6 +62,6 @@
     <script>
         $("#MasterData").addClass("active");
         $("#liMasterData").addClass("menu-open");
-        $("#DataSiswa").addClass("active");
+        $("#DataAnakKandang").addClass("active");
     </script>
 @endsection

@@ -4,125 +4,42 @@ namespace App\Http\Controllers;
 
 use App\Models\BateraiKandang;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Crypt;
-use Illuminate\Support\Str;
-use App\Http\Controllers\Controller;
 
 class BateraiKandangController extends Controller
 {
-    public function index()
-    {
-        // as baterai
+    public function index(){
         $bateraiKandang = BateraiKandang::all();
         return view('admin.baterai.index', compact(['bateraiKandang']));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
+    public function create(){
+        return view('admin.baterai.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-        $this->validate($request, [
-            'nama_baterai' => 'required',
-            'total_ayam' => 'required',
-        ]);
-
-        BateraiKandang::updateOrCreate(
-            [
-                'id' => $request->baterai_id
-            ],
-            [
-                'nama_baterai' => $request->nama_baterai,
-                'total_ayam' => $request->total_ayam,
-            ]
-        );
-
-        return redirect()->back()->with('success', 'Data baterai berhasil diperbarui!'); 
+    public function store(Request $request){
+        BateraiKandang::create($request->all());
+        return redirect()->route('bateraiKandang.index')->with('success', 'Baterai Kandang Berhasil Dibuat');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($bateraiKandang)
-    {
-        //
+    public function edit($id){
+        $bateraiKandang = BateraiKandang::find($id);
+        return view('admin.baterai.edit', compact(['bateraiKandang']));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(BateraiKandang $bateraiKandang)
-    {
-        //
-        $bateraiKandang = Crypt::decrypt($bateraiKandang);
-        $bateraiKandang = BateraiKandang::findorfail($bateraiKandang);
-        return view('admin.baterai.edit', compact('bateraiKandang'));
+    public function update(Request $request,$id){
+        $bateraiKandang = BateraiKandang::find($id);
+        $bateraiKandang->update($request->all());
+        return redirect()->route('bateraiKandang.index')->with('success', 'Baterai Kandang Berhasil Diedit!!');
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $bateraiKandang)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(BateraiKandang $bateraiKandang)
-    {
-        //
-        $bateraiKandang = BateraiKandang::findorfail($bateraiKandang);
+    public function destroy($id){
+        $bateraiKandang = BateraiKandang::find($id);
         $bateraiKandang->delete();
-        return redirect()->back()->with('warning', 'Data baterai berhasil dihapus! (Silahkan cek trash Baterai)');
+        return redirect()->route('bateraiKandang.index')->with('success', 'Baterai Kandang Berhasil DiHapus!!');
     }
 
-    public function trash()
+    public function show($id)
     {
-        $bateraiKandang = BateraiKandang::onlyTrashed()->get();
-        return view('admin.baterai.trash', compact('bateraiKandang'));
-    }
-
-    public function restore($bateraiKandang)
-    {
-        $bateraiKandang = Crypt::decrypt($bateraiKandang);
-        $bateraiKandang = BateraiKandang::withTrashed()->findorfail($bateraiKandang);
-        $bateraiKandang->restore();
-        return redirect()->back()->with('info', 'Data baterai berhasil direstore! (Silahkan cek baterai)');
-    }
-
-    public function kill($bateraiKandang)
-    {
-        $bateraiKandang = BateraiKandang::withTrashed()->findorfail($bateraiKandang);
-        $bateraiKandang->forceDelete();
-        return redirect()->back()->with('success', 'Data baterai berhasil dihapus secara permanent');
+        //
     }
 }

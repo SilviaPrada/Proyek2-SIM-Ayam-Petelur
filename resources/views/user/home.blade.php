@@ -49,13 +49,11 @@
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">Tentang Kami</a></li>
-          <!-- <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li> -->
-          <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
           <li><a class="nav-link scrollto" href="#catat-ayam">Pencatatan Ayam</a></li>
           <li><a class="nav-link scrollto" href="#hasil">Hasil Pencatatan</a></li>
           <li><a class="nav-link scrollto" href="#hitung">Penghitungan</a></li>
           <li><a class="nav-link scrollto" href="#info">Informasi</a></li>
-          <li><a class="getstarted scrollto" href="#about">Keluar</a></li>
+          <li><a class="getstarted scrollto" href="login">Keluar</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -169,36 +167,36 @@
         <div class="row">
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
-              <h4 class="description"><a href="">Baterai A</a></h4>
+              <h4 class="description"><a href="pencatatan_ayam">Baterai A</a></h4>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
-              <h4 class="description"><a href="">Baterai B</a></h4>
+              <h4 class="description"><a href="pencatatan_ayam">Baterai B</a></h4>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
-              <h4 class="description"><a href="">Baterai C</a></h4>
+              <h4 class="description"><a href="pencatatan_ayam">Baterai C</a></h4>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
-              <h4 class="description"><a href="">Baterai D</a></h4>
+              <h4 class="description"><a href="pencatatan_ayam">Baterai D</a></h4>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
-              <h4 class="description"><a href="">Baterai E</a></h4>
+              <h4 class="description"><a href="pencatatan_ayam">Baterai E</a></h4>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
-              <h4 class="description"><a href="">Baterai F</a></h4>
+              <h4 class="description"><a href="pencatatan_ayam">Baterai F</a></h4>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
@@ -209,30 +207,30 @@
 
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
-              <h4 class="description"><a href="">Baterai H</a></h4>
+              <h4 class="description"><a href="pencatatan_ayam">Baterai H</a></h4>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
-              <h4 class="description"><a href="">Baterai I</a></h4>
+              <h4 class="description"><a href="pencatatan_ayam">Baterai I</a></h4>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
-              <h4 class="description"><a href="">Baterai J</a></h4>
+              <h4 class="description"><a href="pencatatan_ayam">Baterai J</a></h4>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
-              <h4 class="description"><a href="">Baterai K</a></h4>
+              <h4 class="description"><a href="pencatatan_ayam">Baterai K</a></h4>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
-              <h4 class="description"><a href="">Baterai L</a></h4>
+              <h4 class="description"><a href="pencatatan_ayam">Baterai L</a></h4>
             </div>
           </div>
         </div>
@@ -286,7 +284,7 @@
               <td>Sehat</td>
               <td>1</td>
               <td>
-								<a href="#" class="btn btn-sm btn-warning">Edit</a>
+								<a href="/edit_pencatatan" class="btn btn-sm btn-warning">Edit</a>
 								<a href="#" class="btn btn-sm btn-danger" onclick="return confirm('Anda yakin ingin hapus?');">Hapus</a>
 						  </td>
             </tr>
@@ -300,7 +298,7 @@
               <td>Sehat</td>
               <td>1</td>
               <td>
-								<a href="#" class="btn btn-sm btn-warning">Edit</a>
+								<a href="/edit_pencatatan" class="btn btn-sm btn-warning">Edit</a>
 								<a href="#" class="btn btn-sm btn-danger" onclick="return confirm('Anda yakin ingin hapus?');">Hapus</a>
 						  </td>
             </tr>
@@ -314,7 +312,7 @@
               <td>Sehat</td>
               <td>1</td>
               <td>
-								<a href="#" class="btn btn-sm btn-warning">Edit</a>
+								<a href="/edit_pencatatan" class="btn btn-sm btn-warning">Edit</a>
 								<a href="#" class="btn btn-sm btn-danger" onclick="return confirm('Anda yakin ingin hapus?');">Hapus</a>
 						  </td>
             </tr>
@@ -328,7 +326,7 @@
               <td>Sehat</td>
               <td>1</td>
               <td>
-								<a href="#" class="btn btn-sm btn-warning">Edit</a>
+								<a href="/edit_pencatatan" class="btn btn-sm btn-warning">Edit</a>
 								<a href="#" class="btn btn-sm btn-danger" onclick="return confirm('Anda yakin ingin hapus?');">Hapus</a>
 						  </td>
             </tr>
@@ -342,7 +340,7 @@
               <td>Sehat</td>
               <td>1</td>
               <td>
-								<a href="#" class="btn btn-sm btn-warning">Edit</a>
+								<a href="/edit_pencatatan" class="btn btn-sm btn-warning">Edit</a>
 								<a href="#" class="btn btn-sm btn-danger" onclick="return confirm('Anda yakin ingin hapus?');">Hapus</a>
 						  </td>
             </tr>
@@ -356,7 +354,7 @@
               <td>Sehat</td>
               <td>1</td>
               <td>
-								<a href="#" class="btn btn-sm btn-warning">Edit</a>
+								<a href="/edit_pencatatan" class="btn btn-sm btn-warning">Edit</a>
 								<a href="#" class="btn btn-sm btn-danger" onclick="return confirm('Anda yakin ingin hapus?');">Hapus</a>
 						  </td>
             </tr>
@@ -374,10 +372,10 @@
         <p>Penghitungan</p>
       </div>
           <div class="row ms-4 justify-content-center">
-            <button type="button" class="btn btn1">Deplesi</button>
-            <button type="button" class="btn btn1">Hen Day</button>
-            <button type="button" class="btn btn1">Egg Weight</button>
-            <button type="button" class="btn btn1">FCR Total</button>
+            <button type="button" class="btn btn1 active"><a href="home-user#hitung">Deplesi</a></button>
+            <button type="button" class="btn btn1"><a href="/penghitunganHenDay">Hen Day</a></button>
+            <button type="button" class="btn btn1"><a href="/penghitunganEggWeight">Egg Weight</a></button>
+            <button type="button" class="btn btn1"><a href="/penghitunganFCR">FCR Total</a></button>
           </div>
           <br>
           <div class="desc">
@@ -387,7 +385,7 @@
           </div><br><br>
           <form class="row justify-content-center ps-4" >
             <div class="col-md-4 ps-5" >
-                  <label for="basic-url" class="form-label">Populasi ayam saat iniL</label>
+                  <label for="basic-url" class="form-label">Populasi ayam saat ini</label>
                   <input type="text" class="form-control" placeholder="0" aria-label="First name">
                 </div>
             <div class="col-md-4 ps-5">
@@ -395,14 +393,14 @@
                 <input type="text" class="form-control" placeholder="0" aria-label="Last name">
                 </div>
               </div><br><br><br>
-              <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+              <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
                 <button type="submit" class="btn btn2">Hitung</button>
               </div><br>
-              <div class="hasil" data-aos="fade-up" data-aos-delay="200">
+              <div class="hasil" data-aos="fade-up" data-aos-delay="100">
                 <p>Deplesi</p>
                 <div class="akhir">
                 <p>0%</p>
-                </div>
+                </div><br>
                 <div class="riwayat">
                 <p>Riwayat Penghitungan</p>
                 </div>
@@ -424,8 +422,10 @@
           <div class="row no-gutters">
             <div class="col-md-8">
               <div class="card-body">
-                <h5 class="card-title">Gumboro</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <a href="/detail_info">
+                  <h5 class="card-title">Gumboro</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </a>
               </div>
             </div>
             <div class="col-md-4">
@@ -437,8 +437,10 @@
           <div class="row no-gutters">
             <div class="col-md-8">
               <div class="card-body">
-                <h5 class="card-title">Kolera</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <a href="/detail_info">
+                  <h5 class="card-title">Kolera</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </a>
               </div>
             </div>
             <div class="col-md-4">
@@ -452,8 +454,10 @@
           <div class="row no-gutters">
             <div class="col-md-8">
               <div class="card-body">
-                <h5 class="card-title">Coryza</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <a href="/detail_info">
+                  <h5 class="card-title">Coryza</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </a>
               </div>
             </div>
             <div class="col-md-4">
@@ -465,8 +469,10 @@
           <div class="row no-gutters">
             <div class="col-md-8">
               <div class="card-body">
-                <h5 class="card-title">Influenza</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <a href="/detail_info">
+                  <h5 class="card-title">Influenza</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </a>
               </div>
             </div>
             <div class="col-md-4">
@@ -480,8 +486,10 @@
           <div class="row no-gutters">
             <div class="col-md-8">
               <div class="card-body">
-                <h5 class="card-title">Virus ND</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <a href="/detail_info">
+                  <h5 class="card-title">Virus ND</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </a>
               </div>
             </div>
             <div class="col-md-4">
@@ -493,8 +501,10 @@
           <div class="row no-gutters">
             <div class="col-md-8">
               <div class="card-body">
-                <h5 class="card-title">CRD</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <a href="/detail_info">
+                  <h5 class="card-title">CRD</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </a>
               </div>
             </div>
             <div class="col-md-4">

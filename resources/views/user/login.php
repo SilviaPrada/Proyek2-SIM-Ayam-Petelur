@@ -39,7 +39,7 @@
     <!-- ======= F.A.Q Section ======= -->
     <section id="faq" class="faq section-bg">
       <div class="login" data-aos="fade-up">
-        <div data-aos="zoom-in" data-aos-delay="100" style="width: 300px; margin-left: auto; margin-right: auto;">
+        <div data-aos="zoom-in" data-aos-delay="50" style="width: 300px; margin-left: auto; margin-right: auto;">
         <br><br><br>
             <div>
             <center><img src="assets/img/logo.png" width="148px" height="143px">
@@ -55,7 +55,7 @@
           <p>Masukkan username dan password untuk memulai aplikasi</p>
           </p>
           <div class="align-items-stretch" data-aos="fade-up" data-aos-delay="200" style="width: 100;">
-            <form action="user/home.php" method="post" role="form" class="php-email-form">
+            <form action="user/home-user" method="post" role="form" class="php-email-form">
               <div class="form-group mt-3">
                 <input type="text" class="form-control" name="username" id="username" placeholder="Username" required>
               </div>

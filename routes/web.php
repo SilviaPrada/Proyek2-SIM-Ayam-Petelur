@@ -1,10 +1,15 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AnakKandangController;
-use App\Http\Controllers\InformasiTernakController;
 use App\Http\Controllers\BateraiKandangController;
-
+use App\Http\Controllers\AnakKandangController;
+use App\Http\Controllers\BarisKandangController;
+use App\Http\Controllers\InformasiTernakController;
+use App\Http\Controllers\KolomAyamController;
+use App\Http\Controllers\RumusController;
+use App\Http\Controllers\PerhitunganRumusController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\PencatatanAyamController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,6 +30,16 @@ use App\Http\Controllers\BateraiKandangController;
 //         'title'=>'Halaman Home'
 //     ]);
 // })->name('home');
+
+Route::resource('bateraiKandang', BateraiKandangController::class);
+Route::resource('anakKandang', AnakKandangController::class);
+Route::resource('barisKandang', BarisKandangController::class);
+Route::resource('informasiTernak', informasiTernakController::class);
+Route::resource('kolomAyam', kolomAyamController::class);
+Route::resource('rumus', RumusController::class);
+Route::resource('perhitunganRumusKandang', PerhitunganRumusController::class);
+Route::resource('user', UserController::class);
+Route::resource('pencatatanAyam', pencatatanAyamController::class);
 
 // Route::get('/home-user', function () {
 //     return view('user/home');
@@ -54,39 +69,22 @@ use App\Http\Controllers\BateraiKandangController;
 //     return view('user/penghitunganEggWeight');
 // });
 
-Route::get('/penghitunganFCR', function () {
-    return view('user/penghitunganFCR');
-});
+// Route::get('/penghitunganFCR', function () {
+//     return view('user/penghitunganFCR');
+// });
 
-Route::get('/', function () {
-    return view('admin.welcome');
-});
+// // Route::get('/baterai', function () {
+// //     return view('admin/baterai/index');
+// // });
 
-Route::get('/informasi', function () {
-    return view('admin/informasi/index');
-});
+// // Route::get('/baterai/edit', function () {
+// //     return view('admin/baterai/edit');
+// // });
 
-Route::get('/anakKandang', function () {
-    return view('admin/anakKandang/index');
-});
+// // Route::get('/baterai/create', function () {
+// //     return view('admin/baterai/create');
+// // });
 
-Route::get('/baterai', function () {
-    return view('admin/baterai/index');
-});
-
-// Route::resource('admin.anakKandang', AnakKandangController::class);
-// Route::resource('informasi', InformasiTernakController::class);
-// Route::resource('admin.baterai', BateraiKandangController::class);
-
-// Route::get('/admin', [AnakKandangController::class, 'index'])->name('anakKandang');
-
-    // Route::get('admin/anakKandang/bateraiKandang/{id}', 'AnakKandangController@bateraiKandang')->name('anakKandang.bateraiKandang');
-    // Route::get('admin/anakKandang/view/json', 'AnakKandangController@view');
-    // Route::get('admin/anakKandang/ubah-foto/{id}', 'AnakKandangController@ubah_foto')->name('anakKandang.ubah-foto');
-    // Route::post('admin/anakKandang/update-foto/{id}', 'AnakKandangController@update_foto')->name('anakKandang.update-foto');;
-    // Route::delete('/anakKandang/deleteAll', 'AnakKandangController@deleteAll')->name('anakKandang.deleteAll');
-    // Route::resource('anakKandang', 'AnakKandangController');
-
-    // Route::controller(AnakKandangController::class)->group(function () {
-    //     Route::get('anakKandang/index', 'index');
-    // });    
+// Route::get('/user', function () {
+//     return view('admin/user/index');
+// });

@@ -47,15 +47,13 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">Tentang Kami</a></li>
-          <!-- <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li> -->
-          <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
-          <li><a class="nav-link scrollto" href="#catat-ayam">Pencatatan Ayam</a></li>
-          <li><a class="nav-link scrollto" href="#hasil">Hasil Pencatatan</a></li>
-          <li><a class="nav-link scrollto" href="#hitung">Penghitungan</a></li>
-          <li><a class="nav-link scrollto" href="#info">Informasi</a></li>
-          <li><a class="getstarted scrollto" href="#about">Keluar</a></li>
+          <li><a class="nav-link scrollto" href="home-user">Home</a></li>
+          <li><a class="nav-link scrollto" href="home-user#about">Tentang Kami</a></li>
+          <li><a class="nav-link scrollto" href="home-user#catat-ayam">Pencatatan Ayam</a></li>
+          <li><a class="nav-link scrollto" href="home-user#hasil">Hasil Pencatatan</a></li>
+          <li><a class="nav-link scrollto" href="home-user#hitung">Penghitungan</a></li>
+          <li><a class="nav-link scrollto" href="home-user#info">Informasi</a></li>
+          <li><a class="getstarted scrollto" href="login">Keluar</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -107,7 +105,7 @@
               <label class="form-check-label" for="inlineRadio1">Bertelur</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" checked>
               <label class="form-check-label" for="inlineRadio2">Tidak Bertelur</label>
             </div>
           </div>
@@ -149,10 +147,10 @@
             <br>
             <div class="row">
               <div class="btn">
-                <button class="btn btn-success" type="submit">Simpan</button>
+                <button class="btn btn-success" type="submit"><a href="home-user#hasil">Simpan</a></button>
               </div>
               <div class="btn">
-                <button class="btn btn-danger" type="submit">Kembali</button>
+                <button class="btn btn-danger" type="submit"><a href="home-user#hasil">Kembali</a></button>
               </div>
             </div>
         </div>

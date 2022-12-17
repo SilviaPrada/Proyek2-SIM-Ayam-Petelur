@@ -47,15 +47,13 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">Tentang Kami</a></li>
-          <!-- <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li> -->
-          <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
-          <li><a class="nav-link scrollto" href="#catat-ayam">Pencatatan Ayam</a></li>
-          <li><a class="nav-link scrollto" href="#hasil">Hasil Pencatatan</a></li>
-          <li><a class="nav-link scrollto" href="#hitung">Penghitungan</a></li>
-          <li><a class="nav-link scrollto" href="#info">Informasi</a></li>
-          <li><a class="getstarted scrollto" href="#about">Keluar</a></li>
+          <li><a class="nav-link scrollto" href="home-user">Home</a></li>
+          <li><a class="nav-link scrollto" href="home-user#about">Tentang Kami</a></li>
+          <li><a class="nav-link scrollto" href="home-user#catat-ayam">Pencatatan Ayam</a></li>
+          <li><a class="nav-link scrollto" href="home-user#hasil">Hasil Pencatatan</a></li>
+          <li><a class="nav-link scrollto" href="home-user#hitung">Penghitungan</a></li>
+          <li><a class="nav-link scrollto" href="home-user#info">Informasi</a></li>
+          <li><a class="getstarted scrollto" href="login">Keluar</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -71,10 +69,10 @@
         <p>Penghitungan</p>
       </div>
           <div class="row ms-4 justify-content-center">
-            <button type="button" class="btn btn1">Deplesi</button>
-            <button type="button" class="btn btn1">Hen Day</button>
-            <button type="button" class="btn btn1">Egg Weight</button>
-            <button type="button" class="btn btn1">FCR Total</button>
+            <button type="button" class="btn btn1"><a href="home-user#hitung">Deplesi</a></button>
+            <button type="button" class="btn btn1"><a href="/penghitunganHenDay"></a>Hen Day</button>
+            <button type="button" class="btn btn1"><a href="/penghitunganEggWeight">Egg Weight</a></button>
+            <button type="button" class="btn btn1 active"><a href="/penghitunganFCR">FCR Total</a></button>
           </div>
           <br>
           <div class="desc">
@@ -91,10 +89,10 @@
                 <input type="text" class="form-control" placeholder="0" aria-label="Last name">
                 </div>
               </div><br><br><br>
-              <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+              <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
                 <button type="submit" class="btn btn2">Hitung</button>
               </div><br>
-              <div class="hasil" data-aos="fade-up" data-aos-delay="200">
+              <div class="hasil" data-aos="fade-up" data-aos-delay="150">
                 <p>FCR Total</p>
                 <div class="akhir">
                 <p>0%</p>

@@ -103,9 +103,9 @@
 <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed sidebar-open">
 <div class="wrapper">
 
-    @include('template_backend.navbar')
+    @include('admin.template_backend.navbar')
 
-    @include('template_backend.sidebar')
+    @include('admin.template_backend.sidebar')
 
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->

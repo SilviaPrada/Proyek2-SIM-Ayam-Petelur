@@ -39,13 +39,13 @@
                         </a>
                         <ul class="nav nav-treeview ml-4">
                             <li class="nav-item">
-                                <a href="#" class="nav-link" id="DataKelas">
+                                <a href="#" class="nav-link" id="DataBaterai">
                                     <i class="fas fa-home nav-icon"></i>
                                     <p>Data Baterai</p>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link" id="DataSiswa">
+                                <a href="#" class="nav-link" id="DataAnakKandang">
                                     <i class="fas fa-users nav-icon"></i>
                                     <p>Data Anak Kandang</p>
                                 </a>
@@ -74,7 +74,7 @@
                             </a>
                             <ul class="nav nav-treeview ml-4">
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link" id="TrashSiswa">
+                                    <a href="#" class="nav-link" id="TrashAnakKandang">
                                         <i class="fas fa-users nav-icon"></i>
                                         <p>Trash Anak Kandang</p>
                                     </a>
@@ -86,7 +86,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link" id="TrashKelas">
+                                    <a href="#" class="nav-link" id="TrashBaterai">
                                         <i class="fas fa-home nav-icon"></i>
                                         <p>Trash Baterai</p>
                                     </a>
@@ -107,40 +107,33 @@
                                 <i class="fas fa-angle-left right"></i>
                             </p>
                         </a>
-                        <ul class="nav nav-treeview ml-4">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link" id="Ulangan">
-                                    <i class="fas fa-file-alt nav-icon"></i>
-                                    <p>Transaksi</p>
-                                </a>
-                            </li>
+                        <ul class="nav nav-treeview ml-4">1
                             <li class="nav-item">
                                 <a href="#" class="nav-link" id="Sikap">
                                     <i class="fas fa-file-alt nav-icon"></i>
                                     <p>Pencatatan Hasil Ternak</p>
                                 </a>
                             </li>
+                    <li class="nav-item has-treeview" id="liMasterData">
+                        <a href="#" class="nav-link" id="MasterData">
+                            <i class="nav-icon fas fa-edit"></i>
+                            <p>
+                                Informasi
+                                <i class="fas fa-angle-left right"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview ml-4">
                             <li class="nav-item">
-                                <a href="#" class="nav-link" id="Rapot">
-                                    <i class="fas fa-file-alt nav-icon"></i>
-                                    <p>Kas</p>
+                                <a href="#" class="nav-link" id="DataInformasi">
+                                    <i class="fas fa-home nav-icon"></i>
+                                    <p>Informasi Ternak</p>
                                 </a>
                             </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item has-treeview" id="liNilai">
-                            <a href="#" class="nav-link" id="Nilai">
-                                <i class="nav-icon fas fa-recycle"></i>
-                                <p>
-                                    Informasi
-                                    <i class="fas fa-angle-left right"></i>
-                                </p>
-                            </a>
                             <ul class="nav nav-treeview ml-4">
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link" id="Ulangan">
+                                    <a href="#" class="nav-link" id="TrashInformasi">
                                         <i class="fas fa-home nav-icon"></i>
-                                        <p>Informasi Ternak</p>
+                                        <p>Trash Informasi Ternak</p>
                                     </a>
                                 </li>
                             </ul>

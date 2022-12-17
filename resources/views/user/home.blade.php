@@ -385,7 +385,7 @@
           </div><br><br>
           <form class="row justify-content-center ps-4" >
             <div class="col-md-4 ps-5" >
-                  <label for="basic-url" class="form-label">Populasi ayam saat iniL</label>
+                  <label for="basic-url" class="form-label">Populasi ayam saat ini</label>
                   <input type="text" class="form-control" placeholder="0" aria-label="First name">
                 </div>
             <div class="col-md-4 ps-5">

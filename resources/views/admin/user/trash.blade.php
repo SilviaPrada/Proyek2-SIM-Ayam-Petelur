@@ -1,4 +1,4 @@
-@extends('template_backend.home')
+@extends('admin.template_backend.home')
 @section('heading', 'Trash User')
 @section('page')
   <li class="breadcrumb-item active">Trash User</li>

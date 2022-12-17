@@ -1,4 +1,4 @@
-@extends('template_backend.home')
+@extends('admin.template_backend.home')
 @section('heading', 'Trash Informasi')
 @section('page')
   <li class="breadcrumb-item active">Trash Informasi</li>
@@ -19,13 +19,27 @@
                 <tr>
                     <th>No.</th>
                     <th>Nama Penyakit</th>
+                    <th>Keterangan</th>
                     <th>Gejala</th>
                     <th>Pengobatan</th>
-                    <th>Keterangan</th>
                     <th>Aksi</th>
                 </tr>
             </thead>
             <tbody>
+            <!-- @foreach ($informasiTernak as $data) -->
+                <tr>
+                    <!-- <td>{{ $loop->iteration }}</td>
+                    <td>{{ $data->nama_penyakit }}</td> -->
+                    <td>
+                        <form action="#" method="post">
+                            @csrf
+                            @method('delete')
+                            <a href="#" class="btn btn-success btn-sm mt-2"><i class="nav-icon fas fa-undo"></i> &nbsp; Restore</a>
+                            <button class="btn btn-danger btn-sm mt-2"><i class="nav-icon fas fa-trash-alt"></i> &nbsp; Hapus</button>
+                        </form>
+                    </td>
+                </tr>
+                @endforeach
             </tbody>
           </table>
         </div>
@@ -34,8 +48,8 @@
 @endsection
 @section('script')
     <script>
-        $("#ViewTrash").addClass("active");
-        $("#liViewTrash").addClass("menu-open");
-        $("#TrashMapel").addClass("active");
+        $("#MasterData").addClass("active");
+        $("#liMasterData").addClass("menu-open");
+        $("#TrashInformasi").addClass("active");
     </script>
 @endsection

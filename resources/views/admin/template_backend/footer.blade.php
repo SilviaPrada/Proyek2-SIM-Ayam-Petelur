@@ -1,6 +1,6 @@
 <footer class="main-footer">
         <marquee>
-            <strong>Copyright &copy; <script>document.write(new Date().getFullYear());</script> &diams; <a href="https://www.polinema.ac.id/">PT.Ragil Kuning Famr</a>. </strong>
+            <strong>Copyright &copy; <script>document.write(new Date().getFullYear());</script> &diams; <a href="https://www.polinema.ac.id/">PT.Ragil Kuning Farm</a>. </strong>
         </marquee>
     </footer>
 

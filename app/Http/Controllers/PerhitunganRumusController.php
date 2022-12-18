@@ -12,9 +12,28 @@ class PerhitunganRumusController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function perhitunganDeplesi($data)
     {
-        //
+        return view('user.perhitunganDeplesi');
+
+    }
+
+    public function perhitunganHenDay($data)
+    {
+        return view('user.perhitunganHenDay');
+
+    }
+
+    public function perhitunganEggWeight($data)
+    {
+        return view('user.perhitunganEggWeight');
+
+    }
+
+    public function perhitunganFCR($data)
+    {
+        return view('user.perhitunganFCR');
+
     }
 
     /**

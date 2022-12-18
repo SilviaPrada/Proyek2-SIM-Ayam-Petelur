@@ -45,7 +45,7 @@
                 </div>
                 <div class="form-group">
                   <label for="tgl_lahir">Tanggal Lahir</label>
-                  <input type="text" id="tgl_lahir" name="tgl_lahir" class="form-control @error('tgl_lahir') is-invalid @enderror" placeholder="{{ __('Tanggal Lahir') }}">
+                  <input type="date" id="tgl_lahir" name="tgl_lahir" class="form-control @error('tgl_lahir') is-invalid @enderror" placeholder="{{ __('Tanggal Lahir') }}">
                 </div>
                 <div class="form-group">
                   <label for="baterai_id">Baterai</label>

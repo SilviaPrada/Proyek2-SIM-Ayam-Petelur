@@ -9,9 +9,8 @@
         <div class="card-header">
           <h3 class="card-title">
               {{-- <button type="button" class="btn btn-primary btn-sm" onclick="{{ route('bateraiKandang.create') }}" data-toggle="modal" data-target="#form-kelas">
-                  <i class="nav-icon fas fa-folder-plus"></i> &nbsp; Tambah Data Baterai
+                  <i class="nav-icon fas fa-folder-plus"></i><a href="{{ route('bateraiKandang.create') }}" > &nbsp; Tambah Data Baterai
               </button> --}}
-              <a href="{{ route('bateraiKandang.create') }}" >Tambah Data</a>
           </h3>
         </div>
         <!-- /.card-header -->

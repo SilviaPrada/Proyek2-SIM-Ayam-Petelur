@@ -48,7 +48,7 @@ class PencatatanAyamController extends Controller
      */
     public function show($id)
     {
-        return view('user.laporanPencatatan.show');
+        //
     }
 
     /**

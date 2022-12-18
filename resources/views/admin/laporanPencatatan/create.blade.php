@@ -18,74 +18,24 @@
             <div class="row">
                 <div class="form-group">
                     <label for="waktu">Waktu</label>
-                    <select id="waktu" name="waktu" class="select2bs4 form-control @error('waktu') is-invalid @enderror">
-                        <option value="">-- Pilih Waktu --</option>
-                        <option value="Pagi"
-                            @if ($pencatatanAyam->waktu == 'Pagi')
-                                selected
-                            @endif
-                        >Pagi</option>
-                        <option value="Sore"
-                            @if ($pencatatanAyam->waktu == 'Sore')
-                                selected
-                            @endif
-                        >Sore</option>
-                    </select>
+                    <input type='text' id="waktu" name='waktu' class="form-control @error('waktu') is-invalid @enderror" placeholder='pagi/sore'>
                 </div>
             </div>
             <div class="form-group">
                 <label for="kolom_id">Kolom</label>
-                <select id="kolom_id" name="kolom_id" class="form-control @error('kolom_id') is-invalid @enderror select2bs4">
-                    <option value="">-- Pilih Kolom --</option>
-                </select>
+                <input type='text' id="kolom_id" name='kolom_id' class="form-control @error('kolom_id') is-invalid @enderror" placeholder='kolom 00'>
             </div>
             <div class="form-group">
-                    <label for="produktivitas">Produktivitas</label>
-                    <select id="produktivitas" name="produktivitas" class="select2bs4 form-control @error('produktivitas') is-invalid @enderror">
-                        <option value="">-- Pilih Produktivitas --</option>
-                        <option value="Bertelur"
-                            @if ($pencatatanAyam->produktivitas == 'Bertelur')
-                                selected
-                            @endif
-                        >Bertelur</option>
-                        <option value="Tidak Bertelur"
-                            @if ($pencatatanAyam->produktivitas == 'Tidak Bertelur')
-                                selected
-                            @endif
-                        >Tidak Bertelur</option>
-                    </select>
-                </div>
+                    <label for="produktifitas">Produktivitas</label>
+                    <input type='text' id="produktifitas" name='produktifitas' class="form-control @error('produktifitas') is-invalid @enderror" placeholder='bertelur/tidak bertelur'>
             </div>
             <div class="form-group">
                     <label for="kondisi">Kondisi</label>
-                    <select id="kondisi" name="kondisi" class="select2bs4 form-control @error('kondisi') is-invalid @enderror">
-                        <option value="">-- Pilih Kondisi --</option>
-                        <option value="Sehat"
-                            @if ($pencatatanAyam->kondisi == 'Sehat')
-                                selected
-                            @endif
-                        >Sehat</option>
-                        <option value="Sakit"
-                            @if ($pencatatanAyam->kondisi == 'Sakit')
-                                selected
-                            @endif
-                        >Sakit</option>
-                        <option value="Mati"
-                            @if ($pencatatanAyam->kondisi == 'Mati')
-                                selected
-                            @endif
-                        >Mati</option>
-                        <option value="Afkir"
-                            @if ($pencatatanAyam->kondisi == 'Afkir')
-                                selected
-                            @endif
-                        >Afkir</option>
-                    </select>
-                </div>
+                    <input type='text' id="kondisi" name='kondisi' class="form-control @error('kondisi') is-invalid @enderror" placeholder='sehat/sakit/mati/afkir'>
             </div>
             <div class="form-group">
                 <label for="jumlah_telur">Jumlah Telur</label>
-                <input type='number' value="{{ $pencatatanAyam->jumlah_telur }}" id="jumlah_telur" name='jumlah_telur' class="form-control @error('jumlah_telur') is-invalid @enderror" placeholder='jumlah telur'>
+                <input type='number' id="jumlah_telur" name='jumlah_telur' class="form-control @error('jumlah_telur') is-invalid @enderror" placeholder='000'>
               </div>
         </div>
         <!-- /.card-body -->

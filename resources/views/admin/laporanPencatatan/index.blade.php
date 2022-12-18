@@ -22,26 +22,38 @@
             <table id="example1" class="table table-bordered table-striped table-hover">
               <thead>
                 <tr>
+                  <th>No.</th>
                   <th>Waktu</th>
                   <th>Kolom ID</th>
-                  <th>Produktivitas</th>
+                  <th>Produktifitas</th>
                   <th>Kondisi</th>
                   <th>Jumlah Telur</th>
                   <th>Aksi</th>
               </thead>
               <tbody>
-              <td>
-                          <a href="{{ route('laporanPencatatan.edit', $bat->id) }}" >Edit</a>
-                          {{-- <a href="{{ route('laporanPencatatan.destroy', $bat->id) }}" >Hapus</a> --}}
-                          {{-- <a href="/pencatatanAyam/{{ $bat->id }}" data-toggle="modal" data-target="#delete{{ $bat->id }}">Hapus</a> 
+              @foreach($pencatatanAyam as $catat => $catat)
+                  <tr>
+                      <td>{{ $catat+1 }}</td>
+                      <td>{{ $catat->waktu }}</td>
+                      <td>{{ $catat->kolom_id }}</td>
+                      <td>{{ $catat->produktifitas }}</td>
+                      <td>{{ $catat->kondisi }}</td>
+                      <td>{{ $catat->jumlah_telur }}</td>
+                      <td>
+                          <a href="{{ route('laporanPencatatan.edit', $catat->id) }}" >Edit</a>
+                          {{-- <a href="{{ route('laporanPencatatan.destroy', $catat->id) }}" >Hapus</a> --}}
+                          {{-- <a href="/pencatatanAyam/{{ $catat->id }}" data-toggle="modal" data-target="#delete{{ $catat->id }}">Hapus</a> 
                           --}}
                           
-                        <form action="{{ route('bateraiKandang.destroy', $bat->id) }}" method="post">
+                        <form action="{{ route('pencatatanAyam.destroy', $catat->id) }}" method="post">
                             @csrf
                             @method('delete')
                             <button class="btn btn-danger btn-sm mt-2"><i class="nav-icon fas fa-trash-alt"></i> &nbsp; Hapus</button>
                         </form>
                       </td>
+                  </tr>
+                  @include('admin.laporanPencatatan.delete')
+                  @endforeach
               </tbody>
             </table>
           </div>

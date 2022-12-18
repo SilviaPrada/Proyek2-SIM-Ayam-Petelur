@@ -24,13 +24,13 @@
                     <select id="waktu_id" name="waktu_id" class="form-control @error('waktu_id') is-invalid @enderror select2bs4">
                         <option value="">-- Pilih Waktu --</option>
                         <option value="2"
-                            @if ($mapel->waktu_id == '2')
+                            @if ($waktu->waktu_id == '2')
                                 selected
                             @endif
                         >Semua</option>
                         @foreach ($waktu as $data)
                         <option value="{{ $data->id }}"
-                            @if ($mapel->waktu_id == $data->id)
+                            @if ($waktu->waktu_id == $data->id)
                                 selected
                             @endif
                         >{{ $data->ket }}</option>
@@ -43,13 +43,13 @@
                 <select id="kolom_id" name="kolom_id" class="form-control @error('kolom_id') is-invalid @enderror select2bs4">
                     <option value="">-- Pilih Kolom --</option>
                     <option value="2"
-                        @if ($mapel->kolom_id == '2')
+                        @if ($kolom->kolom_id == '2')
                             selected
                         @endif
                     >Semua</option>
                     @foreach ($kolom as $data)
                     <option value="{{ $data->id }}"
-                        @if ($mapel->kolom_id == $data->id)
+                        @if ($kolom->kolom_id == $data->id)
                             selected
                         @endif
                     >{{ $data->ket }}</option>
@@ -57,13 +57,13 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="produktivitas">Produktivitas</label>
-                <input type='text' value="{{ $pencatatanAyam->produktivitas }}" id="produktivitas" name='produktivitas' class="form-control @error('produktivitas') is-invalid @enderror" placeholder='produktivitas'>
+                <label for="produktifitas">produktifitas</label>
+                <input type='text' value="{{ $pencatatanAyam->produktifitas }}" id="produktifitas" name='produktifitas' class="form-control @error('produktifitas') is-invalid @enderror" placeholder='produktifitas'>
               </div>
             </div>
             <div class="form-group">
                 <label for="kondisi">Kondisi</label>
-                <input type='text' value="{{ $pencatatanAyam->kondisi }}" id="kondisi" name='produktivitas' class="form-control @error('produktivitas') is-invalid @enderror" placeholder='kondisi'>
+                <input type='text' value="{{ $pencatatanAyam->kondisi }}" id="kondisi" name='produktifitas' class="form-control @error('produktifitas') is-invalid @enderror" placeholder='kondisi'>
               </div>
             </div>
             <div class="form-group">

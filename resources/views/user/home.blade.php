@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -246,7 +247,7 @@
       <div class="row">
         <div class="col-sm-4">
           <div class="form-group">
-                <input type="text" class="toDate form-control" name="dt" id="dt" value="" placeholder="Tanggal/waktu/baterai/baris/kolom/produktivitas/kondisi/jumlah telur">
+                <input type="text" class="toDate form-control" name="dt" id="dt" value="" placeholder="Search by all column  ">
           </div>     
         </div>
         <div class="col-sm-3">
@@ -257,7 +258,13 @@
             </div>
         </div>
       </div>
-      <br>
+      <div class="col-sm-3">
+          <div class="form-group">
+              <div>
+                <button type="button" class="btn btn1"><a href="/pencatatan_ayam">Tambah Data</a></button>
+              </div>
+          </div>
+      </div>
       <div class="row">
         <table class="table table-bordered">
           <thead>

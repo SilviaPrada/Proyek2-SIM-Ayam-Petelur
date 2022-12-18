@@ -1,7 +1,7 @@
 @extends('admin.template_backend.home')
 @section('heading', 'Ubah Foto')
 @section('page')
-  <li class="breadcrumb-item active"><a href="#">Anak Kandang</a></li>
+  <li class="breadcrumb-item active"><a href="{{ route('anakKandang.index') }}">Anak Kandang</a></li>
   <li class="breadcrumb-item active">Ubah Foto</li>
 @endsection
 @section('content')
@@ -20,14 +20,14 @@
       </div>
       <!-- /.card-header -->
       <!-- form start -->
-      <form action="#"  enctype="multipart/form-data" method="post">
+      <form action="{{ route('anakKandang.update-foto', $anakKandang->id) }}"  enctype="multipart/form-data" method="post">
         @csrf
         <div class="card-body">
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="nama_anak_kandang">Nama Anak Kandang</label>
-                        <input type="text" name="nama_anak_kandang" class="form-control" value="#" readonly>
+                        <input type="text" name="nama_anak_kandang" class="form-control" value="{{ $anakKandang->nama_anak_kandang }}" readonly>
                     </div>
                     <div class="form-group">
                         <label for="foto_anak_kandang">File input</label>
@@ -40,14 +40,14 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <img src="#" class="img img-responsive" alt="" width="30%" />
+                    <img src="{{ asset($anakKandang->foto_anak_kandang) }}" class="img img-responsive" alt="" width="30%" />
                 </div>
             </div>
         </div>
         <!-- /.card-body -->
 
         <div class="card-footer">
-            <a href="#" class="btn btn-default"><i class='nav-icon fas fa-arrow-left'></i> &nbsp; Kembali</a> &nbsp;
+            <a href="{{ route('anakKandang.index') }}" class="btn btn-default"><i class='nav-icon fas fa-arrow-left'></i> &nbsp; Kembali</a> &nbsp;
             <button name="submit" class="btn btn-primary"><i class="nav-icon fas fa-upload"></i> &nbsp; Upload</button>
         </div>
       </form>

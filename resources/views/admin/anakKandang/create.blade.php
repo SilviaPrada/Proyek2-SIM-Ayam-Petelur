@@ -1,20 +1,19 @@
 @extends('admin.template_backend.home')
-@section('heading', 'Edit Anak Kandang')
+@section('heading', 'Data Anak Kandang')
 @section('page')
-  <li class="breadcrumb-item active">Edit Data Anak Kandang</li>
+  <li class="breadcrumb-item active">Data Anak Kandang</li>
 @endsection
 @section('content')
 <div class="col-md-12">
     <!-- general form elements -->
     <div class="card card-primary">
       <div class="card-header">
-        <h3 class="card-title">Edit Data Anak Kandang</h3>
+        <h3 class="card-title">Data Anak Kandang</h3>
       </div>
       <!-- /.card-header -->
       <!-- form start -->
-      <form action="{{ route('anakKandang.update', $anakKandang->id) }}" method="post">
+      <form action="{{ route('anakKandang.store') }}" method="POST" id="myForm" enctype="multipart/form-data">
         @csrf
-        @method('PUT')
         <div class="card-body">
           <div class="row">
             <input type="hidden" name="jadwal_id" value="">
@@ -45,11 +44,21 @@
                 </div>
                 <div class="form-group">
                   <label for="tgl_lahir">Tanggal Lahir</label>
-                  <input type="text" id="tgl_lahir" name="tgl_lahir" class="form-control @error('tgl_lahir') is-invalid @enderror" placeholder="{{ __('Tanggal Lahir') }}">
+                  <input type="date" id="tgl_lahir" name="tgl_lahir" class="form-control @error('tgl_lahir') is-invalid @enderror" placeholder="{{ __('Tanggal Lahir') }}">
                 </div>
                 <div class="form-group">
                   <label for="baterai_id">Baterai</label>
                   <input type="text" id="baterai_id" name="baterai_id" class="form-control @error('baterai_id') is-invalid @enderror" placeholder="{{ __('Baterai') }}">
+                </div>
+                <div class="form-group">
+                        <label for="foto">File input</label>
+                        <div class="input-group">
+                            <div class="custom-file">
+                                <input type="file" name="foto_anak_kandang" class="custom-file-input @error('foto_anak_kandang') is-invalid @enderror" id="foto_anak_kandang">
+                                <label class="custom-file-label" for="foto_anak_kandang">Choose file</label>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
           </div>
@@ -57,8 +66,8 @@
         <!-- /.card-body -->
 
         <div class="card-footer">
-          <a href="{{ route('anakKandang.index') }}" name="kembali" class="btn btn-default" id="back"><i class='nav-icon fas fa-arrow-left'></i> &nbsp; Kembali</a> &nbsp;
-          <button name="submit" class="btn btn-primary"><i class="nav-icon fas fa-save"></i> &nbsp; Update</button>
+          <a href="#" name="kembali" class="btn btn-default" id="back"><i class='nav-icon fas fa-arrow-left'></i> &nbsp; Kembali</a> &nbsp;
+          <button name="submit" class="btn btn-primary"><i class="nav-icon fas fa-save"></i> &nbsp; Submit</button>
         </div>
       </form>
     </div>
@@ -66,9 +75,9 @@
 </div>
 @endsection
 @section('script')
-<script>
+  <script>
     $("#MasterData").addClass("active");
     $("#liMasterData").addClass("menu-open");
     $("#DataAnakKandang").addClass("active");
-</script>
+  </script>
 @endsection

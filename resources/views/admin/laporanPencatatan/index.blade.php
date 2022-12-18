@@ -1,18 +1,19 @@
-@extends('template_backend.home')
+@extends('admin.template_backend.home')
 @section('heading', 'Data Pencatatan')
 @section('page')
-  <li class="breadcrumb-item active"><a href="#">Data Pencatatan</a></li>
-  <li class="breadcrumb-item active"></li>
+  <li class="breadcrumb-item active">Data Pencatatan</li>
 @endsection
 @section('content')
 <div class="col-md-12">
     <!-- general form elements -->
     <div class="card">
-      <div class="card-header">
-        <h3 class="card-title">
-            <a href="#" class="btn btn-default btn-sm"><i class="nav-icon fas fa-arrow-left"></i> &nbsp; Kembali</a>
-        </h3>
-      </div>
+        <div class="card-header">
+          <h3 class="card-title">
+            <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target=".bd-example-modal-lg">
+                    <i class="nav-icon fas fa-folder-plus"></i><a href="{{ route('pencatatanAyam.create') }}" > &nbsp; Tambah Pencatatan
+            </button>
+          </h3>
+        </div>
       <!-- /.card-header -->
       <div class="card-body">
         <div class="row">
@@ -21,14 +22,37 @@
               <thead>
                 <tr>
                   <th>No.</th>
-                  <th>Nama Anak Kandang/th>
-                  <th>Baterai</th>
+                  <th>Waktu</th>
+                  <th>Kolom ID</th>
+                  <th>Produktifitas</th>
+                  <th>Kondisi</th>
+                  <th>Jumlah Telur</th>
                   <th>Aksi</th>
               </thead>
               <tbody>
+              @foreach($pencatatanAyam as $pencatatan => $catat)
                   <tr>
-                    <td><a href="#" class="btn btn-info btn-sm"><i class="nav-icon fas fa-search-plus"></i> &nbsp; Show Pencatatan</a></td>
+                      <td>{{ $pencatatan+1 }}</td>
+                      <td>{{ $catat->waktu }}</td>
+                      <td>{{ $catat->kolom_id }}</td>
+                      <td>{{ $catat->produktifitas }}</td>
+                      <td>{{ $catat->kondisi }}</td>
+                      <td>{{ $catat->jumlah_telur }}</td>
+                      <td>
+                          <a href="{{ route('pencatatanAyam.edit', $catat->id) }}" >Edit</a>
+                          {{-- <a href="{{ route('pencatatanAyam.destroy', $catat->id) }}" >Hapus</a> --}}
+                          {{-- <a href="/pencatatanAyam/{{ $catat->id }}" data-toggle="modal" data-target="#delete{{ $catat->id }}">Hapus</a> 
+                          --}}
+                          
+                        <form action="{{ route('pencatatanAyam.destroy', $catat->id) }}" method="post">
+                            @csrf
+                            @method('delete')
+                            <button class="btn btn-danger btn-sm mt-2"><i class="nav-icon fas fa-trash-alt"></i> &nbsp; Hapus</button>
+                        </form>
+                      </td>
                   </tr>
+                  @include('admin.laporanPencatatan.delete')
+                  @endforeach
               </tbody>
             </table>
           </div>
@@ -41,8 +65,8 @@
 @endsection
 @section('script')
     <script>
-        $("#Nilai").addClass("active");
-        $("#liNilai").addClass("menu-open");
-        $("#Ulangan").addClass("active");
+        $("#MasterData").addClass("active");
+        $("#liMasterData").addClass("menu-open");
+        $("#DataPencatatan").addClass("active");
     </script>
 @endsection

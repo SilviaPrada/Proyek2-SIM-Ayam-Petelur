@@ -37,7 +37,7 @@ class PencatatanAyamController extends Controller
     public function store(Request $request)
     {
         PencatatanAyam::create($request->all());
-        return redirect()->route('laporanPencatatan.index')->with('success', 'Pencatatan Berhasil Dibuat');
+        return redirect()->route('pencatatanAyam.index')->with('success', 'Pencatatan Berhasil Dibuat');
     }
 
     /**
@@ -74,7 +74,7 @@ class PencatatanAyamController extends Controller
     {
         $pencatatanAyam = PencatatanAyam::find($id);
         $pencatatanAyam->update($request->all());
-        return redirect()->route('laporanPencatatan.index')->with('success', 'Pencatatan Ayam Berhasil Diedit!!');
+        return redirect()->route('pencatatanAyam.index')->with('success', 'Pencatatan Ayam Berhasil Diedit!!');
     }
 
     /**
@@ -87,6 +87,6 @@ class PencatatanAyamController extends Controller
     {
         $pencatatanAyam = PencatatanAyam::find($id);
         $pencatatanAyam->delete();
-        return redirect()->route('laporanPencatatan.index')->with('success', 'Pencatatan Ayam Berhasil DiHapus!!');
+        return redirect()->route('pencatatanAyam.index')->with('success', 'Pencatatan Ayam Berhasil DiHapus!!');
     }
 }

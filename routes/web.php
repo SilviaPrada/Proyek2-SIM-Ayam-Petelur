@@ -48,6 +48,9 @@ Route::resource('perhitunganRumusKandang', PerhitunganRumusController::class);
 Route::resource('user', UserController::class);
 Route::resource('pencatatanAyam', pencatatanAyamController::class);
 
+Route::get('/pencatatan', function () {
+    return view('admin/laporanPencatatan.index');
+});
 Route::get('/home-user', function () {
     return view('user/home');
 });

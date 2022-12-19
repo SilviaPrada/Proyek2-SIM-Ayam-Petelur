@@ -41,21 +41,29 @@ Route::resource('perhitunganRumusKandang', PerhitunganRumusController::class);
 Route::resource('user', UserController::class);
 Route::resource('pencatatanAyam', pencatatanAyamController::class);
 
-// Route::get('/home-user', function () {
-//     return view('user/home');
-// });
+Route::get('/pencatatan', function () {
+    return view('admin/laporanPencatatan.index');
+});
+
+Route::prefix('pencatatanAyam')->group(function () {
+    Route::get('index', [PencatatanAyamController::class, 'index'])->name('admin.laporanPencatatan.index');
+});
+
+Route::get('/home-user', function () {
+    return view('user/home');
+});
 
 // Route::get('/login', function () {
 //     return view('user/login');
 // });
 
-// Route::get('/pencatatan_ayam', function () {
-//     return view('user/pencatatan_ayam');
-// });
+Route::get('/pencatatan_ayam', function () {
+    return view('user/pencatatan_ayam');
+});
 
-// Route::get('/edit_pencatatan', function () {
-//     return view('user/editPencatatan');
-// });
+Route::get('/edit_pencatatan', function () {
+    return view('user/editPencatatan');
+});
 
 // Route::get('/detail_info', function () {
 //     return view('user/detailInfo');

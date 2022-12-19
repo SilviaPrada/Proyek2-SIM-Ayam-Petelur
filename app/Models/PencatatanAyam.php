@@ -13,7 +13,7 @@ class PencatatanAyam extends Model
     use SoftDeletes;
 
     protected $table = "pencatatan_ayam";
-    protected $fillable = ['waktu','kolom_id', 'produktivitas', 'kondisi', 'jumlah_telur'];
+    protected $fillable = ['waktu','kolom_id', 'produktifitas', 'kondisi', 'jumlah_telur'];
 
     protected $guarded = ['id'];
 

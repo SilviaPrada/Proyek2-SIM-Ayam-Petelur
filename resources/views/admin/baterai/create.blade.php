@@ -44,6 +44,6 @@
   <script>
     $("#MasterData").addClass("active");
     $("#liMasterData").addClass("menu-open");
-    $("#DataKelas").addClass("active");
+    $("#DataBaterai").addClass("active");
   </script>
 @endsection

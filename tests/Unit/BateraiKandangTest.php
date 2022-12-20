@@ -25,10 +25,19 @@ class BateraiKandangTest extends TestCase
     public function test_edit_baterai()
     {
         $id = '1';
-        $response = $this->put('/bateraiKandang'. $id ,[
-            'nama_baterai' => 'Baterai C'
+        $response = $this->put('/bateraiKandang' . '/' . $id,[
+            'nama_baterai' => 'Baterai C',
+            'total_ayam'   => 82,
         ]);
 
-        $response->assertRedirect('/bateraiKandang');
+        $response->assertStatus(302);
+    }
+
+    public function test_delete_baterai()
+    {
+        $id = '1';
+        $response = $this->delete('/bateraiKandang' . '/' . $id);
+
+        $response->assertStatus(302);
     }
 }

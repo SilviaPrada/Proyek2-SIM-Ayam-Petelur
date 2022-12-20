@@ -28,11 +28,19 @@ class InformasiTest extends TestCase
 
     public function test_edit_info()
     {
-        $id = '2';
-        $response = $this->put('/informasiTernak'. $id ,[
+        $id = '1';
+        $response = $this->put('/informasiTernak' . '/' . $id,[
             'nama_penyakit' => 'IBD'
         ]);
 
-        $response->assertRedirect(route('/informasiTernak'));
+        $response->assertStatus(302);
+    }
+
+    public function test_delete_info()
+    {
+        $id = '1';
+        $response = $this->delete('/informasiTernak' . '/' . $id);
+
+        $response->assertStatus(302);
     }
 }

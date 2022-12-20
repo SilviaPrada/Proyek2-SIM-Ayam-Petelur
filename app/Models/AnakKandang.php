@@ -13,7 +13,7 @@ class AnakKandang extends Model
     use SoftDeletes;
 
     protected $table = "anak_kandang";
-    protected $fillable = ['no_ktp', 'nama_anak_kandang','jk', 'telp', 'tmp_lahir', 'tgl_lahir', 'foto_anak_kadang', 'baterai_id'];
+    protected $fillable = ['no_ktp', 'nama_anak_kandang','jk', 'telp', 'tmp_lahir', 'tgl_lahir', 'foto_anak_kadang'];
 
     public function bateraiKandang()
     {

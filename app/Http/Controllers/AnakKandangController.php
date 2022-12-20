@@ -2,84 +2,46 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use App\Models\AnakKandang;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Crypt;
 
 class AnakKandangController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        //
+    public function index(){
+        $anakKandang = AnakKandang::all();
+        return view('admin.anakKandang.index', compact(['anakKandang']));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
+    public function create(){
+        return view('admin.anakKandang.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
+    public function store(Request $request){
+        AnakKandang::create($request->all());
+        return redirect()->route('anakKandang.index')->with('success', 'Anak Kandang Berhasil Ditambahkan');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\AnakKandang  $anakKandang
-     * @return \Illuminate\Http\Response
-     */
-    public function show(AnakKandang $anakKandang)
-    {
-        //
+    public function edit($id){
+        $anakKandang = AnakKandang::find($id);
+        return view('admin.anakKandang.edit', compact(['anakKandang']));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\AnakKandang  $anakKandang
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(AnakKandang $anakKandang)
-    {
-        //
+    public function update(Request $request,$id){
+        $anakKandang = AnakKandang::find($id);
+        $anakKandang->update($request->all());
+        return redirect()->route('anakKandang.index')->with('success', 'Anak Kandang Berhasil Diubah!!');
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\AnakKandang  $anakKandang
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, AnakKandang $anakKandang)
-    {
-        //
+    public function destroy($id){
+        $anakKandang = anakKandang::find($id);
+        $anakKandang->delete();
+        return redirect()->route('anakKandang.index')->with('success', 'Anak Kandang Berhasil DiHapus!!');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\AnakKandang  $anakKandang
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(AnakKandang $anakKandang)
+    public function show($id)
     {
-        //
+        
     }
 }

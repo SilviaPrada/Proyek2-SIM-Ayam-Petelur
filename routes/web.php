@@ -1,15 +1,18 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\BateraiKandangController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RumusController;
+use App\Http\Controllers\KolomAyamController;
 use App\Http\Controllers\AnakKandangController;
 use App\Http\Controllers\BarisKandangController;
-use App\Http\Controllers\InformasiTernakController;
-use App\Http\Controllers\KolomAyamController;
-use App\Http\Controllers\RumusController;
-use App\Http\Controllers\PerhitunganRumusController;
-use App\Http\Controllers\UserController;
+use App\Http\Controllers\BateraiKandangController;
 use App\Http\Controllers\PencatatanAyamController;
+use App\Http\Controllers\InformasiTernakController;
+use App\Http\Controllers\PerhitunganRumusController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -41,8 +44,23 @@ Route::resource('perhitunganRumusKandang', PerhitunganRumusController::class);
 Route::resource('user', UserController::class);
 Route::resource('pencatatanAyam', pencatatanAyamController::class);
 
+Auth::routes();
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('admin/home', [HomeController::class, 'adminHome'])->name('admin.home')->middleware('is_admin');
+Route::get('home', [HomeController::class, 'index'])->name('home');
+
+Route::get('/coba', function () {
+    return view('coba');
+});
+
+// Route::get('/', [LoginController::class, 'login'])->name('login');
+// Route::post('actionlogin', [LoginController::class, 'actionlogin'])->name('actionlogin');
+
+// Route::get('home', [HomeController::class, 'index'])->name('home')->middleware('auth');
+// Route::get('actionlogout', [LoginController::class, 'actionlogout'])->name('actionlogout')->middleware('auth');
+
 // Route::get('/home-user', function () {
-//     return view('user/home');
+//     return view('user.home');
 // });
 
 // Route::get('/login', function () {

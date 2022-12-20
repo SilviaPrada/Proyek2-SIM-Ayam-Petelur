@@ -25,4 +25,14 @@ class InformasiTest extends TestCase
         ]);
         $response->assertStatus(302);
     }
+
+    public function test_edit_info()
+    {
+        $id = '2';
+        $response = $this->put('/informasiTernak'. $id ,[
+            'nama_penyakit' => 'IBD'
+        ]);
+
+        $response->assertRedirect(route('/informasiTernak'));
+    }
 }

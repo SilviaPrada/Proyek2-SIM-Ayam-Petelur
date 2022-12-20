@@ -1,8 +1,9 @@
 <?php
-
 namespace Tests\Unit;
 
-use PHPUnit\Framework\TestCase;
+use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Foundation\Testing\WithFaker;
+use Tests\TestCase;
 
 class BateraiKandangTest extends TestCase
 {
@@ -19,5 +20,15 @@ class BateraiKandangTest extends TestCase
             'total_ayam'   => 80
         ]);
         $response->assertStatus(302);
+    }
+
+    public function test_edit_baterai()
+    {
+        $id = '1';
+        $response = $this->put('/bateraiKandang'. $id ,[
+            'nama_baterai' => 'Baterai C'
+        ]);
+
+        $response->assertRedirect('/bateraiKandang');
     }
 }

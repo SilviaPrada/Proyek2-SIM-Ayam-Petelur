@@ -43,9 +43,4 @@
 </div>
 @endsection
 @section('script')
-    <script>
-        $("#Nilai").addClass("active");
-        $("#liNilai").addClass("menu-open");
-        $("#Ulangan").addClass("active");
-    </script>
 @endsection

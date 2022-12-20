@@ -33,6 +33,13 @@ use App\Http\Controllers\PerhitunganRumusController;
 //         'title'=>'Halaman Home'
 //     ]);
 // })->name('home');
+Route::get('/', function () {
+    return view('welcome');
+  });
+
+  Route::get('/admin', function () {
+    return view('admin/index');
+});
 
 Route::resource('bateraiKandang', BateraiKandangController::class);
 Route::resource('anakKandang', AnakKandangController::class);
@@ -43,6 +50,7 @@ Route::resource('rumus', RumusController::class);
 Route::resource('perhitunganRumusKandang', PerhitunganRumusController::class);
 Route::resource('user', UserController::class);
 Route::resource('pencatatanAyam', pencatatanAyamController::class);
+
 
 Auth::routes();
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -63,34 +71,41 @@ Route::get('/coba', function () {
 //     return view('user.home');
 // });
 
-// Route::get('/login', function () {
-//     return view('user/login');
-// });
+Route::get('/pencatatan', function () {
+    return view('admin/laporanPencatatan.index');
+});
 
-// Route::get('/pencatatan_ayam', function () {
-//     return view('user/pencatatan_ayam');
-// });
+Route::get('/login', function () {
+    return view('user/login');
+});
 
-// Route::get('/edit_pencatatan', function () {
-//     return view('user/editPencatatan');
-// });
+Route::get('/pencatatan_ayam', function () {
+    return view('user/pencatatan_ayam');
+});
+
+Route::get('/edit_pencatatan', function () {
+    return view('user/editPencatatan');
+});
 
 // Route::get('/detail_info', function () {
 //     return view('user/detailInfo');
 // });
 
-// Route::get('/penghitunganHenDay', function () {
-//     return view('user/penghitunganHenDay');
-// });
+Route::get('/penghitunganHenDay', function () {
+    return view('user/penghitunganHenDay');
+});
 
-// Route::get('/penghitunganEggWeight', function () {
-//     return view('user/penghitunganEggWeight');
-// });
+Route::get('/penghitunganEggWeight', function () {
+    return view('user/penghitunganEggWeight');
+});
 
-// Route::get('/penghitunganFCR', function () {
-//     return view('user/penghitunganFCR');
-// });
+Route::get('/penghitunganFCR', function () {
+    return view('user/penghitunganFCR');
+});
 
+Route::get('/penghitunganDeplesi', function () {
+    return view('user/penghitunganDeplesi');
+});
 // // Route::get('/baterai', function () {
 // //     return view('admin/baterai/index');
 // // });
@@ -103,6 +118,7 @@ Route::get('/coba', function () {
 // //     return view('admin/baterai/create');
 // // });
 
-// Route::get('/user', function () {
-//     return view('admin/user/index');
-// });
+Route::get('/user', function () {
+    return view('admin/user/index');
+});
+

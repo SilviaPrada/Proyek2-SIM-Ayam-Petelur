@@ -8,10 +8,9 @@
     <div class="card">
         <div class="card-header">
           <h3 class="card-title">
-              {{-- <button type="button" class="btn btn-primary btn-sm" onclick="{{ route('bateraiKandang.create') }}" data-toggle="modal" data-target="#form-kelas">
-                  <i class="nav-icon fas fa-folder-plus"></i> &nbsp; Tambah Data Baterai
-              </button> --}}
-              <a href="{{ route('bateraiKandang.create') }}" >Tambah Data</a>
+            <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target=".bd-example-modal-lg">
+                    <i class="nav-icon fas fa-folder-plus"></i><a href="{{ route('bateraiKandang.create') }}" > &nbsp; Tambah Data Baterai
+                </button>
           </h3>
         </div>
         <!-- /.card-header -->
@@ -61,6 +60,6 @@
   <script>
     $("#MasterData").addClass("active");
     $("#liMasterData").addClass("menu-open");
-    $("#DataKelas").addClass("active");
+    $("#DataBaterai").addClass("active");
   </script>
 @endsection

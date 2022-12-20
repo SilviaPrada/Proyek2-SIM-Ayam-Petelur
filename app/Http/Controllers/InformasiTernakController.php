@@ -15,6 +15,8 @@ class InformasiTernakController extends Controller
     public function index()
     {
         //
+        $informasiTernak = InformasiTernak::all();
+        return view('admin.informasi.index', compact(['informasiTernak']));
     }
 
     /**
@@ -25,6 +27,7 @@ class InformasiTernakController extends Controller
     public function create()
     {
         //
+        return view('admin.informasi.create');
     }
 
     /**
@@ -35,7 +38,8 @@ class InformasiTernakController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        InformasiTernak::create($request->all());
+        return redirect()->route('informasiTernak.index')->with('success', 'Informasi Ternak Berhasil Dibuat');
     }
 
     /**
@@ -44,7 +48,7 @@ class InformasiTernakController extends Controller
      * @param  \App\Models\InformasiTernak  $informasiTernak
      * @return \Illuminate\Http\Response
      */
-    public function show(InformasiTernak $informasiTernak)
+    public function show($id)
     {
         //
     }
@@ -55,9 +59,11 @@ class InformasiTernakController extends Controller
      * @param  \App\Models\InformasiTernak  $informasiTernak
      * @return \Illuminate\Http\Response
      */
-    public function edit(InformasiTernak $informasiTernak)
+    public function edit($id)
     {
         //
+        $informasiTernak = InformasiTernak::find($id);
+        return view('admin.informasi.edit', compact(['informasiTernak']));
     }
 
     /**
@@ -67,9 +73,11 @@ class InformasiTernakController extends Controller
      * @param  \App\Models\InformasiTernak  $informasiTernak
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, InformasiTernak $informasiTernak)
+    public function update(Request $request, $id)
     {
-        //
+        $informasiTernak = InformasiTernak::find($id);
+        $informasiTernak->update($request->all());
+        return redirect()->route('informasiTernak.index')->with('success', 'Informasi Ternak Berhasil Diedit!!');
     }
 
     /**
@@ -78,8 +86,10 @@ class InformasiTernakController extends Controller
      * @param  \App\Models\InformasiTernak  $informasiTernak
      * @return \Illuminate\Http\Response
      */
-    public function destroy(InformasiTernak $informasiTernak)
+    public function destroy($id)
     {
-        //
+        $informasiTernak = InformasiTernak::find($id);
+        $informasiTernak->delete();
+        return redirect()->route('informasiTernak.index')->with('success', 'Informasi Ternak Berhasil DiHapus!!');
     }
 }

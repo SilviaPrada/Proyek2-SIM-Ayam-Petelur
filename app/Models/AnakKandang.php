@@ -3,21 +3,15 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Notifications\Notifiable;
-use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class AnakKandang extends Model
 {
-    use HasFactory, Notifiable;
-    use SoftDeletes;
+    use HasFactory;
 
-    protected $table = "anak_kandang";
-    protected $fillable = ['no_ktp', 'nama_anak_kandang','jk', 'telp', 'tmp_lahir', 'tgl_lahir', 'foto_anak_kadang'];
+    protected $fillable = ['no_ktp', 'nama_anak_kandang', 'baterai_id', 'jk', 'telp', 'tmp_lahir', 'tgl_lahir', 'foto_anak_kandang'];
 
-    public function bateraiKandang()
-    {
-        return $this->belongsToMany('App\Model\BateraiKandang')->withDefault();
-    }
+    protected $guarded = ['id'];
 
+    protected $table = 'anak_kandang';
 }

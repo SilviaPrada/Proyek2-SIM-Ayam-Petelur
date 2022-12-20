@@ -1,7 +1,7 @@
-@extends('template_backend.home')
+@extends('admin.template_backend.home')
 @section('heading', 'Ubah Foto')
 @section('page')
-  <li class="breadcrumb-item active"><a href="{{ route('#') }}">Anak Kandang</a></li>
+  <li class="breadcrumb-item active"><a href="{{ route('anakKandang.index') }}">Anak Kandang</a></li>
   <li class="breadcrumb-item active">Ubah Foto</li>
 @endsection
 @section('content')
@@ -20,34 +20,34 @@
       </div>
       <!-- /.card-header -->
       <!-- form start -->
-      <form action="{{ route('#') }}"  enctype="multipart/form-data" method="post">
+      <form action="{{ route('anakKandang.update-foto', $anakKandang->id) }}"  enctype="multipart/form-data" method="post">
         @csrf
         <div class="card-body">
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="nama_siswa">Nama Anak Kandang</label>
-                        <input type="text" name="nama_siswa" class="form-control" value="isi nama" readonly>
+                        <label for="nama_anak_kandang">Nama Anak Kandang</label>
+                        <input type="text" name="nama_anak_kandang" class="form-control" value="{{ $anakKandang->nama_anak_kandang }}" readonly>
                     </div>
                     <div class="form-group">
-                        <label for="foto">File input</label>
+                        <label for="foto_anak_kandang">File input</label>
                         <div class="input-group">
                             <div class="custom-file">
-                                <input type="file" name="foto" class="custom-file-input @error('foto') is-invalid @enderror" id="foto">
-                                <label class="custom-file-label" for="foto">Choose file</label>
+                                <input type="file" name="foto_anak_kandang" class="custom-file-input @error('foto_anak_kandang') is-invalid @enderror" id="foto_anak_kandang">
+                                <label class="custom-file-label" for="foto_anak_kandang">Choose file</label>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <img src="#" class="img img-responsive" alt="" width="30%" />
+                    <img src="{{ asset($anakKandang->foto_anak_kandang) }}" class="img img-responsive" alt="" width="30%" />
                 </div>
             </div>
         </div>
         <!-- /.card-body -->
 
         <div class="card-footer">
-            <a href="{{ route("#") }}" class="btn btn-default"><i class='nav-icon fas fa-arrow-left'></i> &nbsp; Kembali</a> &nbsp;
+            <a href="{{ route('anakKandang.index') }}" class="btn btn-default"><i class='nav-icon fas fa-arrow-left'></i> &nbsp; Kembali</a> &nbsp;
             <button name="submit" class="btn btn-primary"><i class="nav-icon fas fa-upload"></i> &nbsp; Upload</button>
         </div>
       </form>
@@ -59,6 +59,6 @@
     <script>
         $("#MasterData").addClass("active");
         $("#liMasterData").addClass("menu-open");
-        $("#DataSiswa").addClass("active");
+        $("#DataAnakKandang").addClass("active");
     </script>
 @endsection

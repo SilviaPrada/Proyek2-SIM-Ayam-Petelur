@@ -1,8 +1,7 @@
-@extends('template_backend.home')
-@section('heading', 'Edit Siswa')
+@extends('admin.template_backend.home')
+@section('heading', 'Edit Anak Kandang')
 @section('page')
-  <li class="breadcrumb-item active"><a href="{{ route('#') }}">Anak Kandang</a></li>
-  <li class="breadcrumb-item active">Edit Anak Kandang</li>
+  <li class="breadcrumb-item active">Edit Data Anak Kandang</li>
 @endsection
 @section('content')
 <div class="col-md-12">
@@ -13,66 +12,44 @@
       </div>
       <!-- /.card-header -->
       <!-- form start -->
-      <form action="{{ route('#') }}" method="post">
+      <form action="{{ route('anakKandang.update', $anakKandang->id) }}" method="post">
         @csrf
-        @method('patch')
+        @method('PUT')
         <div class="card-body">
           <div class="row">
+            <input type="hidden" name="jadwal_id" value="">
             <div class="col-md-6">
-                <div class="form-group">
-                    <label for="no_induk">Nomor KTP</label>
-                    <input type="text" id="no_induk" name="no_induk" value="isi nomor ktp" class="form-control" readonly>
-                </div>
-                <div class="form-group">
-                    <label for="nama_siswa">Nama Anak Kandang</label>
-                    <input type="text" id="nama_siswa" name="nama_siswa" value="{{ isi nama }}" class="form-control @error('nama_siswa') is-invalid @enderror">
+              <div class="form-group">
+                <label for="nama_anak_kandang">Nama Anak Kandang</label>
+                <input type='text' id="nama_anak_kandang" name='nama_anak_kandang' class="form-control @error('nama_anak_kandang') is-invalid @enderror" placeholder="{{ __('Nama Anak Kandang') }}">
+              </div>
+              <div class="form-group">
+                  <label for="no_ktp">No.KTP</label>
+                  <input type="text" id="no_ktp" name="no_ktp"  class="form-control @error('no_ktp') is-invalid @enderror" placeholder="{{ __('No.KTP') }}">
                 </div>
                 <div class="form-group">
                     <label for="jk">Jenis Kelamin</label>
                     <select id="jk" name="jk" class="select2bs4 form-control @error('jk') is-invalid @enderror">
                         <option value="">-- Pilih Jenis Kelamin --</option>
-                        <!-- <option value="L"
-                            @if ($siswa->jk == 'L')
-                                selected
-                            @endif
-                        >Laki-Laki</option>
-                        <option value="P"
-                            @if ($siswa->jk == 'P')
-                                selected
-                            @endif
-                        >Perempuan</option> -->
+                        <option value="L">Laki-Laki</option>
+                        <option value="P">Perempuan</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="tmp_lahir">Tempat Lahir</label>
-                    <input type="text" id="tmp_lahir" name="tmp_lahir" value="{{ $siswa->tmp_lahir }}" class="form-control @error('tmp_lahir') is-invalid @enderror">
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="nis">No ID</label>
-                    <input type="text" id="nis" name="nis" onkeypress="return inputAngka(event)" value="{{ $siswa->nis }}" class="form-control @error('nis') is-invalid @enderror">
+                  <label for="telp">Telepon</label>
+                  <input type="text" id="telp" name="telp" class="form-control @error('telp') is-invalid @enderror" placeholder="{{ __('Telepon') }}">
                 </div>
                 <div class="form-group">
-                    <label for="kelas_id">Baterai</label>
-                    <select id="kelas_id" name="kelas_id" class="select2bs4 form-control @error('kelas_id') is-invalid @enderror">
-                        <option value="">-- Pilih Baterai --</option>
-                        <!-- @foreach ($kelas as $data)
-                            <option value="{{ $data->id }}"
-                                @if ($siswa->kelas_id == $data->id)
-                                    selected
-                                @endif
-                            >{{ $data->nama_kelas }}</option>
-                        @endforeach -->
-                    </select>
+                  <label for="tmp_lahir">Tempat Lahir</label>
+                  <input type="text" id="tmp_lahir" name="tmp_lahir" class="form-control @error('tmp_lahir') is-invalid @enderror" placeholder="{{ __('Tempat Lahir') }}">
                 </div>
                 <div class="form-group">
-                    <label for="telp">Nomor Telpon/HP</label>
-                    <input type="text" id="telp" name="telp" value="isi nomor" onkeypress="return inputAngka(event)" class="form-control @error('telp') is-invalid @enderror">
+                  <label for="tgl_lahir">Tanggal Lahir</label>
+                  <input type="date" id="tgl_lahir" name="tgl_lahir" class="form-control @error('tgl_lahir') is-invalid @enderror" placeholder="{{ __('Tanggal Lahir') }}">
                 </div>
                 <div class="form-group">
-                    <label for="tgl_lahir">Tanggal Lahir</label>
-                    <input type="date" id="tgl_lahir" name="tgl_lahir" value="isi tanggal" class="form-control @error('tgl_lahir') is-invalid @enderror">
+                  <label for="baterai_id">Baterai</label>
+                  <input type="text" id="baterai_id" name="baterai_id" class="form-control @error('baterai_id') is-invalid @enderror" placeholder="{{ __('Baterai') }}">
                 </div>
             </div>
           </div>
@@ -80,7 +57,7 @@
         <!-- /.card-body -->
 
         <div class="card-footer">
-          <a href="#" name="kembali" class="btn btn-default" id="back"><i class='nav-icon fas fa-arrow-left'></i> &nbsp; Kembali</a> &nbsp;
+          <a href="{{ route('anakKandang.index') }}" name="kembali" class="btn btn-default" id="back"><i class='nav-icon fas fa-arrow-left'></i> &nbsp; Kembali</a> &nbsp;
           <button name="submit" class="btn btn-primary"><i class="nav-icon fas fa-save"></i> &nbsp; Update</button>
         </div>
       </form>
@@ -89,14 +66,9 @@
 </div>
 @endsection
 @section('script')
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#back').click(function() {
-        window.location="{{ route('#' }}";
-        });
-    });
+<script>
     $("#MasterData").addClass("active");
     $("#liMasterData").addClass("menu-open");
-    $("#DataSiswa").addClass("active");
+    $("#DataAnakKandang").addClass("active");
 </script>
 @endsection

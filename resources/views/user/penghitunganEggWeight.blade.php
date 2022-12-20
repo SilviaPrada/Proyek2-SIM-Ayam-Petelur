@@ -78,24 +78,25 @@
           <div class="desc">
           <p>Egg Weight adalah suatu cara untuk menghitung bobot telur yang dihasilkan per butir dalam satuan gram.
             </p>
+            <p id="eggweight"></p>
           </div><br><br>
           <form class="row justify-content-center ps-4" >
             <div class="col-md-4 ps-5" >
-                  <label for="basic-url" class="form-label">Bobot telur keseluruhan (kg)</label>
-                  <input type="text" class="form-control" placeholder="0" aria-label="First name">
+                  <label for="input1" class="form-label">Bobot telur keseluruhan (kg)</label>
+                  <input type="number" name="input1" id="input1" class="form-control" placeholder="0" aria-label="First name">
                 </div>
             <div class="col-md-4 ps-5">
-                <label for="basic-url" class="form-label">Jumlah telur (butir)</label>
-                <input type="text" class="form-control" placeholder="0" aria-label="Last name">
+                <label for="input2" class="form-label">Jumlah telur (butir)</label>
+                <input type="number" name="input2" id="input2" class="form-control" placeholder="0" aria-label="Last name">
                 </div>
               </div><br><br><br>
-              <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="200">
-                <button type="submit" class="btn btn2">Hitung</button>
+              <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+                <button type="button" onclick="hitung()" class="btn btn2">Hitung</button>
               </div><br>
-              <div class="hasil" data-aos="fade-up" data-aos-delay="200">
+              <div class="hasil" data-aos="fade-up" data-aos-delay="150">
                 <p>Egg Weight</p>
                 <div class="akhir">
-                <p>0%</p>
+                <p id="hasil"></p>
                 </div>
                 <div class="riwayat">
                 <p>Riwayat Penghitungan</p>
@@ -153,6 +154,18 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script type="text/javascript">
+  var input1 = document.getElementById('input1')
+  var input2 = document.getElementById('input2')
+  var hasil = document.getElementById('hasil')
+  var eggweight = document.getElementById('eggweight')
+
+  function hitung() {
+    eggweight.textContent = Number(input1.value) / Number(input2.value) * 1000
+    hasil.innerHTML = 
+			eggweight.textContent + " Kg"
+  }
+  </script>
 
 </body>
 

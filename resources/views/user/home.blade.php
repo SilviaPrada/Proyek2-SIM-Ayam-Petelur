@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -246,7 +247,7 @@
       <div class="row">
         <div class="col-sm-4">
           <div class="form-group">
-                <input type="text" class="toDate form-control" name="dt" id="dt" value="" placeholder="Tanggal/waktu/baterai/baris/kolom/produktivitas/kondisi/jumlah telur">
+                <input type="text" class="toDate form-control" name="dt" id="dt" value="" placeholder="Search by all column  ">
           </div>     
         </div>
         <div class="col-sm-3">
@@ -257,7 +258,13 @@
             </div>
         </div>
       </div>
-      <br>
+      <div class="col-sm-3">
+          <div class="form-group">
+              <div>
+                <button type="button" class="btn btn1"><a href="/pencatatan_ayam">Tambah Data</a></button>
+              </div>
+          </div>
+      </div>
       <div class="row">
         <table class="table table-bordered">
           <thead>
@@ -382,32 +389,45 @@
             <p>Deplesi  digunakan untuk menghitung jumlah penyusutan ayam baik karena 
               kematian maupun karena afkir (culling).
             </p>
+            <p id="deplesi"></p>
           </div><br><br>
           <form class="row justify-content-center ps-4" >
             <div class="col-md-4 ps-5" >
-                  <label for="basic-url" class="form-label">Populasi ayam saat iniL</label>
-                  <input type="text" class="form-control" placeholder="0" aria-label="First name">
+                  <label for="basic-url" class="form-label">Populasi ayam saat ini</label>
+                  <input type="number" name="input1" id="input1" class="form-control" placeholder="0" aria-label="First name">
                 </div>
             <div class="col-md-4 ps-5">
                 <label for="basic-url" class="form-label">Jumlah ayam afkir/mati</label>
-                <input type="text" class="form-control" placeholder="0" aria-label="Last name">
+                <input type="number" name="input2" id="input2" class="form-control" placeholder="0" aria-label="Last name">
                 </div>
               </div><br><br><br>
-              <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="200">
-                <button type="submit" class="btn btn2">Hitung</button>
+              <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                <button type="button" onclick="hitung()" class="btn btn2">Hitung</button>
               </div><br>
-              <div class="hasil" data-aos="fade-up" data-aos-delay="200">
+              <div class="hasil" data-aos="fade-up" data-aos-delay="100">
                 <p>Deplesi</p>
                 <div class="akhir">
-                <p>0%</p>
+                <p id="hasil"></p>
                 </div><br>
-                <div class="riwayat">
+                <!-- <div class="riwayat">
                 <p>Riwayat Penghitungan</p>
-                </div>
+                </div> -->
               </div>
             </form>
       <!-- </div> -->
     </div>
+    <script type="text/javascript">
+  var input1 = document.getElementById('input1')
+  var input2 = document.getElementById('input2')
+  var hasil = document.getElementById('hasil')
+  var deplesi = document.getElementById('deplesi')
+
+  function hitung() {
+    deplesi.textContent = Number(input1.value) / Number(input2.value) * 100
+    hasil.innerHTML = 
+			deplesi.textContent + "%"
+  }
+  </script>
   </section><!-- End Hitung Section -->
 
 

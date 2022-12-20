@@ -14,7 +14,8 @@ class PencatatanAyamController extends Controller
      */
     public function index()
     {
-        //
+        $pencatatanAyam = PencatatanAyam::all();
+        return view('admin.laporanPencatatan.index', compact(['pencatatanAyam']));
     }
 
     /**
@@ -24,7 +25,7 @@ class PencatatanAyamController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.laporanPencatatan.create');
     }
 
     /**
@@ -35,7 +36,8 @@ class PencatatanAyamController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        PencatatanAyam::create($request->all());
+        return redirect()->route('pencatatanAyam.index')->with('success', 'Pencatatan Berhasil Dibuat');
     }
 
     /**
@@ -44,7 +46,7 @@ class PencatatanAyamController extends Controller
      * @param  \App\Models\PencatatanAyam  $pencatatanAyam
      * @return \Illuminate\Http\Response
      */
-    public function show(PencatatanAyam $pencatatanAyam)
+    public function show($id)
     {
         //
     }
@@ -55,9 +57,10 @@ class PencatatanAyamController extends Controller
      * @param  \App\Models\PencatatanAyam  $pencatatanAyam
      * @return \Illuminate\Http\Response
      */
-    public function edit(PencatatanAyam $pencatatanAyam)
+    public function edit($id)
     {
-        //
+        $pencatatanAyam = PencatatanAyam::find($id);
+        return view('admin.laporanPencatatan.edit', compact(['pencatatanAyam']));
     }
 
     /**
@@ -67,9 +70,11 @@ class PencatatanAyamController extends Controller
      * @param  \App\Models\PencatatanAyam  $pencatatanAyam
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, PencatatanAyam $pencatatanAyam)
+    public function update(Request $request, $id)
     {
-        //
+        $pencatatanAyam = PencatatanAyam::find($id);
+        $pencatatanAyam->update($request->all());
+        return redirect()->route('pencatatanAyam.index')->with('success', 'Pencatatan Ayam Berhasil Diedit!!');
     }
 
     /**
@@ -78,8 +83,10 @@ class PencatatanAyamController extends Controller
      * @param  \App\Models\PencatatanAyam  $pencatatanAyam
      * @return \Illuminate\Http\Response
      */
-    public function destroy(PencatatanAyam $pencatatanAyam)
+    public function destroy($id)
     {
-        //
+        $pencatatanAyam = PencatatanAyam::find($id);
+        $pencatatanAyam->delete();
+        return redirect()->route('pencatatanAyam.index')->with('success', 'Pencatatan Ayam Berhasil DiHapus!!');
     }
 }

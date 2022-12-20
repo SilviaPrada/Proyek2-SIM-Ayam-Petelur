@@ -8,7 +8,7 @@
     <!-- general form elements -->
     <div class="card card-primary">
       <div class="card-header">
-        <h3 class="card-title">Tambah Data Anak Kandang</h3>
+        <h3 class="card-title">Data Anak Kandang</h3>
       </div>
       <!-- /.card-header -->
       <!-- form start -->
@@ -20,35 +20,53 @@
             <div class="col-md-6">
               <div class="form-group">
                 <label for="nama_anak_kandang">Nama Anak Kandang</label>
-                <input type='text' id="nama_anak_kandang" name='nama_anak_kandang' class="form-control @error('nama_anak_kandang') is-invalid @enderror" placeholder='nama anak kandang'>
+                <input type='text' id="nama_anak_kandang" name='nama_anak_kandang' class="form-control @error('nama_anak_kandang') is-invalid @enderror" placeholder="{{ __('Nama Anak Kandang') }}">
               </div>
               <div class="form-group">
-                <label for="total_ayam">No KTP</label>
-                <input type='number' id="no_ktp" name='total_ayam' class="form-control @error('no_ktp') is-invalid @enderror" placeholder='nomor KTP'>
-              </div>
-              <div class="form-group">
-                <label for="jk" class="font-weight-bold">Jenis Kelamin</label>
-                    <select name="id_jurusan" id="id_jurusan" class="form-control" required>
-                        <option value="">Pilih Jenis Kelamin</option>
-                            @foreach($anakKandang as $anak)
-                            <option value="{{ $anak->id }}"> {{ $anak->jk }} </option>
-                            @endforeach
+                  <label for="no_ktp">No.KTP</label>
+                  <input type="text" id="no_ktp" name="no_ktp"  class="form-control @error('no_ktp') is-invalid @enderror" placeholder="{{ __('No.KTP') }}">
+                </div>
+                <div class="form-group">
+                    <label for="jk">Jenis Kelamin</label>
+                    <select id="jk" name="jk" class="select2bs4 form-control @error('jk') is-invalid @enderror">
+                        <option value="">-- Pilih Jenis Kelamin --</option>
+                        <option value="L">Laki-Laki</option>
+                        <option value="P">Perempuan</option>
                     </select>
-              </div>
+                </div>
+                <div class="form-group">
+                  <label for="telp">Telepon</label>
+                  <input type="text" id="telp" name="telp" class="form-control @error('telp') is-invalid @enderror" placeholder="{{ __('Telepon') }}">
+                </div>
+                <div class="form-group">
+                  <label for="tmp_lahir">Tempat Lahir</label>
+                  <input type="text" id="tmp_lahir" name="tmp_lahir" class="form-control @error('tmp_lahir') is-invalid @enderror" placeholder="{{ __('Tempat Lahir') }}">
+                </div>
+                <div class="form-group">
+                  <label for="tgl_lahir">Tanggal Lahir</label>
+                  <input type="date" id="tgl_lahir" name="tgl_lahir" class="form-control @error('tgl_lahir') is-invalid @enderror" placeholder="{{ __('Tanggal Lahir') }}">
+                </div>
+                <div class="form-group">
+                  <label for="baterai_id">Baterai</label>
+                  <input type="text" id="baterai_id" name="baterai_id" class="form-control @error('baterai_id') is-invalid @enderror" placeholder="{{ __('Baterai') }}">
+                </div>
+                <div class="form-group">
+                        <label for="foto">File input</label>
+                        <div class="input-group">
+                            <div class="custom-file">
+                                <input type="file" name="foto_anak_kandang" class="custom-file-input @error('foto_anak_kandang') is-invalid @enderror" id="foto_anak_kandang">
+                                <label class="custom-file-label" for="foto_anak_kandang">Choose file</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
           </div>
         </div>
         <!-- /.card-body -->
-        <td>{{ $ank->nama_anak_kandang }}</td>
-        <td>{{ $ank->no_ktp }}</td>
-        <td>{{ $ank->jk }}</td>
-        <td>{{ $ank->telp }}</td>
-        <td>{{ $ank->tmp_lahir }}</td>
-        <td>{{ $ank->tgl_lahir }}</td>
-        <td>{{ $ank->foto }}</td>
 
         <div class="card-footer">
-          <a href="#" name="kembali" class="btn btn-default" id="back"><i class='nav-icon fas fa-arrow-left'></i> &nbsp; Kembali</a> &nbsp;
+          <a href="{{ route('anakKandang.index') }}" name="kembali" class="btn btn-default" id="back"><i class='nav-icon fas fa-arrow-left'></i> &nbsp; Kembali</a> &nbsp;
           <button name="submit" class="btn btn-primary"><i class="nav-icon fas fa-save"></i> &nbsp; Submit</button>
         </div>
       </form>
@@ -60,6 +78,6 @@
   <script>
     $("#MasterData").addClass("active");
     $("#liMasterData").addClass("menu-open");
-    $("#DataKelas").addClass("active");
+    $("#DataAnakKandang").addClass("active");
   </script>
 @endsection

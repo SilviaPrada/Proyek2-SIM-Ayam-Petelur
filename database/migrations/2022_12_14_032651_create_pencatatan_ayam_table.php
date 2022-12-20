@@ -15,10 +15,10 @@ class CreatePencatatanAyamTable extends Migration
     {
         Schema::create('pencatatan_ayam', function (Blueprint $table) {
             $table->id();
-            $table->enum('waktu', ['Pagi', 'Sore']);
+            $table->string('waktu', 200);
             $table->integer('kolom_id');
-            $table->enum('produktifitas', ['Bertelur', 'Tidak Bertelur']);
-            $table->enum('kondisi', ['Sehat', 'Sakit', 'Mati', 'Afkir']);
+            $table->string('produktifitas', 200);
+            $table->string('kondisi', 200);
             $table->integer('jumlah_telur');
             $table->timestamps();
             $table->softDeletes();

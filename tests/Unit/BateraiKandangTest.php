@@ -11,8 +11,13 @@ class BateraiKandangTest extends TestCase
      *
      * @return void
      */
-    public function test_baterai_kandang()
+    public function test_add_baterai()
     {
-        $this->assertTrue(true);
+        $id = 1;
+        $response = $this->post('/bateraiKandang',[
+            'nama_baterai' => 'Baterai B',
+            'total_ayam'   => 80
+        ]);
+        $response->assertStatus(302);
     }
 }

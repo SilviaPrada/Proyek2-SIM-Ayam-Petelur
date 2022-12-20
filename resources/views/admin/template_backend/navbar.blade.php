@@ -7,27 +7,22 @@
         </li>
     </ul>
     <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-            <div class="btn-group" role="group">
-                <a id="btnGroupDrop1" style="color: #fff; margin-right: 40px;" type="button" class="dropdown-toggle text-capitalize" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-             
+        <li class="nav-item dropdown">
+            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                {{ Auth::user()->name }}
+            </a>
+
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="{{ route('logout') }}"
+                   onclick="event.preventDefault();
+                                 document.getElementById('logout-form').submit();">
+                    {{ __('Logout') }}
                 </a>
-                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                    <a class="dropdown-item" href="#"><i class="nav-icon fas fa-user"></i> &nbsp; My Profile</a>
-                    <a class="dropdown-item" href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i class="nav-icon fas fa-sign-out-alt"></i> &nbsp; Log Out</a>
-                    <form id="logout-form" action="#" method="POST" style="display: none;">
-                        @csrf
-                    </form>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#"
-                            onclick="event.preventDefault();
-                                        document.getElementById('logout-form').submit();">
-                            {{ __('Logout') }}
-                        </a>
-                    </div>
-                </div>
-              </div>
+                
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                    @csrf
+                </form>
+            </div>
         </li>
     </ul>
 </nav>
-<!-- /.navbar -->

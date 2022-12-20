@@ -40,6 +40,6 @@ class BateraiKandangController extends Controller
 
     public function show($id)
     {
-        //
+        
     }
 }

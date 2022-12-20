@@ -1,10 +1,3 @@
-{{-- @extends('admin.template_backend.home')
-@section('heading', 'Dashboard')
-@section('page')
-  <li class="breadcrumb-item active">Dashboard</li>
-@endsection
-@endsection --}}
-
 @extends('layouts.app')
 
 @section('content')
@@ -21,7 +14,7 @@
                         </div>
                     @endif
 
-                    {{ __('You are normal user') }}
+                    {{ __('You are logged in!') }}
                 </div>
             </div>
         </div>

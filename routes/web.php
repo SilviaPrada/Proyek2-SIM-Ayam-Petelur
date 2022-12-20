@@ -75,9 +75,9 @@ Route::get('/pencatatan', function () {
     return view('admin/laporanPencatatan.index');
 });
 
-Route::get('/login', function () {
-    return view('user/login');
-});
+// Route::get('/login', function () {
+//     return view('user/login');
+// });
 
 Route::get('/pencatatan_ayam', function () {
     return view('user/pencatatan_ayam');

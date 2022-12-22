@@ -3,47 +3,47 @@ services:
   app:
     build:
       args:
-        user: ian
+        user: simap
         uid: 1000
       context: ./
       dockerfile: Dockerfile
-    image: gallery
-    container_name: gallery-app
+    image: simap
+    container_name: simap-app
     restart: unless-stopped
     working_dir: /var/www/
     volumes:
       - ./:/var/www
     networks:
-      - gallery
+      - simap
 
   db:
     image: mysql:8.0
-    container_name: gallery-db
+    container_name: simap-db
     restart: unless-stopped
     environment:
-      MYSQL_DATABASE: gallery
-      MYSQL_ROOT_PASSWORD:
-      MYSQL_PASSWORD:
-      MYSQL_USER: root
+      MYSQL_DATABASE: simap
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_PASSWORD: password
+      MYSQL_USER: simap
       SERVICE_TAGS: dev
       SERVICE_NAME: mysql
     volumes:
-      - ./docker-compose/mysql:/docker-entrypoint-initdb.d
+      - ./docker/mysql:/docker-entrypoint-initdb.d
     networks:
-      - gallery
+      - simap
 
   nginx:
     image: nginx:alpine
-    container_name: gallery-nginx
+    container_name: simap-nginx
     restart: unless-stopped
     ports:
       - 8000:80
     volumes:
       - ./:/var/www
-      - ./docker-compose/nginx:/etc/nginx/conf.d/
+      - ./docker/nginx:/etc/nginx/conf.d/
     networks:
-      - gallery
+      - simap
 
 networks:
-  gallery:
+  simap:
     driver: bridge

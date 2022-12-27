@@ -69,7 +69,7 @@
         <p>Penghitungan</p>
       </div>
           <div class="row ms-4 justify-content-center">
-            <button type="button" class="btn btn1"><a href="home-user#hitung">Deplesi</a></button>
+            <button type="button" class="btn btn1"><a href="/penghitunganDeplesi">Deplesi</a></button>
             <button type="button" class="btn btn1"><a href="/penghitunganHenDay"></a>Hen Day</button>
             <button type="button" class="btn btn1"><a href="/penghitunganEggWeight">Egg Weight</a></button>
             <button type="button" class="btn btn1 active"><a href="/penghitunganFCR">FCR Total</a></button>
@@ -98,9 +98,9 @@
                 <div class="akhir">
                 <p id="hasil"></p>
                 </div>
-                <div class="riwayat">
+                {{-- <div class="riwayat">
                 <p>Riwayat Penghitungan</p>
-                </div>
+                </div> --}}
               </div>
             </form>
       <!-- </div> -->
@@ -162,7 +162,7 @@
   var fcr = document.getElementById('fcr')
 
   function hitung() {
-    fcr.textContent = Number(input1.value) / Number(input2.value) * 100
+    fcr.textContent = Number(input1.value) * 100 / Number(input2.value)
     hasil.innerHTML = 
 			fcr.textContent + " Kg"
   }

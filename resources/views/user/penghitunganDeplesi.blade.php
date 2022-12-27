@@ -51,7 +51,7 @@
           <li><a class="nav-link scrollto" href="home-user#about">Tentang Kami</a></li>
           <li><a class="nav-link scrollto" href="home-user#catat-ayam">Pencatatan Ayam</a></li>
           <li><a class="nav-link scrollto" href="home-user#hasil">Hasil Pencatatan</a></li>
-          <li><a class="nav-link scrollto" href="home-user#hitung">Penghitungan</a></li>
+          <li><a class="nav-link scrollto" href="/penghitunganDeplesi">Penghitungan</a></li>
           <li><a class="nav-link scrollto" href="home-user#info">Informasi</a></li>
           <li><a class="getstarted scrollto" href="login">Keluar</a></li>
         </ul>
@@ -99,9 +99,9 @@
                 <div class="akhir">
                 <p id="hasil"></p>
                 </div><br>
-                <div class="riwayat">
+                {{-- <div class="riwayat">
                 <p>Riwayat Penghitungan</p>
-                </div>
+                </div> --}}
               </div>
             </form>
       <!-- </div> -->
@@ -162,7 +162,7 @@
   var deplesi = document.getElementById('deplesi')
 
   function hitung() {
-    deplesi.textContent = Number(input1.value) / Number(input2.value) * 100
+    deplesi.textContent = Number(input2.value) * 100 / Number(input1.value)
     hasil.innerHTML = 
 		deplesi.textContent + "%"
   }

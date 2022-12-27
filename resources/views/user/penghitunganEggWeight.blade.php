@@ -51,7 +51,7 @@
           <li><a class="nav-link scrollto" href="home-user#about">Tentang Kami</a></li>
           <li><a class="nav-link scrollto" href="home-user#catat-ayam">Pencatatan Ayam</a></li>
           <li><a class="nav-link scrollto" href="home-user#hasil">Hasil Pencatatan</a></li>
-          <li><a class="nav-link scrollto" href="home-user#hitung">Penghitungan</a></li>
+          <li><a class="nav-link scrollto" href="/penghitunganDeplesi">Penghitungan</a></li>
           <li><a class="nav-link scrollto" href="home-user#info">Informasi</a></li>
           <li><a class="getstarted scrollto" href="login">Keluar</a></li>
         </ul>
@@ -69,7 +69,7 @@
         <p>Penghitungan</p>
       </div>
           <div class="row ms-4 justify-content-center">
-            <button type="button" class="btn btn1"><a href="home-user#hitung">Deplesi</a></button>
+            <button type="button" class="btn btn1"><a href="/penghitunganDeplesi">Deplesi</a></button>
             <button type="button" class="btn btn1"><a href="/penghitunganHenDay">Hen Day</a></button>
             <button type="button" class="btn btn1 active"><a href="/penghitunganEggWeight">Egg Weight</a></button>
             <button type="button" class="btn btn1"><a href="/penghitunganFCR">FCR Total</a></button>
@@ -98,9 +98,9 @@
                 <div class="akhir">
                 <p id="hasil"></p>
                 </div>
-                <div class="riwayat">
+                {{-- <div class="riwayat">
                 <p>Riwayat Penghitungan</p>
-                </div>
+                </div> --}}
               </div>
             </form>
       <!-- </div> -->
@@ -161,7 +161,7 @@
   var eggweight = document.getElementById('eggweight')
 
   function hitung() {
-    eggweight.textContent = Number(input1.value) / Number(input2.value) * 1000
+    eggweight.textContent = Number(input1.value) * 1000 / Number(input2.value) 
     hasil.innerHTML = 
 			eggweight.textContent + " Kg"
   }

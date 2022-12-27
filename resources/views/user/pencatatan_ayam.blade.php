@@ -51,7 +51,7 @@
           <li><a class="nav-link scrollto" href="home-user#about">Tentang Kami</a></li>
           <li><a class="nav-link scrollto" href="home-user#catat-ayam">Pencatatan Ayam</a></li>
           <li><a class="nav-link scrollto" href="home-user#hasil">Hasil Pencatatan</a></li>
-          <li><a class="nav-link scrollto" href="home-user#hitung">Penghitungan</a></li>
+          <li><a class="nav-link scrollto" href="/penghitunganDeplesi">Penghitungan</a></li>
           <li><a class="nav-link scrollto" href="home-user#info">Informasi</a></li>
           <li><a class="getstarted scrollto" href="login">Keluar</a></li>
         </ul>

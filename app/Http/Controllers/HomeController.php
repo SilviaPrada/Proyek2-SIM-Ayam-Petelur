@@ -1,7 +1,8 @@
 <?php
    
 namespace App\Http\Controllers;
-  
+
+use App\Http\Middleware\IsAdmin;
 use Illuminate\Http\Request;
    
 class HomeController extends Controller
@@ -23,7 +24,15 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('admin.index');
+       if (auth()->user()->is_admin == 1) {
+            return view('admin.index');
+        } else if(auth()->user()->is_admin == 0){
+            return view('user.home');
+        }
+        else{
+            return redirect()->route('login');
+        }
+        
     }
   
     /**

@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\AnakKandang;
-use App\Models\BateraiKandang;
 use App\Models\User;
+use App\Models\AnakKandang;
 use Illuminate\Http\Request;
+use App\Models\BateraiKandang;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Crypt;
 
@@ -125,7 +127,7 @@ class UserController extends Controller
      */
     public function destroy(User $User)
     {
-        $user = User::findorfail($id);
+        $user = User::findorfail($User);
         if ($user->role == 'Admin') {
             if ($user->id == Auth::user()->id) {
                 $user->delete();
@@ -259,7 +261,7 @@ class UserController extends Controller
             ]);
             $anak_kandang = AnakKandang::where('id_card', Auth::user()->id_card)->first();
             $foto_anak_kandang = $request->foto_anak_kandang;
-            $new_foto = date('s' . 'i' . 'H' . 'd' . 'm' . 'Y') . "_" . $foto->getClientOriginalName();
+            $new_foto = date('s' . 'i' . 'H' . 'd' . 'm' . 'Y') . "_" . $foto_anak_kandang->getClientOriginalName();
             $anak_kandang_data = [
                 'foto_anak_kandang' => 'uploads/anak_kandang/' . $new_foto,
             ];

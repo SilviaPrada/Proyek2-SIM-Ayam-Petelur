@@ -13,29 +13,6 @@ use App\Http\Controllers\BateraiKandangController;
 use App\Http\Controllers\PencatatanAyamController;
 use App\Http\Controllers\InformasiTernakController;
 use App\Http\Controllers\PerhitunganRumusController;
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
-// Route::get('/home', function () {
-//     return view('user/layout/home',[
-//         'title'=>'Halaman Home'
-//     ]);
-// })->name('home');
-Route::get('/', function () {
-    return view('welcome');
-  });
 
   Route::get('/admin', function () {
     return view('admin/index');
@@ -56,10 +33,13 @@ Auth::routes();
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('admin/home', [HomeController::class, 'adminHome'])->name('admin.home')->middleware('is_admin');
 Route::get('home', [HomeController::class, 'index'])->name('home');
-
+Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/coba', function () {
     return view('coba');
 });
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 // Route::get('/', [LoginController::class, 'login'])->name('login');
 // Route::post('actionlogin', [LoginController::class, 'actionlogin'])->name('actionlogin');

@@ -1740,7 +1740,7 @@ section {
   padding-left: 60px;
 }
 
-.hitung .btn2[type=submit] {
+.hitung .btn2[type=button] {
   width: 346px;
   height: 38px;
   background: #EF7E16;

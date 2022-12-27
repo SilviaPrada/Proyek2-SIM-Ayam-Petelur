@@ -21,11 +21,11 @@
             <div class="col-md-6">
               <div class="form-group">
                 <label for="nama_baterai">Nama Baterai</label>
-                <input type='text' value="{{ $bateraiKandang->nama_baterai }}" id="nama_baterai" name='nama_baterai' class="form-control @error('nama_baterai') is-invalid @enderror" placeholder='nama baterai'>
+                <input type='text' value="{{ $bateraiKandang->nama_baterai }}" id="nama_baterai" name='nama_baterai' class="form-control @error('nama_baterai') is-invalid @enderror" placeholder="{{ __('Nama Baterai') }}">
               </div>
               <div class="form-group">
                 <label for="total_ayam">Total Ayam</label>
-                <input type='number' value="{{ $bateraiKandang->total_ayam }}" id="total_ayam" name='total_ayam' class="form-control @error('total_ayam') is-invalid @enderror" placeholder='total ayam'>
+                <input type='number' value="{{ $bateraiKandang->total_ayam }}" id="total_ayam" name='total_ayam' class="form-control @error('total_ayam') is-invalid @enderror" placeholder="{{ __('Total Ayam') }}">
               </div>
             </div>
           </div>

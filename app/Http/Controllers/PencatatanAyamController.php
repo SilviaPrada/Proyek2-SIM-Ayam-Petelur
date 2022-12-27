@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\PencatatanAyam;
+use App\Models\BateraiKandang;
 use Illuminate\Http\Request;
 
 class PencatatanAyamController extends Controller
@@ -14,8 +15,17 @@ class PencatatanAyamController extends Controller
      */
     public function index()
     {
+        return view('admin.laporanPencatatan.index');
+    }
+
+    public function crud()
+    {
         $pencatatanAyam = PencatatanAyam::all();
-        return view('admin.laporanPencatatan.index', compact(['pencatatanAyam']));
+        if (auth()->user()->is_admin == 1) {
+            return view('admin.laporanPencatatan.crud', compact(['pencatatanAyam']));
+        } else if(auth()->user()->is_admin == 0){
+            return view('user.home', compact(['pencatatanAyam']));
+        }   
     }
 
     /**
@@ -37,7 +47,11 @@ class PencatatanAyamController extends Controller
     public function store(Request $request)
     {
         PencatatanAyam::create($request->all());
-        return redirect()->route('pencatatanAyam.index')->with('success', 'Pencatatan Berhasil Dibuat');
+        if (auth()->user()->is_admin == 1) {
+            return redirect()->route('pencatatanAyam.crud')->with('success', 'Pencatatan Berhasil Dibuat');
+        } else if(auth()->user()->is_admin == 0){
+            return view('user.home');
+        } 
     }
 
     /**
@@ -48,7 +62,7 @@ class PencatatanAyamController extends Controller
      */
     public function show($id)
     {
-        //
+
     }
 
     /**
@@ -60,7 +74,11 @@ class PencatatanAyamController extends Controller
     public function edit($id)
     {
         $pencatatanAyam = PencatatanAyam::find($id);
-        return view('admin.laporanPencatatan.edit', compact(['pencatatanAyam']));
+        if (auth()->user()->is_admin == 1) {
+            return view('admin.laporanPencatatan.edit', compact(['pencatatanAyam']));
+        } else if(auth()->user()->is_admin == 0){
+            return view('user.home', compact(['pencatatanAyam']));
+        }
     }
 
     /**
@@ -74,7 +92,11 @@ class PencatatanAyamController extends Controller
     {
         $pencatatanAyam = PencatatanAyam::find($id);
         $pencatatanAyam->update($request->all());
-        return redirect()->route('pencatatanAyam.index')->with('success', 'Pencatatan Ayam Berhasil Diedit!!');
+        if (auth()->user()->is_admin == 1) {
+            return redirect()->route('pencatatanAyam.crud')->with('success', 'Pencatatan Ayam Berhasil Diedit!!');
+        } else if(auth()->user()->is_admin == 0){
+            return redirect()->route('user.home')->with('success', 'Pencatatan Ayam Berhasil Diedit!!');
+        }
     }
 
     /**
@@ -87,6 +109,10 @@ class PencatatanAyamController extends Controller
     {
         $pencatatanAyam = PencatatanAyam::find($id);
         $pencatatanAyam->delete();
-        return redirect()->route('pencatatanAyam.index')->with('success', 'Pencatatan Ayam Berhasil DiHapus!!');
+        if (auth()->user()->is_admin == 1) {
+            return view('admin.laporanPencatatan.crud');
+        } else if(auth()->user()->is_admin == 0){
+            return view('user.home');
+        }
     }
 }

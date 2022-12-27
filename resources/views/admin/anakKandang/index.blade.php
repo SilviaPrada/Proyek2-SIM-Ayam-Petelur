@@ -42,10 +42,7 @@
                   <td>{{ $ankKdg->tgl_lahir }}</td>
                   <td>{{ $ankKdg->baterai_id }}</td>
                   <td>
-                      <a href="{{ route('anakKandang.edit', $ankKdg->id) }}" >Edit</a>
-                          {{-- <a href="{{ route('anakKandang.destroy', $ankKdg->id) }}" >Hapus</a> --}}
-                          {{-- <a href="/anakKandang/{{ $ankKdg->id }}" data-toggle="modal" data-target="#delete{{ $ankKdg->id }}">Hapus</a> 
-                          --}}
+                  <button class="btn btn-warning btn-sm mt-2"><a href="{{ route('anakKandang.edit', $ankKdg->id) }}" >Edit</a>
                           
                         <form action="{{ route('anakKandang.destroy', $ankKdg->id) }}" method="post">
                             @csrf

@@ -27,22 +27,24 @@ Route::resource('rumus', RumusController::class);
 Route::resource('perhitunganRumusKandang', PerhitunganRumusController::class);
 Route::resource('user', UserController::class);
 Route::resource('pencatatanAyam', pencatatanAyamController::class);
-
+Route::resource('homePage', HomeController::class);
 
 Auth::routes();
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('admin/home', [HomeController::class, 'adminHome'])->name('admin.home')->middleware('is_admin');
-Route::get('home', [HomeController::class, 'index'])->name('home');
+// Route::get('home', [HomeController::class, 'index'])->name('home');
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/coba', function () {
     return view('coba');
 });
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/crud', 'App\Http\Controllers\PencatatanAyamController@crud');
 
-Route::get('/kolera', function () {
-    return view('user.detailinfo.detailInfo');
+Route::get('/pencatatanAyamKandang', function () {
+    return view('admin/laporanPencatatan.crud');
+});
+
+// ROUTE INFORMASI TERNAK
+Route::get('/gumboro', function () {
+    return view('user.detailinfo.gumboro');
 });
 Route::get('/coryza', function () {
     return view('user.detailinfo.coryza');
@@ -51,23 +53,9 @@ Route::get('/virusnd', function () {
     return view('user.detailinfo.virusnd');
 });
 
-// Route::get('/', [LoginController::class, 'login'])->name('login');
-// Route::post('actionlogin', [LoginController::class, 'actionlogin'])->name('actionlogin');
-
-// Route::get('home', [HomeController::class, 'index'])->name('home')->middleware('auth');
-// Route::get('actionlogout', [LoginController::class, 'actionlogout'])->name('actionlogout')->middleware('auth');
-
-// Route::get('/home-user', function () {
-//     return view('user.home');
-// });
-
 Route::get('/pencatatan', function () {
     return view('admin/laporanPencatatan.index');
 });
-
-// Route::get('/login', function () {
-//     return view('user/login');
-// });
 
 Route::get('/pencatatan_ayam', function () {
     return view('user/pencatatan_ayam');
@@ -79,10 +67,6 @@ Route::get('/edit_pencatatan', function () {
 
 Route::get('/detail_info', function () {
     return view('user/detailInfo');
-});
-
-Route::get('/homee', function () {
-    return view('user/home');
 });
 
 Route::get('/penghitunganHenDay', function () {

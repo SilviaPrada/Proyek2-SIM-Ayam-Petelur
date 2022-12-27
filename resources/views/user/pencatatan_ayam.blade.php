@@ -68,94 +68,80 @@
     </div>  
   <div class="edit" data-aos="fade-up">
         <div data-aos="zoom-in" data-aos-delay="100" style="width: 420px; margin-left: auto; margin-right: auto; margin-top:">
-        <br><br>
-        <h3>Baterai A</h3>
-        <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
-            <div class="column">
-              <p>Baris</p>
-                <select class="dropdown" name="baris" id="baris"> 
-                  <option value="Baris 01">Baris 01</option>
-                  <option value="Baris 02">Baris 02</option>
-                  <option value="Baris 03">Baris 03</option>
-                  <option value="Baris 04">Baris 04</option>
-                </select>
+          <br><br>
+          <h3>Baterai A</h3>
+        <form action="{{ route('pencatatanAyam.store') }}" method="POST" id="myForm" enctype="multipart/form-data">
+        @csrf
+        <div class="card-body">
+            <div class="form-group">
+                    <label for="waktu">Waktu</label>
+                    <select id="waktu" name="waktu" class="select2bs4 form-control @error('waktu') is-invalid @enderror">
+                        <option value="Pagi">Pagi</option>
+                        <option value="Sore">Sore</option>
+                    </select>
+                </div>
+            <div class="form-group">
+                  <label for="kolom_id">Kolom Id</label>
+                  <select id="kolom_id" name="kolom_id" class="form-control @error('kolom_id') is-invalid @enderror select2bs4">
+                      <option value=""> Kolom Ayam</option>
+                      <option value="01">01</option>
+                      <option value="02">02</option>
+                      <option value="03">03</option>
+                      <option value="04">04</option>
+                      <option value="05">05</option>
+                      <option value="06">06</option>
+                      <option value="07">07</option>
+                      <option value="08">08</option>
+                      <option value="09">09</option>
+                      <option value="10">10</option>
+                  </select>
             </div>
-            <div class="column">
-              <p>Kolom</p>
-                <select class="dropdown" name="kolom" id="kolom"> 
-                <option value="Kolom 01">Kolom 01</option>
-                  <option value="Kolom 02">Kolom 02</option>
-                  <option value="Kolom 03">Kolom 03</option>
-                  <option value="Kolom 04">Kolom 04</option>
-                </select>
+            <div class="form-group">
+                <label for="produktifitas">Produktifitas</label>
+                    <div class="form-check">
+                        <input type='radio' id="produktifitasB" name='produktifitas' class="form-check-input" value="Bertelur">
+                        <label for="produktifitasB" class="form-check-label"> Bertelur </label>
+                    </div>
+                    <div class="form-check">
+                        <input type='radio' id="produktifitasTB" name='produktifitas' class="form-check-input" value="Tidak Bertelur">
+                        <label for="produktifitasTB" class="form-check-label"> Tidak Bertelur </label>
+                    </div>
             </div>
-            <div class="column">
-              <p>Waktu</p>
-                <select class="dropdown" name="waktu" id="waktu">
-                <option value="Pagi">Pagi</option>
-                  <option value="Sore">Sore</option>
-                </select>
+            <div class="form-group">
+                <label for="kondisi">Kondisi</label>
+                    <div class="form-check">
+                        <input type='radio' id="kondisiSH" name='kondisi' class="form-check-input" value="Sehat">
+                        <label for="kondisiSH" class="form-check-label"> Sehat </label>
+                    </div>
+                    <div class="form-check">
+                        <input type='radio' id="kondisiSK" name='kondisi' class="form-check-input" value="Sakit">
+                        <label for="kondisiSK" class="form-check-label"> Sakit </label>
+                    </div>
+                    <div class="form-check">
+                        <input type='radio' id="kondisiMT" name='kondisi' class="form-check-input" value="Mati">
+                        <label for="kondisiMT" class="form-check-label"> Mati </label>
+                    </div>
+                    <div class="form-check">
+                        <input type='radio' id="kondisiAF" name='kondisi' class="form-check-input" value="Afkir">
+                        <label for="kondisiAF" class="form-check-label"> Afkir </label>
+                    </div>
             </div>
-          </div>
-          <br>
-          <p>Produktivitas</p>
-          <div class="row">
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-              <label class="form-check-label" for="inlineRadio1">Bertelur</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-              <label class="form-check-label" for="inlineRadio2">Tidak Bertelur</label>
-            </div>
-          </div>
-          <p>Kondisi</p>
-          <div class="row">
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-              <label class="form-check-label" for="exampleRadios1">
-                Sehat
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-              <label class="form-check-label" for="exampleRadios2">
-                Mati
-              </label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-              <label class="form-check-label" for="exampleRadios1">
-                Sakit
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-              <label class="form-check-label" for="exampleRadios2">
-                Afkir
-              </label>
-            </div>
-          </div>
-          <br>
-              <p>Jumlah telur</p>
-              <div class="col-md-2">
-                <input type="text" class="form-control" id="inputZip" placeholder="00">
-              </div>
-            </div>
-            <br>
-            <div class="row">
-              <div class="btn">
-                <button class="btn btn-success" type="submit">Simpan</button>
-              </div>
-              <div class="btn">
-                <button class="btn btn-danger" type="submit">Kembali</button>
-              </div>
+            <div class="form-group">
+                <label for="jumlah_telur">Jumlah Telur</label>
+                <input type='number' id="jumlah_telur" name='jumlah_telur' class="form-control @error('jumlah_telur') is-invalid @enderror" placeholder='000'>
             </div>
         </div>
-    </div>
-</div>
+        </div>
+        </div>
+        <!-- /.card-body -->
+
+        <div class="card-footer">
+            <a href="/" name="kembali" class="btn btn-default" id="back"><i class='nav-icon fas fa-arrow-left'></i> &nbsp; Kembali</a> &nbsp;
+          <button name="submit" class="btn btn-primary"><i class="nav-icon fas fa-save"></i> &nbsp; Submit</button>
+        </div>
+      </form>
+        </div>
+  </div>
     </section><!-- End F.A.Q Section -->
   
     <!-- ======= Footer ======= -->

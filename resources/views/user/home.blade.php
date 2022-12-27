@@ -442,9 +442,11 @@
           <div class="row no-gutters">
             <div class="col-md-8">
               <div class="card-body">
-                <a href="/detail_info">
+                <a href="/gumboro">
                   <h5 class="card-title">Gumboro</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">
+                  Penyakit gumboro atau Infectious bursal disease (IBD) adalah penyakit yang disebabkan oleh virus famili Birnaviridae.
+                  </p>
                 </a>
               </div>
             </div>
@@ -453,30 +455,15 @@
             </div>
           </div>
         </div>
-        <div class="card mb-3" style="max-width: 540px;">
-          <div class="row no-gutters">
-            <div class="col-md-8">
-              <div class="card-body">
-                <a href="/detail_info">
-                  <h5 class="card-title">Kolera</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <img src="assets/img/kolera.png" class="card-img" alt="gambar" height="100%">
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="row">
         <div class="card mb-3" style="max-width: 540px;">
           <div class="row no-gutters">
             <div class="col-md-8">
               <div class="card-body">
-                <a href="/detail_info">
+                <a href="/coryza">
                   <h5 class="card-title">Coryza</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">
+                  Coryza adalah penyakit pada ayam yang disebabkan oleh bakteri gram negatif Haemophilus paragallinarum.</p>
                 </a>
               </div>
             </div>
@@ -485,30 +472,16 @@
             </div>
           </div>
         </div>
-        <div class="card mb-3" style="max-width: 540px;">
-          <div class="row no-gutters">
-            <div class="col-md-8">
-              <div class="card-body">
-                <a href="/detail_info">
-                  <h5 class="card-title">Influenza</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <img src="assets/img/influenza.png" class="card-img" alt="gambar" height="100%">
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="row">
         <div class="card mb-3" style="max-width: 540px;">
           <div class="row no-gutters">
             <div class="col-md-8">
               <div class="card-body">
-                <a href="/detail_info">
+                <a href="/virusnd">
                   <h5 class="card-title">Virus ND</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">
+                  Tetelo (virus ND) adalah penyakit yang menular yang disebabkan oleh virus ND.
+                  </p>
                 </a>
               </div>
             </div>
@@ -517,23 +490,6 @@
             </div>
           </div>
         </div>
-        <div class="card mb-3" style="max-width: 540px;">
-          <div class="row no-gutters">
-            <div class="col-md-8">
-              <div class="card-body">
-                <a href="/detail_info">
-                  <h5 class="card-title">CRD</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <img src="assets/img/crd.png" class="card-img" alt="gambar" height="100%">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     
   </section><!-- End Services Section -->
 

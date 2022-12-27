@@ -70,9 +70,10 @@
                         <div class="col-lg-12">
                             <div class="title-all">
                                 <div class="row">
+                                  <a href="/" class="btn btn-default btn-sm"><i class="nav-icon fas fa-arrow-left"></i> &nbsp; Kembali</a>
                                     <div class="col-lg-12">
                                         <div class="title-all text-center">
-                                                <h3 style="font-weight: 700;">Gumboro</h3>
+                                                <h3 style="font-weight: 700;"><td>Coryza</td></h3>
                                                 <br>
                                                 <img width="18%" src="assets/img/gumboro.png" alt="" />
                                                 <br><br>
@@ -81,15 +82,25 @@
                                     </div>
                                 </div>
                                 <h4 style="font-weight: 700;">Tentang Penyakit</h4><br>
-                                        <p style="padding-left: 25px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet ultrices est. </p>
+                                        <p style="padding-left: 25px;"><td>
+                                        Coryza adalah penyakit pada ayam yang disebabkan oleh bakteri gram negatif 
+                                        Haemophilus paragallinarum yang  menyerang bagian pernapasan ayam
+                                        </td></p>
                                         <br>
                                 <br>
                                 <h4 style="font-weight: 700;">Gejala-Gejala</h4><br>
-                                        <p style="padding-left: 25px;">Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.</p>
+                                        <p style="padding-left: 25px;"><td>
+                                        Terlihat mengantuk, terdapat luka pada sayap, hidung berlendir berwarna kekuningan 
+                                        dan berbau busuk, sesak nafas, mengorok, menurunnya nafsu makan dan produksi telur 
+                                        berkualitas.
+                                        </td></p>
                                         <br>
                                         <br>
                                 <h4 style="font-weight: 700;">Obat dan Penanganan</h4><br>
-                                        <p style="padding-left: 25px;">Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.</p>
+                                        <p style="padding-left: 25px;"><td>
+                                        Menggunakan antibiotic  Intertrim-LA dengan dosis 0,2 ml per kg berat ayam dan diulangi 
+                                        per 96 jam.
+                                        </td></p>
                                         <br>
                             </div>
                         </div>

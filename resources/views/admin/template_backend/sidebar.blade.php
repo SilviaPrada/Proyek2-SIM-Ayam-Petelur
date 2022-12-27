@@ -39,15 +39,6 @@
                             </p>
                         </a>
                     </li>
-                    <li class="nav-item has-treeview" id="liMasterData">
-                        <a href="#" class="nav-link" id="MasterData">
-                            <i class="nav-icon fas fa-edit"></i>
-                            <p>
-                                Data User
-                                <i class="fas fa-angle-left right"></i>
-                            </p>
-                        </a>
-                    </li>
                     <li class="nav-item has-treeview" id="liNilai">
                         <a href="{{ route('pencatatanAyam.index') }}" class="nav-link" id="Nilai">
                             <i class="nav-icon fas fa-file-signature"></i>

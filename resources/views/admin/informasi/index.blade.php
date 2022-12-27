@@ -35,7 +35,7 @@
                   <td>{{ $info->gejala }}</td>
                   <td>{{ $info->pengobatan }}</td>
                   <td>
-                      <a href="{{ route('informasiTernak.edit', $info->id) }}" >Edit</a>
+                  <button class="btn btn-warning btn-sm mt-2"><a href="{{ route('informasiTernak.edit', $info->id) }}" >Edit</a>
                           {{-- <a href="{{ route('informasiTernak.destroy', $info->id) }}" >Hapus</a> --}}
                           {{-- <a href="/informasiTernak/{{ $info->id }}" data-toggle="modal" data-target="#delete{{ $info->id }}">Hapus</a> 
                           --}}

@@ -93,7 +93,8 @@
         <div class="col-lg-6 pt-5 pt-lg-0">
           <h3 data-aos="fade-up">SISTEM INFORMASI MANAJEMEN AYAM PETELUR</h3>
           <p data-aos="fade-up" data-aos-delay="100">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+            SIMAP merupakan sebuah sistem informasi manajemen yang dibuat untuk membantu dalam proses memanajemen peternakan.
+            Dengan fitur yang disediakan, diharapkan dapat memudahkan anak kandang dalan menjalankan tugas dan juga pengelola peternakan dalam memanajemen usahanya.
           </p>
         </div>
       </div>
@@ -107,7 +108,7 @@
 
         <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
           <div class="member">
-            <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+            <img src="assets/img/team/mila.png" class="img-fluid" alt="">
             <div class="member-info">
               <div class="member-info-content">
                 <h4>Mila Yunita</h4>
@@ -119,7 +120,7 @@
 
         <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
           <div class="member">
-            <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+            <img src="assets/img/team/rara.jpg" class="img-fluid" alt="">
             <div class="member-info">
               <div class="member-info-content">
                 <h4>Rara Deninda Hurianto</h4>
@@ -131,7 +132,7 @@
 
         <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
           <div class="member">
-            <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+            <img src="assets/img/team/shine.jpeg" class="img-fluid" alt="">
             <div class="member-info">
               <div class="member-info-content">
                 <h4>Shine Devi Oktaviana R S P</h4>
@@ -143,7 +144,7 @@
 
         <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
           <div class="member">
-            <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+            <img src="assets/img/team/silvi.jpg" class="img-fluid" alt="">
             <div class="member-info">
               <div class="member-info-content">
                 <h4>Silvia Prada Aprilia</h4>
@@ -244,20 +245,7 @@
       <div class="section-title">
         <p>Hasil Pencatatan</p>
       </div>
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="form-group">
-                <input type="text" class="toDate form-control" name="dt" id="dt" value="" placeholder="Search by all column  ">
-          </div>     
-        </div>
-        <div class="col-sm-3">
-            <div class="form-group">
-                <div>
-                    <button type="submit" name="submit" value="search" id="submit" class="btn btn-default"><i class="fa fa-fw fa-search"></i>Cari</button>
-                </div>
-            </div>
-        </div>
-      </div>
+      <br>
       <div class="col-sm-3">
           <div class="form-group">
               <div>
@@ -271,8 +259,6 @@
             <tr style="background-color: #FFCEA1;">
               <th scope="col">Tanggal</th>
               <th scope="col">Waktu</th>
-              <th scope="col">Baterai</th>
-              <th scope="col">Baris</th>
               <th scope="col">Kolom Ayam</th>
               <th scope="col">Produktivitas</th>
               <th scope="col">Kondisi</th>
@@ -281,91 +267,25 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>2 September 2022</td>
-              <td>Sore</td>
-              <td>Baterai A</td>
-              <td>Baris 03</td>
-              <td>Kolom 03</td>
-              <td>Bertelur</td>
-              <td>Sehat</td>
-              <td>1</td>
-              <td>
-								<a href="/edit_pencatatan" class="btn btn-sm btn-warning">Edit</a>
-								<a href="#" class="btn btn-sm btn-danger" onclick="return confirm('Anda yakin ingin hapus?');">Hapus</a>
-						  </td>
-            </tr>
-            <tr>
-              <td>2 September 2022</td>
-              <td>Sore</td>
-              <td>Baterai A</td>
-              <td>Baris 03</td>
-              <td>Kolom 03</td>
-              <td>Bertelur</td>
-              <td>Sehat</td>
-              <td>1</td>
-              <td>
-								<a href="/edit_pencatatan" class="btn btn-sm btn-warning">Edit</a>
-								<a href="#" class="btn btn-sm btn-danger" onclick="return confirm('Anda yakin ingin hapus?');">Hapus</a>
-						  </td>
-            </tr>
-            <tr>
-              <td>2 September 2022</td>
-              <td>Sore</td>
-              <td>Baterai A</td>
-              <td>Baris 03</td>
-              <td>Kolom 03</td>
-              <td>Bertelur</td>
-              <td>Sehat</td>
-              <td>1</td>
-              <td>
-								<a href="/edit_pencatatan" class="btn btn-sm btn-warning">Edit</a>
-								<a href="#" class="btn btn-sm btn-danger" onclick="return confirm('Anda yakin ingin hapus?');">Hapus</a>
-						  </td>
-            </tr>
-            <tr>
-              <td>2 September 2022</td>
-              <td>Sore</td>
-              <td>Baterai A</td>
-              <td>Baris 03</td>
-              <td>Kolom 03</td>
-              <td>Bertelur</td>
-              <td>Sehat</td>
-              <td>1</td>
-              <td>
-								<a href="/edit_pencatatan" class="btn btn-sm btn-warning">Edit</a>
-								<a href="#" class="btn btn-sm btn-danger" onclick="return confirm('Anda yakin ingin hapus?');">Hapus</a>
-						  </td>
-            </tr>
-            <tr>
-              <td>2 September 2022</td>
-              <td>Sore</td>
-              <td>Baterai A</td>
-              <td>Baris 03</td>
-              <td>Kolom 03</td>
-              <td>Bertelur</td>
-              <td>Sehat</td>
-              <td>1</td>
-              <td>
-								<a href="/edit_pencatatan" class="btn btn-sm btn-warning">Edit</a>
-								<a href="#" class="btn btn-sm btn-danger" onclick="return confirm('Anda yakin ingin hapus?');">Hapus</a>
-						  </td>
-            </tr>
-            <tr>
-              <td>2 September 2022</td>
-              <td>Sore</td>
-              <td>Baterai A</td>
-              <td>Baris 03</td>
-              <td>Kolom 03</td>
-              <td>Bertelur</td>
-              <td>Sehat</td>
-              <td>1</td>
-              <td>
-								<a href="/edit_pencatatan" class="btn btn-sm btn-warning">Edit</a>
-								<a href="#" class="btn btn-sm btn-danger" onclick="return confirm('Anda yakin ingin hapus?');">Hapus</a>
-						  </td>
-            </tr>
-          </tbody>
+                @foreach($pencatatanAyam as $pencatatan => $catat)
+                  <tr>
+                      <td>{{ $catat->created_at }}</td>
+                      <td>{{ $catat->waktu }}</td>
+                      <td>{{ $catat->kolom_id }}</td>
+                      <td>{{ $catat->produktifitas }}</td>
+                      <td>{{ $catat->kondisi }}</td>
+                      <td>{{ $catat->jumlah_telur }}</td>
+                      <td>
+                      <button class="btn btn-warning btn-sm mt-2"><a href="{{ route('pencatatanAyam.edit', $catat->id) }}" >Edit</a>
+                        <form action="{{ route('pencatatanAyam.destroy', $catat->id) }}" method="post">
+                            @csrf
+                            @method('delete')
+                            <button class="btn btn-danger btn-sm mt-2"><i class="nav-icon fas fa-trash-alt"></i> &nbsp; Hapus</button>
+                        </form>
+                      </td>
+                  </tr>
+                  @endforeach
+              </tbody>
         </table>
       </div>
     </div>

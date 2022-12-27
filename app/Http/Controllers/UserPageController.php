@@ -1,51 +1,12 @@
 <?php
-   
+
 namespace App\Http\Controllers;
-use App\Models\PencatatanAyam;
-use App\Http\Middleware\IsAdmin;
+
 use Illuminate\Http\Request;
-   
-class HomeController extends Controller
+use App\Models\PencatatanAyam;
+
+class UserPageController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-  
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
-    public function index()
-    {
-       if (auth()->user()->is_admin == 1) {
-            return view('admin.index');
-        } else if(auth()->user()->is_admin == 0){
-            $pencatatanAyam = PencatatanAyam::all();
-            return view('user.home', compact(['pencatatanAyam']));
-        }
-        else{
-            return redirect()->route('login');
-        }
-        
-    }
-  
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
-    public function adminHome()
-    {
-        return view('admin-home');
-    }
-    
     public function store(Request $request)
     {
         PencatatanAyam::create($request->all());

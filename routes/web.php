@@ -61,6 +61,16 @@ Route::get('/coba', function () {
     return view('coba');
 });
 
+Route::get('/kolera', function () {
+    return view('user.detailinfo.detailInfo');
+});
+Route::get('/coryza', function () {
+    return view('user.detailinfo.coryza');
+});
+Route::get('/virusnd', function () {
+    return view('user.detailinfo.virusnd');
+});
+
 // Route::get('/', [LoginController::class, 'login'])->name('login');
 // Route::post('actionlogin', [LoginController::class, 'actionlogin'])->name('actionlogin');
 
@@ -87,9 +97,13 @@ Route::get('/edit_pencatatan', function () {
     return view('user/editPencatatan');
 });
 
-// Route::get('/detail_info', function () {
-//     return view('user/detailInfo');
-// });
+Route::get('/detail_info', function () {
+    return view('user/detailInfo');
+});
+
+Route::get('/homee', function () {
+    return view('user/home');
+});
 
 Route::get('/penghitunganHenDay', function () {
     return view('user/penghitunganHenDay');
